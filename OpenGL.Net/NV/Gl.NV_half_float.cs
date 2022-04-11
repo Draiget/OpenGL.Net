@@ -1040,6 +1040,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertex2hNV(ushort x, ushort y);
 
@@ -1048,6 +1049,7 @@ namespace OpenGL
 			internal static glVertex2hNV pglVertex2hNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertex2hvNV(ushort* v);
 
@@ -1056,6 +1058,7 @@ namespace OpenGL
 			internal static glVertex2hvNV pglVertex2hvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertex3hNV(ushort x, ushort y, ushort z);
 
@@ -1064,6 +1067,7 @@ namespace OpenGL
 			internal static glVertex3hNV pglVertex3hNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertex3hvNV(ushort* v);
 
@@ -1072,6 +1076,7 @@ namespace OpenGL
 			internal static glVertex3hvNV pglVertex3hvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertex4hNV(ushort x, ushort y, ushort z, ushort w);
 
@@ -1080,6 +1085,7 @@ namespace OpenGL
 			internal static glVertex4hNV pglVertex4hNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertex4hvNV(ushort* v);
 
@@ -1088,6 +1094,7 @@ namespace OpenGL
 			internal static glVertex4hvNV pglVertex4hvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNormal3hNV(ushort nx, ushort ny, ushort nz);
 
@@ -1096,6 +1103,7 @@ namespace OpenGL
 			internal static glNormal3hNV pglNormal3hNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNormal3hvNV(ushort* v);
 
@@ -1104,6 +1112,7 @@ namespace OpenGL
 			internal static glNormal3hvNV pglNormal3hvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glColor3hNV(ushort red, ushort green, ushort blue);
 
@@ -1112,6 +1121,7 @@ namespace OpenGL
 			internal static glColor3hNV pglColor3hNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glColor3hvNV(ushort* v);
 
@@ -1120,6 +1130,7 @@ namespace OpenGL
 			internal static glColor3hvNV pglColor3hvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glColor4hNV(ushort red, ushort green, ushort blue, ushort alpha);
 
@@ -1128,6 +1139,7 @@ namespace OpenGL
 			internal static glColor4hNV pglColor4hNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glColor4hvNV(ushort* v);
 
@@ -1136,6 +1148,7 @@ namespace OpenGL
 			internal static glColor4hvNV pglColor4hvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoord1hNV(ushort s);
 
@@ -1144,6 +1157,7 @@ namespace OpenGL
 			internal static glTexCoord1hNV pglTexCoord1hNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoord1hvNV(ushort* v);
 
@@ -1152,6 +1166,7 @@ namespace OpenGL
 			internal static glTexCoord1hvNV pglTexCoord1hvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoord2hNV(ushort s, ushort t);
 
@@ -1160,6 +1175,7 @@ namespace OpenGL
 			internal static glTexCoord2hNV pglTexCoord2hNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoord2hvNV(ushort* v);
 
@@ -1168,6 +1184,7 @@ namespace OpenGL
 			internal static glTexCoord2hvNV pglTexCoord2hvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoord3hNV(ushort s, ushort t, ushort r);
 
@@ -1176,6 +1193,7 @@ namespace OpenGL
 			internal static glTexCoord3hNV pglTexCoord3hNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoord3hvNV(ushort* v);
 
@@ -1184,6 +1202,7 @@ namespace OpenGL
 			internal static glTexCoord3hvNV pglTexCoord3hvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoord4hNV(ushort s, ushort t, ushort r, ushort q);
 
@@ -1192,6 +1211,7 @@ namespace OpenGL
 			internal static glTexCoord4hNV pglTexCoord4hNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoord4hvNV(ushort* v);
 
@@ -1200,6 +1220,7 @@ namespace OpenGL
 			internal static glTexCoord4hvNV pglTexCoord4hvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMultiTexCoord1hNV(int target, ushort s);
 
@@ -1208,6 +1229,7 @@ namespace OpenGL
 			internal static glMultiTexCoord1hNV pglMultiTexCoord1hNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMultiTexCoord1hvNV(int target, ushort* v);
 
@@ -1216,6 +1238,7 @@ namespace OpenGL
 			internal static glMultiTexCoord1hvNV pglMultiTexCoord1hvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMultiTexCoord2hNV(int target, ushort s, ushort t);
 
@@ -1224,6 +1247,7 @@ namespace OpenGL
 			internal static glMultiTexCoord2hNV pglMultiTexCoord2hNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMultiTexCoord2hvNV(int target, ushort* v);
 
@@ -1232,6 +1256,7 @@ namespace OpenGL
 			internal static glMultiTexCoord2hvNV pglMultiTexCoord2hvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMultiTexCoord3hNV(int target, ushort s, ushort t, ushort r);
 
@@ -1240,6 +1265,7 @@ namespace OpenGL
 			internal static glMultiTexCoord3hNV pglMultiTexCoord3hNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMultiTexCoord3hvNV(int target, ushort* v);
 
@@ -1248,6 +1274,7 @@ namespace OpenGL
 			internal static glMultiTexCoord3hvNV pglMultiTexCoord3hvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMultiTexCoord4hNV(int target, ushort s, ushort t, ushort r, ushort q);
 
@@ -1256,6 +1283,7 @@ namespace OpenGL
 			internal static glMultiTexCoord4hNV pglMultiTexCoord4hNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMultiTexCoord4hvNV(int target, ushort* v);
 
@@ -1264,6 +1292,7 @@ namespace OpenGL
 			internal static glMultiTexCoord4hvNV pglMultiTexCoord4hvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFogCoordhNV(ushort fog);
 
@@ -1272,6 +1301,7 @@ namespace OpenGL
 			internal static glFogCoordhNV pglFogCoordhNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFogCoordhvNV(ushort* fog);
 
@@ -1280,6 +1310,7 @@ namespace OpenGL
 			internal static glFogCoordhvNV pglFogCoordhvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glSecondaryColor3hNV(ushort red, ushort green, ushort blue);
 
@@ -1288,6 +1319,7 @@ namespace OpenGL
 			internal static glSecondaryColor3hNV pglSecondaryColor3hNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glSecondaryColor3hvNV(ushort* v);
 
@@ -1296,6 +1328,7 @@ namespace OpenGL
 			internal static glSecondaryColor3hvNV pglSecondaryColor3hvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexWeighthNV(ushort weight);
 
@@ -1304,6 +1337,7 @@ namespace OpenGL
 			internal static glVertexWeighthNV pglVertexWeighthNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexWeighthvNV(ushort* weight);
 
@@ -1312,6 +1346,7 @@ namespace OpenGL
 			internal static glVertexWeighthvNV pglVertexWeighthvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexAttrib1hNV(uint index, ushort x);
 
@@ -1320,6 +1355,7 @@ namespace OpenGL
 			internal static glVertexAttrib1hNV pglVertexAttrib1hNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexAttrib1hvNV(uint index, ushort* v);
 
@@ -1328,6 +1364,7 @@ namespace OpenGL
 			internal static glVertexAttrib1hvNV pglVertexAttrib1hvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexAttrib2hNV(uint index, ushort x, ushort y);
 
@@ -1336,6 +1373,7 @@ namespace OpenGL
 			internal static glVertexAttrib2hNV pglVertexAttrib2hNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexAttrib2hvNV(uint index, ushort* v);
 
@@ -1344,6 +1382,7 @@ namespace OpenGL
 			internal static glVertexAttrib2hvNV pglVertexAttrib2hvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexAttrib3hNV(uint index, ushort x, ushort y, ushort z);
 
@@ -1352,6 +1391,7 @@ namespace OpenGL
 			internal static glVertexAttrib3hNV pglVertexAttrib3hNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexAttrib3hvNV(uint index, ushort* v);
 
@@ -1360,6 +1400,7 @@ namespace OpenGL
 			internal static glVertexAttrib3hvNV pglVertexAttrib3hvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexAttrib4hNV(uint index, ushort x, ushort y, ushort z, ushort w);
 
@@ -1368,6 +1409,7 @@ namespace OpenGL
 			internal static glVertexAttrib4hNV pglVertexAttrib4hNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexAttrib4hvNV(uint index, ushort* v);
 
@@ -1376,6 +1418,7 @@ namespace OpenGL
 			internal static glVertexAttrib4hvNV pglVertexAttrib4hvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexAttribs1hvNV(uint index, int n, ushort* v);
 
@@ -1384,6 +1427,7 @@ namespace OpenGL
 			internal static glVertexAttribs1hvNV pglVertexAttribs1hvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexAttribs2hvNV(uint index, int n, ushort* v);
 
@@ -1392,6 +1436,7 @@ namespace OpenGL
 			internal static glVertexAttribs2hvNV pglVertexAttribs2hvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexAttribs3hvNV(uint index, int n, ushort* v);
 
@@ -1400,6 +1445,7 @@ namespace OpenGL
 			internal static glVertexAttribs3hvNV pglVertexAttribs3hvNV;
 
 			[RequiredByFeature("GL_NV_half_float")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexAttribs4hvNV(uint index, int n, ushort* v);
 

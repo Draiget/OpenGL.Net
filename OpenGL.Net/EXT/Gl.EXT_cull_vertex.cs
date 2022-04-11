@@ -111,6 +111,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_cull_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glCullParameterdvEXT(int pname, double* @params);
 
@@ -119,6 +120,7 @@ namespace OpenGL
 			internal static glCullParameterdvEXT pglCullParameterdvEXT;
 
 			[RequiredByFeature("GL_EXT_cull_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glCullParameterfvEXT(int pname, float* @params);
 

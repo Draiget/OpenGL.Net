@@ -221,6 +221,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("EGL_KHR_stream_attrib")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr eglCreateStreamAttribKHR(IntPtr dpy, IntPtr* attrib_list);
 
@@ -228,6 +229,7 @@ namespace OpenGL
 			internal static eglCreateStreamAttribKHR peglCreateStreamAttribKHR;
 
 			[RequiredByFeature("EGL_KHR_stream_attrib")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglSetStreamAttribKHR(IntPtr dpy, IntPtr stream, uint attribute, IntPtr value);
 
@@ -235,6 +237,7 @@ namespace OpenGL
 			internal static eglSetStreamAttribKHR peglSetStreamAttribKHR;
 
 			[RequiredByFeature("EGL_KHR_stream_attrib")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglQueryStreamAttribKHR(IntPtr dpy, IntPtr stream, uint attribute, IntPtr* value);
 
@@ -242,6 +245,7 @@ namespace OpenGL
 			internal static eglQueryStreamAttribKHR peglQueryStreamAttribKHR;
 
 			[RequiredByFeature("EGL_KHR_stream_attrib")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglStreamConsumerAcquireAttribKHR(IntPtr dpy, IntPtr stream, IntPtr* attrib_list);
 
@@ -249,6 +253,7 @@ namespace OpenGL
 			internal static eglStreamConsumerAcquireAttribKHR peglStreamConsumerAcquireAttribKHR;
 
 			[RequiredByFeature("EGL_KHR_stream_attrib")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglStreamConsumerReleaseAttribKHR(IntPtr dpy, IntPtr stream, IntPtr* attrib_list);
 

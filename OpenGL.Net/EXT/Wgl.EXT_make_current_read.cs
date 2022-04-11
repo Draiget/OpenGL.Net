@@ -86,6 +86,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("WGL_EXT_make_current_read")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglMakeContextCurrentEXT(IntPtr hDrawDC, IntPtr hReadDC, IntPtr hglrc);
 
@@ -93,6 +94,7 @@ namespace OpenGL
 			internal static wglMakeContextCurrentEXT pwglMakeContextCurrentEXT;
 
 			[RequiredByFeature("WGL_EXT_make_current_read")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr wglGetCurrentReadDCEXT();
 

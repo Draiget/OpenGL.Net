@@ -247,6 +247,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_pixel_transform")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glPixelTransformParameteriEXT(int target, int pname, int param);
 
@@ -255,6 +256,7 @@ namespace OpenGL
 			internal static glPixelTransformParameteriEXT pglPixelTransformParameteriEXT;
 
 			[RequiredByFeature("GL_EXT_pixel_transform")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glPixelTransformParameterfEXT(int target, int pname, float param);
 
@@ -263,6 +265,7 @@ namespace OpenGL
 			internal static glPixelTransformParameterfEXT pglPixelTransformParameterfEXT;
 
 			[RequiredByFeature("GL_EXT_pixel_transform")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glPixelTransformParameterivEXT(int target, int pname, int* @params);
 
@@ -271,6 +274,7 @@ namespace OpenGL
 			internal static glPixelTransformParameterivEXT pglPixelTransformParameterivEXT;
 
 			[RequiredByFeature("GL_EXT_pixel_transform")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glPixelTransformParameterfvEXT(int target, int pname, float* @params);
 
@@ -279,6 +283,7 @@ namespace OpenGL
 			internal static glPixelTransformParameterfvEXT pglPixelTransformParameterfvEXT;
 
 			[RequiredByFeature("GL_EXT_pixel_transform")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetPixelTransformParameterivEXT(int target, int pname, int* @params);
 
@@ -287,6 +292,7 @@ namespace OpenGL
 			internal static glGetPixelTransformParameterivEXT pglGetPixelTransformParameterivEXT;
 
 			[RequiredByFeature("GL_EXT_pixel_transform")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetPixelTransformParameterfvEXT(int target, int pname, float* @params);
 

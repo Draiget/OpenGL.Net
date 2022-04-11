@@ -68,6 +68,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_discard_framebuffer", Api = "gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDiscardFramebufferEXT(int target, int numAttachments, int* attachments);
 

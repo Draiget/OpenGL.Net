@@ -284,6 +284,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GLX_EXT_texture_from_pixmap")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glXBindTexImageEXT(IntPtr dpy, IntPtr drawable, int buffer, int* attrib_list);
 
@@ -291,6 +292,7 @@ namespace OpenGL
 			internal static glXBindTexImageEXT pglXBindTexImageEXT;
 
 			[RequiredByFeature("GLX_EXT_texture_from_pixmap")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glXReleaseTexImageEXT(IntPtr dpy, IntPtr drawable, int buffer);
 

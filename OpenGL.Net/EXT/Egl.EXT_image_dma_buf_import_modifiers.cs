@@ -186,6 +186,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("EGL_EXT_image_dma_buf_import_modifiers")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglQueryDmaBufFormatsEXT(IntPtr dpy, int max_formats, int* formats, int* num_formats);
 
@@ -193,6 +194,7 @@ namespace OpenGL
 			internal static eglQueryDmaBufFormatsEXT peglQueryDmaBufFormatsEXT;
 
 			[RequiredByFeature("EGL_EXT_image_dma_buf_import_modifiers")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglQueryDmaBufModifiersEXT(IntPtr dpy, int format, int max_modifiers, ulong* modifiers, bool* external_only, int* num_modifiers);
 

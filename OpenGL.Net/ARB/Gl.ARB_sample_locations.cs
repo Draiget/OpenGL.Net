@@ -164,6 +164,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_ARB_sample_locations", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFramebufferSampleLocationsfvARB(int target, uint start, int count, float* v);
 
@@ -172,6 +173,7 @@ namespace OpenGL
 			internal static glFramebufferSampleLocationsfvARB pglFramebufferSampleLocationsfvARB;
 
 			[RequiredByFeature("GL_ARB_sample_locations", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNamedFramebufferSampleLocationsfvARB(uint framebuffer, uint start, int count, float* v);
 
@@ -180,6 +182,7 @@ namespace OpenGL
 			internal static glNamedFramebufferSampleLocationsfvARB pglNamedFramebufferSampleLocationsfvARB;
 
 			[RequiredByFeature("GL_ARB_sample_locations", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glEvaluateDepthValuesARB();
 

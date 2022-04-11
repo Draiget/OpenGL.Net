@@ -114,6 +114,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GLX_NV_present_video")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate uint* glXEnumerateVideoDevicesNV(IntPtr dpy, int screen, int* nelements);
 
@@ -121,6 +122,7 @@ namespace OpenGL
 			internal static glXEnumerateVideoDevicesNV pglXEnumerateVideoDevicesNV;
 
 			[RequiredByFeature("GLX_NV_present_video")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glXBindVideoDeviceNV(IntPtr dpy, uint video_slot, uint video_device, int* attrib_list);
 

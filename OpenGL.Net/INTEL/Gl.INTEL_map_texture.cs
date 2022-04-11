@@ -141,6 +141,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_INTEL_map_texture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glSyncTextureINTEL(uint texture);
 
@@ -149,6 +150,7 @@ namespace OpenGL
 			internal static glSyncTextureINTEL pglSyncTextureINTEL;
 
 			[RequiredByFeature("GL_INTEL_map_texture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUnmapTexture2DINTEL(uint texture, int level);
 
@@ -157,6 +159,7 @@ namespace OpenGL
 			internal static glUnmapTexture2DINTEL pglUnmapTexture2DINTEL;
 
 			[RequiredByFeature("GL_INTEL_map_texture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr glMapTexture2DINTEL(uint texture, int level, uint access, int* stride, int* layout);
 

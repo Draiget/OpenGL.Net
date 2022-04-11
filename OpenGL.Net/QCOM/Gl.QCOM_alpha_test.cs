@@ -63,6 +63,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_QCOM_alpha_test", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glAlphaFuncQCOM(int func, float @ref);
 

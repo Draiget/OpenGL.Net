@@ -213,6 +213,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_convolution")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetConvolutionFilterEXT(int target, int format, int type, IntPtr image);
 
@@ -221,6 +222,7 @@ namespace OpenGL
 			internal static glGetConvolutionFilterEXT pglGetConvolutionFilterEXT;
 
 			[RequiredByFeature("GL_EXT_convolution")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetConvolutionParameterfvEXT(int target, int pname, float* @params);
 
@@ -229,6 +231,7 @@ namespace OpenGL
 			internal static glGetConvolutionParameterfvEXT pglGetConvolutionParameterfvEXT;
 
 			[RequiredByFeature("GL_EXT_convolution")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetConvolutionParameterivEXT(int target, int pname, int* @params);
 
@@ -237,6 +240,7 @@ namespace OpenGL
 			internal static glGetConvolutionParameterivEXT pglGetConvolutionParameterivEXT;
 
 			[RequiredByFeature("GL_EXT_convolution")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetSeparableFilterEXT(int target, int format, int type, IntPtr row, IntPtr column, IntPtr span);
 

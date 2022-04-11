@@ -125,6 +125,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("WGL_I3D_swap_frame_lock")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglEnableFrameLockI3D();
 
@@ -132,6 +133,7 @@ namespace OpenGL
 			internal static wglEnableFrameLockI3D pwglEnableFrameLockI3D;
 
 			[RequiredByFeature("WGL_I3D_swap_frame_lock")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglDisableFrameLockI3D();
 
@@ -139,6 +141,7 @@ namespace OpenGL
 			internal static wglDisableFrameLockI3D pwglDisableFrameLockI3D;
 
 			[RequiredByFeature("WGL_I3D_swap_frame_lock")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglIsEnabledFrameLockI3D(bool* pFlag);
 
@@ -146,6 +149,7 @@ namespace OpenGL
 			internal static wglIsEnabledFrameLockI3D pwglIsEnabledFrameLockI3D;
 
 			[RequiredByFeature("WGL_I3D_swap_frame_lock")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglQueryFrameLockMasterI3D(bool* pFlag);
 

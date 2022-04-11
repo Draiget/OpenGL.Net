@@ -78,6 +78,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_OVR_multiview_multisampled_render_to_texture", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFramebufferTextureMultisampleMultiviewOVR(int target, int attachment, uint texture, int level, int samples, int baseViewIndex, int numViews);
 

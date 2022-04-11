@@ -391,6 +391,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("WGL_I3D_genlock")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglEnableGenlockI3D(IntPtr hDC);
 
@@ -398,6 +399,7 @@ namespace OpenGL
 			internal static wglEnableGenlockI3D pwglEnableGenlockI3D;
 
 			[RequiredByFeature("WGL_I3D_genlock")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglDisableGenlockI3D(IntPtr hDC);
 
@@ -405,6 +407,7 @@ namespace OpenGL
 			internal static wglDisableGenlockI3D pwglDisableGenlockI3D;
 
 			[RequiredByFeature("WGL_I3D_genlock")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglIsEnabledGenlockI3D(IntPtr hDC, bool* pFlag);
 
@@ -412,6 +415,7 @@ namespace OpenGL
 			internal static wglIsEnabledGenlockI3D pwglIsEnabledGenlockI3D;
 
 			[RequiredByFeature("WGL_I3D_genlock")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglGenlockSourceI3D(IntPtr hDC, uint uSource);
 
@@ -419,6 +423,7 @@ namespace OpenGL
 			internal static wglGenlockSourceI3D pwglGenlockSourceI3D;
 
 			[RequiredByFeature("WGL_I3D_genlock")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglGetGenlockSourceI3D(IntPtr hDC, uint* uSource);
 
@@ -426,6 +431,7 @@ namespace OpenGL
 			internal static wglGetGenlockSourceI3D pwglGetGenlockSourceI3D;
 
 			[RequiredByFeature("WGL_I3D_genlock")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglGenlockSourceEdgeI3D(IntPtr hDC, uint uEdge);
 
@@ -433,6 +439,7 @@ namespace OpenGL
 			internal static wglGenlockSourceEdgeI3D pwglGenlockSourceEdgeI3D;
 
 			[RequiredByFeature("WGL_I3D_genlock")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglGetGenlockSourceEdgeI3D(IntPtr hDC, uint* uEdge);
 
@@ -440,6 +447,7 @@ namespace OpenGL
 			internal static wglGetGenlockSourceEdgeI3D pwglGetGenlockSourceEdgeI3D;
 
 			[RequiredByFeature("WGL_I3D_genlock")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglGenlockSampleRateI3D(IntPtr hDC, uint uRate);
 
@@ -447,6 +455,7 @@ namespace OpenGL
 			internal static wglGenlockSampleRateI3D pwglGenlockSampleRateI3D;
 
 			[RequiredByFeature("WGL_I3D_genlock")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglGetGenlockSampleRateI3D(IntPtr hDC, uint* uRate);
 
@@ -454,6 +463,7 @@ namespace OpenGL
 			internal static wglGetGenlockSampleRateI3D pwglGetGenlockSampleRateI3D;
 
 			[RequiredByFeature("WGL_I3D_genlock")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglGenlockSourceDelayI3D(IntPtr hDC, uint uDelay);
 
@@ -461,6 +471,7 @@ namespace OpenGL
 			internal static wglGenlockSourceDelayI3D pwglGenlockSourceDelayI3D;
 
 			[RequiredByFeature("WGL_I3D_genlock")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglGetGenlockSourceDelayI3D(IntPtr hDC, uint* uDelay);
 
@@ -468,6 +479,7 @@ namespace OpenGL
 			internal static wglGetGenlockSourceDelayI3D pwglGetGenlockSourceDelayI3D;
 
 			[RequiredByFeature("WGL_I3D_genlock")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglQueryGenlockMaxSourceDelayI3D(IntPtr hDC, uint* uMaxLineDelay, uint* uMaxPixelDelay);
 

@@ -163,6 +163,7 @@ namespace OpenGL
 		{
 			[RequiredByFeature("GL_EXT_multisample")]
 			[RequiredByFeature("GL_SGIS_multisample")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glSampleMaskEXT(float value, [MarshalAs(UnmanagedType.I1)] bool invert);
 
@@ -173,6 +174,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_EXT_multisample")]
 			[RequiredByFeature("GL_SGIS_multisample")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glSamplePatternEXT(int pattern);
 

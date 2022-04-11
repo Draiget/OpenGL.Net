@@ -143,6 +143,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_QCOM_extended_get2", Api = "gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glExtGetShadersQCOM(uint* shaders, int maxShaders, int* numShaders);
 
@@ -151,6 +152,7 @@ namespace OpenGL
 			internal static glExtGetShadersQCOM pglExtGetShadersQCOM;
 
 			[RequiredByFeature("GL_QCOM_extended_get2", Api = "gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glExtGetProgramsQCOM(uint* programs, int maxPrograms, int* numPrograms);
 
@@ -168,6 +170,7 @@ namespace OpenGL
 			internal static glExtIsProgramBinaryQCOM pglExtIsProgramBinaryQCOM;
 
 			[RequiredByFeature("GL_QCOM_extended_get2", Api = "gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glExtGetProgramBinarySourceQCOM(uint program, int shadertype, string source, int* length);
 

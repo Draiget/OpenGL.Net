@@ -96,6 +96,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("EGL_ANDROID_create_native_client_buffer")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr eglCreateNativeClientBufferANDROID(int* attrib_list);
 

@@ -191,35 +191,39 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_AMD_framebuffer_sample_positions")]
-			[SuppressUnmanagedCodeSecurity]
-			internal delegate void glFramebufferSamplePositionsfvAMD(int target, uint numsamples, uint pixelindex, float* values);
+[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+[SuppressUnmanagedCodeSecurity]
+internal delegate void glFramebufferSamplePositionsfvAMD(int target, uint numsamples, uint pixelindex, float* values);
 
 			[RequiredByFeature("GL_AMD_framebuffer_sample_positions")]
-			[ThreadStatic]
+            [ThreadStatic]
 			internal static glFramebufferSamplePositionsfvAMD pglFramebufferSamplePositionsfvAMD;
 
 			[RequiredByFeature("GL_AMD_framebuffer_sample_positions")]
-			[SuppressUnmanagedCodeSecurity]
+            [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+            [SuppressUnmanagedCodeSecurity]
 			internal delegate void glNamedFramebufferSamplePositionsfvAMD(uint framebuffer, uint numsamples, uint pixelindex, float* values);
 
 			[RequiredByFeature("GL_AMD_framebuffer_sample_positions")]
-			[ThreadStatic]
+            [ThreadStatic]
 			internal static glNamedFramebufferSamplePositionsfvAMD pglNamedFramebufferSamplePositionsfvAMD;
 
 			[RequiredByFeature("GL_AMD_framebuffer_sample_positions")]
-			[SuppressUnmanagedCodeSecurity]
+            [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+            [SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetFramebufferParameterfvAMD(int target, int pname, uint numsamples, uint pixelindex, int size, float* values);
 
 			[RequiredByFeature("GL_AMD_framebuffer_sample_positions")]
-			[ThreadStatic]
+            [ThreadStatic]
 			internal static glGetFramebufferParameterfvAMD pglGetFramebufferParameterfvAMD;
 
 			[RequiredByFeature("GL_AMD_framebuffer_sample_positions")]
-			[SuppressUnmanagedCodeSecurity]
+            [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+            [SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetNamedFramebufferParameterfvAMD(uint framebuffer, int pname, uint numsamples, uint pixelindex, int size, float* values);
 
 			[RequiredByFeature("GL_AMD_framebuffer_sample_positions")]
-			[ThreadStatic]
+            [ThreadStatic]
 			internal static glGetNamedFramebufferParameterfvAMD pglGetNamedFramebufferParameterfvAMD;
 
 		}

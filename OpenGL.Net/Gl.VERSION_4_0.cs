@@ -3030,6 +3030,7 @@ namespace OpenGL
 			[RequiredByFeature("GL_ES_VERSION_3_2", Api = "gles2")]
 			[RequiredByFeature("GL_ARB_sample_shading", Api = "gl|glcore")]
 			[RequiredByFeature("GL_OES_sample_shading", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMinSampleShading(float value);
 
@@ -3046,6 +3047,7 @@ namespace OpenGL
 			[RequiredByFeature("GL_ARB_draw_buffers_blend", Api = "gl|glcore")]
 			[RequiredByFeature("GL_EXT_draw_buffers_indexed", Api = "gles2")]
 			[RequiredByFeature("GL_OES_draw_buffers_indexed", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glBlendEquationi(uint buf, int mode);
 
@@ -3064,6 +3066,7 @@ namespace OpenGL
 			[RequiredByFeature("GL_ARB_draw_buffers_blend", Api = "gl|glcore")]
 			[RequiredByFeature("GL_EXT_draw_buffers_indexed", Api = "gles2")]
 			[RequiredByFeature("GL_OES_draw_buffers_indexed", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glBlendEquationSeparatei(uint buf, int modeRGB, int modeAlpha);
 
@@ -3082,6 +3085,7 @@ namespace OpenGL
 			[RequiredByFeature("GL_ARB_draw_buffers_blend", Api = "gl|glcore")]
 			[RequiredByFeature("GL_EXT_draw_buffers_indexed", Api = "gles2")]
 			[RequiredByFeature("GL_OES_draw_buffers_indexed", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glBlendFunci(uint buf, int src, int dst);
 
@@ -3100,6 +3104,7 @@ namespace OpenGL
 			[RequiredByFeature("GL_ARB_draw_buffers_blend", Api = "gl|glcore")]
 			[RequiredByFeature("GL_EXT_draw_buffers_indexed", Api = "gles2")]
 			[RequiredByFeature("GL_OES_draw_buffers_indexed", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glBlendFuncSeparatei(uint buf, int srcRGB, int dstRGB, int srcAlpha, int dstAlpha);
 
@@ -3115,6 +3120,7 @@ namespace OpenGL
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ES_VERSION_3_1", Api = "gles2")]
 			[RequiredByFeature("GL_ARB_draw_indirect", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDrawArraysIndirect(int mode, IntPtr indirect);
 
@@ -3127,6 +3133,7 @@ namespace OpenGL
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ES_VERSION_3_1", Api = "gles2")]
 			[RequiredByFeature("GL_ARB_draw_indirect", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDrawElementsIndirect(int mode, int type, IntPtr indirect);
 
@@ -3138,6 +3145,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_gpu_shader_fp64", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUniform1d(int location, double x);
 
@@ -3148,6 +3156,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_gpu_shader_fp64", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUniform2d(int location, double x, double y);
 
@@ -3158,6 +3167,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_gpu_shader_fp64", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUniform3d(int location, double x, double y, double z);
 
@@ -3168,6 +3178,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_gpu_shader_fp64", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUniform4d(int location, double x, double y, double z, double w);
 
@@ -3178,6 +3189,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_gpu_shader_fp64", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUniform1dv(int location, int count, double* value);
 
@@ -3188,6 +3200,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_gpu_shader_fp64", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUniform2dv(int location, int count, double* value);
 
@@ -3198,6 +3211,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_gpu_shader_fp64", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUniform3dv(int location, int count, double* value);
 
@@ -3208,6 +3222,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_gpu_shader_fp64", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUniform4dv(int location, int count, double* value);
 
@@ -3218,6 +3233,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_gpu_shader_fp64", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUniformMatrix2dv(int location, int count, [MarshalAs(UnmanagedType.I1)] bool transpose, double* value);
 
@@ -3228,6 +3244,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_gpu_shader_fp64", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUniformMatrix3dv(int location, int count, [MarshalAs(UnmanagedType.I1)] bool transpose, double* value);
 
@@ -3238,6 +3255,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_gpu_shader_fp64", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUniformMatrix4dv(int location, int count, [MarshalAs(UnmanagedType.I1)] bool transpose, double* value);
 
@@ -3248,6 +3266,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_gpu_shader_fp64", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUniformMatrix2x3dv(int location, int count, [MarshalAs(UnmanagedType.I1)] bool transpose, double* value);
 
@@ -3258,6 +3277,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_gpu_shader_fp64", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUniformMatrix2x4dv(int location, int count, [MarshalAs(UnmanagedType.I1)] bool transpose, double* value);
 
@@ -3268,6 +3288,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_gpu_shader_fp64", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUniformMatrix3x2dv(int location, int count, [MarshalAs(UnmanagedType.I1)] bool transpose, double* value);
 
@@ -3278,6 +3299,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_gpu_shader_fp64", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUniformMatrix3x4dv(int location, int count, [MarshalAs(UnmanagedType.I1)] bool transpose, double* value);
 
@@ -3288,6 +3310,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_gpu_shader_fp64", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUniformMatrix4x2dv(int location, int count, [MarshalAs(UnmanagedType.I1)] bool transpose, double* value);
 
@@ -3298,6 +3321,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_gpu_shader_fp64", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUniformMatrix4x3dv(int location, int count, [MarshalAs(UnmanagedType.I1)] bool transpose, double* value);
 
@@ -3308,6 +3332,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_gpu_shader_fp64", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetUniformdv(uint program, int location, double* @params);
 
@@ -3318,6 +3343,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_shader_subroutine", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glGetSubroutineUniformLocation(uint program, int shadertype, string name);
 
@@ -3328,6 +3354,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_shader_subroutine", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate uint glGetSubroutineIndex(uint program, int shadertype, string name);
 
@@ -3338,6 +3365,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_shader_subroutine", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetActiveSubroutineUniformiv(uint program, int shadertype, uint index, int pname, int* values);
 
@@ -3348,6 +3376,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_shader_subroutine", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetActiveSubroutineUniformName(uint program, int shadertype, uint index, int bufsize, int* length, StringBuilder name);
 
@@ -3358,6 +3387,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_shader_subroutine", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetActiveSubroutineName(uint program, int shadertype, uint index, int bufsize, int* length, StringBuilder name);
 
@@ -3368,6 +3398,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_shader_subroutine", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUniformSubroutinesuiv(int shadertype, int count, uint* indices);
 
@@ -3378,6 +3409,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_shader_subroutine", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetUniformSubroutineuiv(int shadertype, int location, uint* @params);
 
@@ -3388,6 +3420,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_shader_subroutine", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetProgramStageiv(uint program, int shadertype, int pname, int* values);
 
@@ -3401,6 +3434,7 @@ namespace OpenGL
 			[RequiredByFeature("GL_ARB_tessellation_shader", Api = "gl|glcore")]
 			[RequiredByFeature("GL_EXT_tessellation_shader", Api = "gles2")]
 			[RequiredByFeature("GL_OES_tessellation_shader", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glPatchParameteri(int pname, int value);
 
@@ -3414,6 +3448,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_tessellation_shader", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glPatchParameterfv(int pname, float* values);
 
@@ -3425,6 +3460,7 @@ namespace OpenGL
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ES_VERSION_3_0", Api = "gles2")]
 			[RequiredByFeature("GL_ARB_transform_feedback2", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glBindTransformFeedback(int target, uint id);
 
@@ -3438,6 +3474,7 @@ namespace OpenGL
 			[RequiredByFeature("GL_ES_VERSION_3_0", Api = "gles2")]
 			[RequiredByFeature("GL_ARB_transform_feedback2", Api = "gl|glcore")]
 			[RequiredByFeature("GL_NV_transform_feedback2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDeleteTransformFeedbacks(int n, uint* ids);
 
@@ -3452,6 +3489,7 @@ namespace OpenGL
 			[RequiredByFeature("GL_ES_VERSION_3_0", Api = "gles2")]
 			[RequiredByFeature("GL_ARB_transform_feedback2", Api = "gl|glcore")]
 			[RequiredByFeature("GL_NV_transform_feedback2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGenTransformFeedbacks(int n, uint* ids);
 
@@ -3481,6 +3519,7 @@ namespace OpenGL
 			[RequiredByFeature("GL_ES_VERSION_3_0", Api = "gles2")]
 			[RequiredByFeature("GL_ARB_transform_feedback2", Api = "gl|glcore")]
 			[RequiredByFeature("GL_NV_transform_feedback2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glPauseTransformFeedback();
 
@@ -3495,6 +3534,7 @@ namespace OpenGL
 			[RequiredByFeature("GL_ES_VERSION_3_0", Api = "gles2")]
 			[RequiredByFeature("GL_ARB_transform_feedback2", Api = "gl|glcore")]
 			[RequiredByFeature("GL_NV_transform_feedback2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glResumeTransformFeedback();
 
@@ -3509,6 +3549,7 @@ namespace OpenGL
 			[RequiredByFeature("GL_ARB_transform_feedback2", Api = "gl|glcore")]
 			[RequiredByFeature("GL_EXT_draw_transform_feedback", Api = "gles2")]
 			[RequiredByFeature("GL_NV_transform_feedback2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDrawTransformFeedback(int mode, uint id);
 
@@ -3521,6 +3562,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_transform_feedback3", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDrawTransformFeedbackStream(int mode, uint id, uint stream);
 
@@ -3531,6 +3573,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_transform_feedback3", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glBeginQueryIndexed(int target, uint index, uint id);
 
@@ -3541,6 +3584,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_transform_feedback3", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glEndQueryIndexed(int target, uint index);
 
@@ -3551,6 +3595,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_0")]
 			[RequiredByFeature("GL_ARB_transform_feedback3", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetQueryIndexediv(int target, uint index, int pname, int* @params);
 

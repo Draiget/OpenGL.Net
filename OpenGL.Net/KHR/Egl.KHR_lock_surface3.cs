@@ -291,6 +291,7 @@ namespace OpenGL
 		{
 			[RequiredByFeature("EGL_KHR_lock_surface")]
 			[RequiredByFeature("EGL_KHR_lock_surface3")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglLockSurfaceKHR(IntPtr dpy, IntPtr surface, int* attrib_list);
 
@@ -300,6 +301,7 @@ namespace OpenGL
 
 			[RequiredByFeature("EGL_KHR_lock_surface")]
 			[RequiredByFeature("EGL_KHR_lock_surface3")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglUnlockSurfaceKHR(IntPtr dpy, IntPtr surface);
 
@@ -308,6 +310,7 @@ namespace OpenGL
 			internal static eglUnlockSurfaceKHR peglUnlockSurfaceKHR;
 
 			[RequiredByFeature("EGL_KHR_lock_surface3")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglQuerySurface64KHR(IntPtr dpy, IntPtr surface, int attribute, IntPtr* value);
 

@@ -246,6 +246,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_ARB_shading_language_include", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNamedStringARB(int type, int namelen, string name, int stringlen, string @string);
 
@@ -254,6 +255,7 @@ namespace OpenGL
 			internal static glNamedStringARB pglNamedStringARB;
 
 			[RequiredByFeature("GL_ARB_shading_language_include", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDeleteNamedStringARB(int namelen, string name);
 
@@ -262,6 +264,7 @@ namespace OpenGL
 			internal static glDeleteNamedStringARB pglDeleteNamedStringARB;
 
 			[RequiredByFeature("GL_ARB_shading_language_include", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glCompileShaderIncludeARB(uint shader, int count, string[] path, int* length);
 
@@ -279,6 +282,7 @@ namespace OpenGL
 			internal static glIsNamedStringARB pglIsNamedStringARB;
 
 			[RequiredByFeature("GL_ARB_shading_language_include", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetNamedStringARB(int namelen, string name, int bufSize, int* stringlen, StringBuilder @string);
 
@@ -287,6 +291,7 @@ namespace OpenGL
 			internal static glGetNamedStringARB pglGetNamedStringARB;
 
 			[RequiredByFeature("GL_ARB_shading_language_include", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetNamedStringivARB(int namelen, string name, int pname, int* @params);
 

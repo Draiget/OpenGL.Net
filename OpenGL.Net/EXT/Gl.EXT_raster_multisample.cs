@@ -107,6 +107,7 @@ namespace OpenGL
 		{
 			[RequiredByFeature("GL_EXT_raster_multisample", Api = "gl|glcore|gles2")]
 			[RequiredByFeature("GL_NV_framebuffer_mixed_samples", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glRasterSamplesEXT(uint samples, [MarshalAs(UnmanagedType.I1)] bool fixedsamplelocations);
 

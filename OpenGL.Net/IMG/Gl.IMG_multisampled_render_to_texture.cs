@@ -126,6 +126,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_IMG_multisampled_render_to_texture", Api = "gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glRenderbufferStorageMultisampleIMG(int target, int samples, int internalformat, int width, int height);
 
@@ -134,6 +135,7 @@ namespace OpenGL
 			internal static glRenderbufferStorageMultisampleIMG pglRenderbufferStorageMultisampleIMG;
 
 			[RequiredByFeature("GL_IMG_multisampled_render_to_texture", Api = "gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFramebufferTexture2DMultisampleIMG(int target, int attachment, int textarget, uint texture, int level, int samples);
 

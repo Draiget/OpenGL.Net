@@ -99,6 +99,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_gpu_program_parameters")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glProgramEnvParameters4fvEXT(int target, uint index, int count, float* @params);
 
@@ -107,6 +108,7 @@ namespace OpenGL
 			internal static glProgramEnvParameters4fvEXT pglProgramEnvParameters4fvEXT;
 
 			[RequiredByFeature("GL_EXT_gpu_program_parameters")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glProgramLocalParameters4fvEXT(int target, uint index, int count, float* @params);
 

@@ -505,6 +505,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("WGL_ARB_pixel_format")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglGetPixelFormatAttribivARB(IntPtr hdc, int iPixelFormat, int iLayerPlane, uint nAttributes, int* piAttributes, int* piValues);
 
@@ -512,6 +513,7 @@ namespace OpenGL
 			internal static wglGetPixelFormatAttribivARB pwglGetPixelFormatAttribivARB;
 
 			[RequiredByFeature("WGL_ARB_pixel_format")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglGetPixelFormatAttribfvARB(IntPtr hdc, int iPixelFormat, int iLayerPlane, uint nAttributes, int* piAttributes, float* pfValues);
 
@@ -519,6 +521,7 @@ namespace OpenGL
 			internal static wglGetPixelFormatAttribfvARB pwglGetPixelFormatAttribfvARB;
 
 			[RequiredByFeature("WGL_ARB_pixel_format")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglChoosePixelFormatARB(IntPtr hdc, int* piAttribIList, float* pfAttribFList, uint nMaxFormats, int* piFormats, uint* nNumFormats);
 

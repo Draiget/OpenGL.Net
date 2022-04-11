@@ -147,6 +147,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_SGI_color_table")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetColorTableSGI(int target, int format, int type, IntPtr table);
 
@@ -155,6 +156,7 @@ namespace OpenGL
 			internal static glGetColorTableSGI pglGetColorTableSGI;
 
 			[RequiredByFeature("GL_SGI_color_table")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetColorTableParameterfvSGI(int target, int pname, float* @params);
 
@@ -163,6 +165,7 @@ namespace OpenGL
 			internal static glGetColorTableParameterfvSGI pglGetColorTableParameterfvSGI;
 
 			[RequiredByFeature("GL_SGI_color_table")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetColorTableParameterivSGI(int target, int pname, int* @params);
 

@@ -70,6 +70,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("EGL_ANDROID_presentation_time")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglPresentationTimeANDROID(IntPtr dpy, IntPtr surface, Int64 time);
 

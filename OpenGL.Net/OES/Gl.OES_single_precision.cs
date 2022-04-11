@@ -153,6 +153,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_OES_single_precision", Api = "gl|gles1")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glClipPlanefOES(int plane, float* equation);
 
@@ -161,6 +162,7 @@ namespace OpenGL
 			internal static glClipPlanefOES pglClipPlanefOES;
 
 			[RequiredByFeature("GL_OES_single_precision", Api = "gl|gles1")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFrustumfOES(float l, float r, float b, float t, float n, float f);
 
@@ -169,6 +171,7 @@ namespace OpenGL
 			internal static glFrustumfOES pglFrustumfOES;
 
 			[RequiredByFeature("GL_OES_single_precision", Api = "gl|gles1")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetClipPlanefOES(int plane, float* equation);
 
@@ -177,6 +180,7 @@ namespace OpenGL
 			internal static glGetClipPlanefOES pglGetClipPlanefOES;
 
 			[RequiredByFeature("GL_OES_single_precision", Api = "gl|gles1")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glOrthofOES(float l, float r, float b, float t, float n, float f);
 

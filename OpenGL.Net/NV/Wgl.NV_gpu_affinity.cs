@@ -182,6 +182,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("WGL_NV_gpu_affinity")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglEnumGpusNV(uint iGpuIndex, IntPtr* phGpu);
 
@@ -189,6 +190,7 @@ namespace OpenGL
 			internal static wglEnumGpusNV pwglEnumGpusNV;
 
 			[RequiredByFeature("WGL_NV_gpu_affinity")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglEnumGpuDevicesNV(IntPtr hGpu, uint iDeviceIndex, IntPtr lpGpuDevice);
 
@@ -196,6 +198,7 @@ namespace OpenGL
 			internal static wglEnumGpuDevicesNV pwglEnumGpuDevicesNV;
 
 			[RequiredByFeature("WGL_NV_gpu_affinity")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr wglCreateAffinityDCNV(IntPtr* phGpuList);
 
@@ -203,6 +206,7 @@ namespace OpenGL
 			internal static wglCreateAffinityDCNV pwglCreateAffinityDCNV;
 
 			[RequiredByFeature("WGL_NV_gpu_affinity")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglEnumGpusFromAffinityDCNV(IntPtr hAffinityDC, uint iGpuIndex, IntPtr* hGpu);
 
@@ -210,6 +214,7 @@ namespace OpenGL
 			internal static wglEnumGpusFromAffinityDCNV pwglEnumGpusFromAffinityDCNV;
 
 			[RequiredByFeature("WGL_NV_gpu_affinity")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglDeleteDCNV(IntPtr hdc);
 

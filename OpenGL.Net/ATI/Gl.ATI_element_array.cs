@@ -143,6 +143,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_ATI_element_array")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glElementPointerATI(int type, IntPtr pointer);
 
@@ -151,6 +152,7 @@ namespace OpenGL
 			internal static glElementPointerATI pglElementPointerATI;
 
 			[RequiredByFeature("GL_ATI_element_array")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDrawElementArrayATI(int mode, int count);
 
@@ -159,6 +161,7 @@ namespace OpenGL
 			internal static glDrawElementArrayATI pglDrawElementArrayATI;
 
 			[RequiredByFeature("GL_ATI_element_array")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDrawRangeElementArrayATI(int mode, uint start, uint end, int count);
 

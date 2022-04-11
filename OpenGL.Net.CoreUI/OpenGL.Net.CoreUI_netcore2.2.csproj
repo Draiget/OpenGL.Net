@@ -1,13 +1,13 @@
 ﻿<Project>
 
   <PropertyGroup>
-    <BaseIntermediateOutputPath>obj\netcoreapp2.2</BaseIntermediateOutputPath>
+    <BaseIntermediateOutputPath>obj\netcoreapp3.0</BaseIntermediateOutputPath>
   </PropertyGroup>
 
   <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <AssemblyName>OpenGL.Net.CoreUI</AssemblyName>
     <RootNamespace>OpenGL</RootNamespace>
     <Authors>Luca Piccioni</Authors>

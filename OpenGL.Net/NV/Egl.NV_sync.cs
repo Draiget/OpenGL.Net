@@ -250,6 +250,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("EGL_NV_sync")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr eglCreateFenceSyncNV(IntPtr dpy, uint condition, int* attrib_list);
 
@@ -257,6 +258,7 @@ namespace OpenGL
 			internal static eglCreateFenceSyncNV peglCreateFenceSyncNV;
 
 			[RequiredByFeature("EGL_NV_sync")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglDestroySyncNV(IntPtr sync);
 
@@ -264,6 +266,7 @@ namespace OpenGL
 			internal static eglDestroySyncNV peglDestroySyncNV;
 
 			[RequiredByFeature("EGL_NV_sync")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglFenceNV(IntPtr sync);
 
@@ -271,6 +274,7 @@ namespace OpenGL
 			internal static eglFenceNV peglFenceNV;
 
 			[RequiredByFeature("EGL_NV_sync")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int eglClientWaitSyncNV(IntPtr sync, int flags, ulong timeout);
 
@@ -278,6 +282,7 @@ namespace OpenGL
 			internal static eglClientWaitSyncNV peglClientWaitSyncNV;
 
 			[RequiredByFeature("EGL_NV_sync")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglSignalSyncNV(IntPtr sync, uint mode);
 
@@ -285,6 +290,7 @@ namespace OpenGL
 			internal static eglSignalSyncNV peglSignalSyncNV;
 
 			[RequiredByFeature("EGL_NV_sync")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglGetSyncAttribNV(IntPtr sync, int attribute, int* value);
 

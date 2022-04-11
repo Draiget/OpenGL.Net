@@ -78,7 +78,8 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("EGL_ANGLE_query_surface_pointer")]
-			[SuppressUnmanagedCodeSecurity]
+            [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+            [SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglQuerySurfacePointerANGLE(IntPtr dpy, IntPtr surface, int attribute, IntPtr* value);
 
 			[RequiredByFeature("EGL_ANGLE_query_surface_pointer")]

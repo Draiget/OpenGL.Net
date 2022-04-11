@@ -141,19 +141,21 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_AMD_framebuffer_multisample_advanced", Api = "gl|glcore|gles2")]
-			[SuppressUnmanagedCodeSecurity]
+            [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+            [SuppressUnmanagedCodeSecurity]
 			internal delegate void glRenderbufferStorageMultisampleAdvancedAMD(int target, int samples, int storageSamples, int internalformat, int width, int height);
 
 			[RequiredByFeature("GL_AMD_framebuffer_multisample_advanced", Api = "gl|glcore|gles2")]
-			[ThreadStatic]
+            [ThreadStatic]
 			internal static glRenderbufferStorageMultisampleAdvancedAMD pglRenderbufferStorageMultisampleAdvancedAMD;
 
 			[RequiredByFeature("GL_AMD_framebuffer_multisample_advanced", Api = "gl|glcore|gles2")]
-			[SuppressUnmanagedCodeSecurity]
+            [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+            [SuppressUnmanagedCodeSecurity]
 			internal delegate void glNamedRenderbufferStorageMultisampleAdvancedAMD(uint renderbuffer, int samples, int storageSamples, int internalformat, int width, int height);
 
 			[RequiredByFeature("GL_AMD_framebuffer_multisample_advanced", Api = "gl|glcore|gles2")]
-			[ThreadStatic]
+            [ThreadStatic]
 			internal static glNamedRenderbufferStorageMultisampleAdvancedAMD pglNamedRenderbufferStorageMultisampleAdvancedAMD;
 
 		}

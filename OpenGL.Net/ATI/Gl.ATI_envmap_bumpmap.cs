@@ -185,6 +185,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_ATI_envmap_bumpmap")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexBumpParameterivATI(int pname, int* param);
 
@@ -193,6 +194,7 @@ namespace OpenGL
 			internal static glTexBumpParameterivATI pglTexBumpParameterivATI;
 
 			[RequiredByFeature("GL_ATI_envmap_bumpmap")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexBumpParameterfvATI(int pname, float* param);
 
@@ -201,6 +203,7 @@ namespace OpenGL
 			internal static glTexBumpParameterfvATI pglTexBumpParameterfvATI;
 
 			[RequiredByFeature("GL_ATI_envmap_bumpmap")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetTexBumpParameterivATI(int pname, int* param);
 
@@ -209,6 +212,7 @@ namespace OpenGL
 			internal static glGetTexBumpParameterivATI pglGetTexBumpParameterivATI;
 
 			[RequiredByFeature("GL_ATI_envmap_bumpmap")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetTexBumpParameterfvATI(int pname, float* param);
 

@@ -332,6 +332,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_transform_feedback")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTransformFeedbackAttribsNV(int count, int* attribs, int bufferMode);
 
@@ -340,6 +341,7 @@ namespace OpenGL
 			internal static glTransformFeedbackAttribsNV pglTransformFeedbackAttribsNV;
 
 			[RequiredByFeature("GL_NV_transform_feedback")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTransformFeedbackVaryingsNV(uint program, int count, int* locations, int bufferMode);
 
@@ -348,6 +350,7 @@ namespace OpenGL
 			internal static glTransformFeedbackVaryingsNV pglTransformFeedbackVaryingsNV;
 
 			[RequiredByFeature("GL_NV_transform_feedback")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glActiveVaryingNV(uint program, string name);
 
@@ -356,6 +359,7 @@ namespace OpenGL
 			internal static glActiveVaryingNV pglActiveVaryingNV;
 
 			[RequiredByFeature("GL_NV_transform_feedback")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glGetVaryingLocationNV(uint program, string name);
 
@@ -364,6 +368,7 @@ namespace OpenGL
 			internal static glGetVaryingLocationNV pglGetVaryingLocationNV;
 
 			[RequiredByFeature("GL_NV_transform_feedback")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetActiveVaryingNV(uint program, uint index, int bufSize, int* length, int* size, int* type, StringBuilder name);
 
@@ -372,6 +377,7 @@ namespace OpenGL
 			internal static glGetActiveVaryingNV pglGetActiveVaryingNV;
 
 			[RequiredByFeature("GL_NV_transform_feedback")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetTransformFeedbackVaryingNV(uint program, uint index, int* location);
 
@@ -380,6 +386,7 @@ namespace OpenGL
 			internal static glGetTransformFeedbackVaryingNV pglGetTransformFeedbackVaryingNV;
 
 			[RequiredByFeature("GL_NV_transform_feedback")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTransformFeedbackStreamAttribsNV(int count, int* attribs, int nbuffers, int* bufstreams, int bufferMode);
 

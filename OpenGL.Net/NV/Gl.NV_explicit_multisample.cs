@@ -117,6 +117,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_explicit_multisample")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glSampleMaskIndexedNV(uint index, uint mask);
 
@@ -125,6 +126,7 @@ namespace OpenGL
 			internal static glSampleMaskIndexedNV pglSampleMaskIndexedNV;
 
 			[RequiredByFeature("GL_NV_explicit_multisample")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexRenderbufferNV(int target, uint renderbuffer);
 

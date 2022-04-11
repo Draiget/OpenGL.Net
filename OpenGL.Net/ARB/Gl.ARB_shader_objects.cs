@@ -437,6 +437,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_ARB_shader_objects")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDeleteObjectARB(uint obj);
 
@@ -445,6 +446,7 @@ namespace OpenGL
 			internal static glDeleteObjectARB pglDeleteObjectARB;
 
 			[RequiredByFeature("GL_ARB_shader_objects")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate uint glGetHandleARB(int pname);
 
@@ -453,6 +455,7 @@ namespace OpenGL
 			internal static glGetHandleARB pglGetHandleARB;
 
 			[RequiredByFeature("GL_ARB_shader_objects")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetObjectParameterfvARB(uint obj, int pname, float* @params);
 
@@ -461,6 +464,7 @@ namespace OpenGL
 			internal static glGetObjectParameterfvARB pglGetObjectParameterfvARB;
 
 			[RequiredByFeature("GL_ARB_shader_objects")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetObjectParameterivARB(uint obj, int pname, int* @params);
 
@@ -469,6 +473,7 @@ namespace OpenGL
 			internal static glGetObjectParameterivARB pglGetObjectParameterivARB;
 
 			[RequiredByFeature("GL_ARB_shader_objects")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetInfoLogARB(uint obj, int maxLength, int* length, StringBuilder infoLog);
 
@@ -477,6 +482,7 @@ namespace OpenGL
 			internal static glGetInfoLogARB pglGetInfoLogARB;
 
 			[RequiredByFeature("GL_ARB_shader_objects")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetAttachedObjectsARB(uint containerObj, int maxCount, int* count, uint* obj);
 

@@ -77,6 +77,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("EGL_NV_system_time")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate ulong eglGetSystemTimeFrequencyNV();
 
@@ -84,6 +85,7 @@ namespace OpenGL
 			internal static eglGetSystemTimeFrequencyNV peglGetSystemTimeFrequencyNV;
 
 			[RequiredByFeature("EGL_NV_system_time")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate ulong eglGetSystemTimeNV();
 

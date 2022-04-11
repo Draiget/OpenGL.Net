@@ -149,6 +149,7 @@ namespace OpenGL
 			internal static wglBindDisplayColorTableEXT pwglBindDisplayColorTableEXT;
 
 			[RequiredByFeature("WGL_EXT_display_color_table")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void wglDestroyDisplayColorTableEXT(ushort id);
 

@@ -193,6 +193,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_OES_matrix_palette", Api = "gles1")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glCurrentPaletteMatrixOES(uint matrixpaletteindex);
 
@@ -201,6 +202,7 @@ namespace OpenGL
 			internal static glCurrentPaletteMatrixOES pglCurrentPaletteMatrixOES;
 
 			[RequiredByFeature("GL_OES_matrix_palette", Api = "gles1")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glLoadPaletteFromModelViewMatrixOES();
 
@@ -209,6 +211,7 @@ namespace OpenGL
 			internal static glLoadPaletteFromModelViewMatrixOES pglLoadPaletteFromModelViewMatrixOES;
 
 			[RequiredByFeature("GL_OES_matrix_palette", Api = "gles1")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMatrixIndexPointerOES(int size, int type, int stride, IntPtr pointer);
 
@@ -217,6 +220,7 @@ namespace OpenGL
 			internal static glMatrixIndexPointerOES pglMatrixIndexPointerOES;
 
 			[RequiredByFeature("GL_OES_matrix_palette", Api = "gles1")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glWeightPointerOES(int size, int type, int stride, IntPtr pointer);
 

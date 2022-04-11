@@ -123,6 +123,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_shader_pixel_local_storage2", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFramebufferPixelLocalStorageSizeEXT(uint target, int size);
 
@@ -131,6 +132,7 @@ namespace OpenGL
 			internal static glFramebufferPixelLocalStorageSizeEXT pglFramebufferPixelLocalStorageSizeEXT;
 
 			[RequiredByFeature("GL_EXT_shader_pixel_local_storage2", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glGetFramebufferPixelLocalStorageSizeEXT(uint target);
 
@@ -139,6 +141,7 @@ namespace OpenGL
 			internal static glGetFramebufferPixelLocalStorageSizeEXT pglGetFramebufferPixelLocalStorageSizeEXT;
 
 			[RequiredByFeature("GL_EXT_shader_pixel_local_storage2", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glClearPixelLocalStorageuiEXT(int offset, int n, uint* values);
 

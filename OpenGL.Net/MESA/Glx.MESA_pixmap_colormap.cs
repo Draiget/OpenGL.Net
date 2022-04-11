@@ -73,6 +73,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GLX_MESA_pixmap_colormap")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr glXCreateGLXPixmapMESA(IntPtr dpy, IntPtr visual, IntPtr pixmap, IntPtr cmap);
 

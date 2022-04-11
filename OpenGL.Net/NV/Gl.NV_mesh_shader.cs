@@ -413,6 +413,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_mesh_shader", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDrawMeshTasksNV(uint first, uint count);
 
@@ -421,6 +422,7 @@ namespace OpenGL
 			internal static glDrawMeshTasksNV pglDrawMeshTasksNV;
 
 			[RequiredByFeature("GL_NV_mesh_shader", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDrawMeshTasksIndirectNV(IntPtr indirect);
 
@@ -429,6 +431,7 @@ namespace OpenGL
 			internal static glDrawMeshTasksIndirectNV pglDrawMeshTasksIndirectNV;
 
 			[RequiredByFeature("GL_NV_mesh_shader", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMultiDrawMeshTasksIndirectNV(IntPtr indirect, int drawcount, int stride);
 
@@ -437,6 +440,7 @@ namespace OpenGL
 			internal static glMultiDrawMeshTasksIndirectNV pglMultiDrawMeshTasksIndirectNV;
 
 			[RequiredByFeature("GL_NV_mesh_shader", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMultiDrawMeshTasksIndirectCountNV(IntPtr indirect, IntPtr drawcount, int maxdrawcount, int stride);
 

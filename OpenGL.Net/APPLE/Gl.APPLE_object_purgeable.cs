@@ -160,6 +160,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_APPLE_object_purgeable")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glObjectPurgeableAPPLE(int objectType, uint name, int option);
 
@@ -168,6 +169,7 @@ namespace OpenGL
 			internal static glObjectPurgeableAPPLE pglObjectPurgeableAPPLE;
 
 			[RequiredByFeature("GL_APPLE_object_purgeable")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glObjectUnpurgeableAPPLE(int objectType, uint name, int option);
 
@@ -176,6 +178,7 @@ namespace OpenGL
 			internal static glObjectUnpurgeableAPPLE pglObjectUnpurgeableAPPLE;
 
 			[RequiredByFeature("GL_APPLE_object_purgeable")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetObjectParameterivAPPLE(int objectType, uint name, int pname, int* @params);
 

@@ -281,6 +281,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_HP_image_transform")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glImageTransformParameteriHP(int target, int pname, int param);
 
@@ -289,6 +290,7 @@ namespace OpenGL
 			internal static glImageTransformParameteriHP pglImageTransformParameteriHP;
 
 			[RequiredByFeature("GL_HP_image_transform")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glImageTransformParameterfHP(int target, int pname, float param);
 
@@ -297,6 +299,7 @@ namespace OpenGL
 			internal static glImageTransformParameterfHP pglImageTransformParameterfHP;
 
 			[RequiredByFeature("GL_HP_image_transform")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glImageTransformParameterivHP(int target, int pname, int* @params);
 
@@ -305,6 +308,7 @@ namespace OpenGL
 			internal static glImageTransformParameterivHP pglImageTransformParameterivHP;
 
 			[RequiredByFeature("GL_HP_image_transform")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glImageTransformParameterfvHP(int target, int pname, float* @params);
 
@@ -313,6 +317,7 @@ namespace OpenGL
 			internal static glImageTransformParameterfvHP pglImageTransformParameterfvHP;
 
 			[RequiredByFeature("GL_HP_image_transform")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetImageTransformParameterivHP(int target, int pname, int* @params);
 
@@ -321,6 +326,7 @@ namespace OpenGL
 			internal static glGetImageTransformParameterivHP pglGetImageTransformParameterivHP;
 
 			[RequiredByFeature("GL_HP_image_transform")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetImageTransformParameterfvHP(int target, int pname, float* @params);
 

@@ -169,6 +169,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_SGIX_sprite")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glSpriteParameterfSGIX(int pname, float param);
 
@@ -177,6 +178,7 @@ namespace OpenGL
 			internal static glSpriteParameterfSGIX pglSpriteParameterfSGIX;
 
 			[RequiredByFeature("GL_SGIX_sprite")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glSpriteParameterfvSGIX(int pname, float* @params);
 
@@ -185,6 +187,7 @@ namespace OpenGL
 			internal static glSpriteParameterfvSGIX pglSpriteParameterfvSGIX;
 
 			[RequiredByFeature("GL_SGIX_sprite")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glSpriteParameteriSGIX(int pname, int param);
 
@@ -193,6 +196,7 @@ namespace OpenGL
 			internal static glSpriteParameteriSGIX pglSpriteParameteriSGIX;
 
 			[RequiredByFeature("GL_SGIX_sprite")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glSpriteParameterivSGIX(int pname, int* @params);
 

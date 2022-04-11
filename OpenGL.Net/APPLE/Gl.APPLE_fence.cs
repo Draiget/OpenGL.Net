@@ -220,6 +220,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_APPLE_fence")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGenFencesAPPLE(int n, uint* fences);
 
@@ -228,6 +229,7 @@ namespace OpenGL
 			internal static glGenFencesAPPLE pglGenFencesAPPLE;
 
 			[RequiredByFeature("GL_APPLE_fence")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDeleteFencesAPPLE(int n, uint* fences);
 
@@ -236,6 +238,7 @@ namespace OpenGL
 			internal static glDeleteFencesAPPLE pglDeleteFencesAPPLE;
 
 			[RequiredByFeature("GL_APPLE_fence")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glSetFenceAPPLE(uint fence);
 
@@ -262,6 +265,7 @@ namespace OpenGL
 			internal static glTestFenceAPPLE pglTestFenceAPPLE;
 
 			[RequiredByFeature("GL_APPLE_fence")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFinishFenceAPPLE(uint fence);
 
@@ -279,6 +283,7 @@ namespace OpenGL
 			internal static glTestObjectAPPLE pglTestObjectAPPLE;
 
 			[RequiredByFeature("GL_APPLE_fence")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFinishObjectAPPLE(int @object, int name);
 

@@ -61,7 +61,8 @@ namespace OpenGL
 		{
 			[RequiredByFeature("GL_3DFX_tbuffer")]
 			[SuppressUnmanagedCodeSecurity]
-			internal delegate void glTbufferMask3DFX(uint mask);
+            [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+            internal delegate void glTbufferMask3DFX(uint mask);
 
 			[RequiredByFeature("GL_3DFX_tbuffer")]
 			[ThreadStatic]

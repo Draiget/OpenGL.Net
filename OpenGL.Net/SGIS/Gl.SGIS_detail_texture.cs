@@ -167,6 +167,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_SGIS_detail_texture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDetailTexFuncSGIS(int target, int n, float* points);
 
@@ -175,6 +176,7 @@ namespace OpenGL
 			internal static glDetailTexFuncSGIS pglDetailTexFuncSGIS;
 
 			[RequiredByFeature("GL_SGIS_detail_texture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetDetailTexFuncSGIS(int target, float* points);
 

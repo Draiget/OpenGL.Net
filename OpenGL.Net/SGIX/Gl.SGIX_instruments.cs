@@ -160,6 +160,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_SGIX_instruments")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glGetInstrumentsSGIX();
 
@@ -168,6 +169,7 @@ namespace OpenGL
 			internal static glGetInstrumentsSGIX pglGetInstrumentsSGIX;
 
 			[RequiredByFeature("GL_SGIX_instruments")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glInstrumentsBufferSGIX(int size, int* buffer);
 
@@ -176,6 +178,7 @@ namespace OpenGL
 			internal static glInstrumentsBufferSGIX pglInstrumentsBufferSGIX;
 
 			[RequiredByFeature("GL_SGIX_instruments")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glPollInstrumentsSGIX(int* marker_p);
 
@@ -184,6 +187,7 @@ namespace OpenGL
 			internal static glPollInstrumentsSGIX pglPollInstrumentsSGIX;
 
 			[RequiredByFeature("GL_SGIX_instruments")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReadInstrumentsSGIX(int marker);
 
@@ -192,6 +196,7 @@ namespace OpenGL
 			internal static glReadInstrumentsSGIX pglReadInstrumentsSGIX;
 
 			[RequiredByFeature("GL_SGIX_instruments")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glStartInstrumentsSGIX();
 
@@ -200,6 +205,7 @@ namespace OpenGL
 			internal static glStartInstrumentsSGIX pglStartInstrumentsSGIX;
 
 			[RequiredByFeature("GL_SGIX_instruments")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glStopInstrumentsSGIX(int marker);
 

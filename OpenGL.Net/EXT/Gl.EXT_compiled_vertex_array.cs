@@ -87,6 +87,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_compiled_vertex_array")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glLockArraysEXT(int first, int count);
 
@@ -95,6 +96,7 @@ namespace OpenGL
 			internal static glLockArraysEXT pglLockArraysEXT;
 
 			[RequiredByFeature("GL_EXT_compiled_vertex_array")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUnlockArraysEXT();
 

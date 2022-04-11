@@ -115,6 +115,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_sample_locations", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFramebufferSampleLocationsfvNV(int target, uint start, int count, float* v);
 
@@ -123,6 +124,7 @@ namespace OpenGL
 			internal static glFramebufferSampleLocationsfvNV pglFramebufferSampleLocationsfvNV;
 
 			[RequiredByFeature("GL_NV_sample_locations", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNamedFramebufferSampleLocationsfvNV(uint framebuffer, uint start, int count, float* v);
 
@@ -131,6 +133,7 @@ namespace OpenGL
 			internal static glNamedFramebufferSampleLocationsfvNV pglNamedFramebufferSampleLocationsfvNV;
 
 			[RequiredByFeature("GL_NV_sample_locations", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glResolveDepthValuesNV();
 

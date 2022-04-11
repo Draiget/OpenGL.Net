@@ -97,6 +97,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_EGL_image_storage", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glEGLImageTargetTexStorageEXT(int target, IntPtr image, int* attrib_list);
 
@@ -105,6 +106,7 @@ namespace OpenGL
 			internal static glEGLImageTargetTexStorageEXT pglEGLImageTargetTexStorageEXT;
 
 			[RequiredByFeature("GL_EXT_EGL_image_storage", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glEGLImageTargetTextureStorageEXT(uint texture, IntPtr image, int* attrib_list);
 

@@ -281,6 +281,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GLX_NV_video_out")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glXGetVideoDeviceNV(IntPtr dpy, int screen, int numVideoDevices, IntPtr pVideoDevice);
 
@@ -288,6 +289,7 @@ namespace OpenGL
 			internal static glXGetVideoDeviceNV pglXGetVideoDeviceNV;
 
 			[RequiredByFeature("GLX_NV_video_out")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glXReleaseVideoDeviceNV(IntPtr dpy, int screen, IntPtr VideoDevice);
 
@@ -295,6 +297,7 @@ namespace OpenGL
 			internal static glXReleaseVideoDeviceNV pglXReleaseVideoDeviceNV;
 
 			[RequiredByFeature("GLX_NV_video_out")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glXBindVideoImageNV(IntPtr dpy, IntPtr VideoDevice, IntPtr pbuf, int iVideoBuffer);
 
@@ -302,6 +305,7 @@ namespace OpenGL
 			internal static glXBindVideoImageNV pglXBindVideoImageNV;
 
 			[RequiredByFeature("GLX_NV_video_out")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glXReleaseVideoImageNV(IntPtr dpy, IntPtr pbuf);
 
@@ -309,6 +313,7 @@ namespace OpenGL
 			internal static glXReleaseVideoImageNV pglXReleaseVideoImageNV;
 
 			[RequiredByFeature("GLX_NV_video_out")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glXSendPbufferToVideoNV(IntPtr dpy, IntPtr pbuf, int iBufferType, uint* pulCounterPbuffer, [MarshalAs(UnmanagedType.I1)] bool bBlock);
 
@@ -316,6 +321,7 @@ namespace OpenGL
 			internal static glXSendPbufferToVideoNV pglXSendPbufferToVideoNV;
 
 			[RequiredByFeature("GLX_NV_video_out")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glXGetVideoInfoNV(IntPtr dpy, int screen, IntPtr VideoDevice, uint* pulCounterOutputPbuffer, uint* pulCounterOutputVideo);
 

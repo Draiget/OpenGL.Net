@@ -1397,6 +1397,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glColor4ubVertex2fSUN(byte r, byte g, byte b, byte a, float x, float y);
 
@@ -1405,6 +1406,7 @@ namespace OpenGL
 			internal static glColor4ubVertex2fSUN pglColor4ubVertex2fSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glColor4ubVertex2fvSUN(byte* c, float* v);
 
@@ -1413,6 +1415,7 @@ namespace OpenGL
 			internal static glColor4ubVertex2fvSUN pglColor4ubVertex2fvSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glColor4ubVertex3fSUN(byte r, byte g, byte b, byte a, float x, float y, float z);
 
@@ -1421,6 +1424,7 @@ namespace OpenGL
 			internal static glColor4ubVertex3fSUN pglColor4ubVertex3fSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glColor4ubVertex3fvSUN(byte* c, float* v);
 
@@ -1429,6 +1433,7 @@ namespace OpenGL
 			internal static glColor4ubVertex3fvSUN pglColor4ubVertex3fvSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glColor3fVertex3fSUN(float r, float g, float b, float x, float y, float z);
 
@@ -1437,6 +1442,7 @@ namespace OpenGL
 			internal static glColor3fVertex3fSUN pglColor3fVertex3fSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glColor3fVertex3fvSUN(float* c, float* v);
 
@@ -1445,6 +1451,7 @@ namespace OpenGL
 			internal static glColor3fVertex3fvSUN pglColor3fVertex3fvSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNormal3fVertex3fSUN(float nx, float ny, float nz, float x, float y, float z);
 
@@ -1453,6 +1460,7 @@ namespace OpenGL
 			internal static glNormal3fVertex3fSUN pglNormal3fVertex3fSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNormal3fVertex3fvSUN(float* n, float* v);
 
@@ -1461,6 +1469,7 @@ namespace OpenGL
 			internal static glNormal3fVertex3fvSUN pglNormal3fVertex3fvSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glColor4fNormal3fVertex3fSUN(float r, float g, float b, float a, float nx, float ny, float nz, float x, float y, float z);
 
@@ -1469,6 +1478,7 @@ namespace OpenGL
 			internal static glColor4fNormal3fVertex3fSUN pglColor4fNormal3fVertex3fSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glColor4fNormal3fVertex3fvSUN(float* c, float* n, float* v);
 
@@ -1477,6 +1487,7 @@ namespace OpenGL
 			internal static glColor4fNormal3fVertex3fvSUN pglColor4fNormal3fVertex3fvSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoord2fVertex3fSUN(float s, float t, float x, float y, float z);
 
@@ -1485,6 +1496,7 @@ namespace OpenGL
 			internal static glTexCoord2fVertex3fSUN pglTexCoord2fVertex3fSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoord2fVertex3fvSUN(float* tc, float* v);
 
@@ -1493,6 +1505,7 @@ namespace OpenGL
 			internal static glTexCoord2fVertex3fvSUN pglTexCoord2fVertex3fvSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoord4fVertex4fSUN(float s, float t, float p, float q, float x, float y, float z, float w);
 
@@ -1501,6 +1514,7 @@ namespace OpenGL
 			internal static glTexCoord4fVertex4fSUN pglTexCoord4fVertex4fSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoord4fVertex4fvSUN(float* tc, float* v);
 
@@ -1509,6 +1523,7 @@ namespace OpenGL
 			internal static glTexCoord4fVertex4fvSUN pglTexCoord4fVertex4fvSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoord2fColor4ubVertex3fSUN(float s, float t, byte r, byte g, byte b, byte a, float x, float y, float z);
 
@@ -1517,6 +1532,7 @@ namespace OpenGL
 			internal static glTexCoord2fColor4ubVertex3fSUN pglTexCoord2fColor4ubVertex3fSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoord2fColor4ubVertex3fvSUN(float* tc, byte* c, float* v);
 
@@ -1525,6 +1541,7 @@ namespace OpenGL
 			internal static glTexCoord2fColor4ubVertex3fvSUN pglTexCoord2fColor4ubVertex3fvSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoord2fColor3fVertex3fSUN(float s, float t, float r, float g, float b, float x, float y, float z);
 
@@ -1533,6 +1550,7 @@ namespace OpenGL
 			internal static glTexCoord2fColor3fVertex3fSUN pglTexCoord2fColor3fVertex3fSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoord2fColor3fVertex3fvSUN(float* tc, float* c, float* v);
 
@@ -1541,6 +1559,7 @@ namespace OpenGL
 			internal static glTexCoord2fColor3fVertex3fvSUN pglTexCoord2fColor3fVertex3fvSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoord2fNormal3fVertex3fSUN(float s, float t, float nx, float ny, float nz, float x, float y, float z);
 
@@ -1549,6 +1568,7 @@ namespace OpenGL
 			internal static glTexCoord2fNormal3fVertex3fSUN pglTexCoord2fNormal3fVertex3fSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoord2fNormal3fVertex3fvSUN(float* tc, float* n, float* v);
 
@@ -1557,6 +1577,7 @@ namespace OpenGL
 			internal static glTexCoord2fNormal3fVertex3fvSUN pglTexCoord2fNormal3fVertex3fvSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoord2fColor4fNormal3fVertex3fSUN(float s, float t, float r, float g, float b, float a, float nx, float ny, float nz, float x, float y, float z);
 
@@ -1565,6 +1586,7 @@ namespace OpenGL
 			internal static glTexCoord2fColor4fNormal3fVertex3fSUN pglTexCoord2fColor4fNormal3fVertex3fSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoord2fColor4fNormal3fVertex3fvSUN(float* tc, float* c, float* n, float* v);
 
@@ -1573,6 +1595,7 @@ namespace OpenGL
 			internal static glTexCoord2fColor4fNormal3fVertex3fvSUN pglTexCoord2fColor4fNormal3fVertex3fvSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoord4fColor4fNormal3fVertex4fSUN(float s, float t, float p, float q, float r, float g, float b, float a, float nx, float ny, float nz, float x, float y, float z, float w);
 
@@ -1581,6 +1604,7 @@ namespace OpenGL
 			internal static glTexCoord4fColor4fNormal3fVertex4fSUN pglTexCoord4fColor4fNormal3fVertex4fSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoord4fColor4fNormal3fVertex4fvSUN(float* tc, float* c, float* n, float* v);
 
@@ -1589,6 +1613,7 @@ namespace OpenGL
 			internal static glTexCoord4fColor4fNormal3fVertex4fvSUN pglTexCoord4fColor4fNormal3fVertex4fvSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodeuiVertex3fSUN(uint rc, float x, float y, float z);
 
@@ -1597,6 +1622,7 @@ namespace OpenGL
 			internal static glReplacementCodeuiVertex3fSUN pglReplacementCodeuiVertex3fSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodeuiVertex3fvSUN(uint* rc, float* v);
 
@@ -1605,6 +1631,7 @@ namespace OpenGL
 			internal static glReplacementCodeuiVertex3fvSUN pglReplacementCodeuiVertex3fvSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodeuiColor4ubVertex3fSUN(uint rc, byte r, byte g, byte b, byte a, float x, float y, float z);
 
@@ -1613,6 +1640,7 @@ namespace OpenGL
 			internal static glReplacementCodeuiColor4ubVertex3fSUN pglReplacementCodeuiColor4ubVertex3fSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodeuiColor4ubVertex3fvSUN(uint* rc, byte* c, float* v);
 
@@ -1621,6 +1649,7 @@ namespace OpenGL
 			internal static glReplacementCodeuiColor4ubVertex3fvSUN pglReplacementCodeuiColor4ubVertex3fvSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodeuiColor3fVertex3fSUN(uint rc, float r, float g, float b, float x, float y, float z);
 
@@ -1629,6 +1658,7 @@ namespace OpenGL
 			internal static glReplacementCodeuiColor3fVertex3fSUN pglReplacementCodeuiColor3fVertex3fSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodeuiColor3fVertex3fvSUN(uint* rc, float* c, float* v);
 
@@ -1637,6 +1667,7 @@ namespace OpenGL
 			internal static glReplacementCodeuiColor3fVertex3fvSUN pglReplacementCodeuiColor3fVertex3fvSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodeuiNormal3fVertex3fSUN(uint rc, float nx, float ny, float nz, float x, float y, float z);
 
@@ -1645,6 +1676,7 @@ namespace OpenGL
 			internal static glReplacementCodeuiNormal3fVertex3fSUN pglReplacementCodeuiNormal3fVertex3fSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodeuiNormal3fVertex3fvSUN(uint* rc, float* n, float* v);
 
@@ -1653,6 +1685,7 @@ namespace OpenGL
 			internal static glReplacementCodeuiNormal3fVertex3fvSUN pglReplacementCodeuiNormal3fVertex3fvSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodeuiColor4fNormal3fVertex3fSUN(uint rc, float r, float g, float b, float a, float nx, float ny, float nz, float x, float y, float z);
 
@@ -1661,6 +1694,7 @@ namespace OpenGL
 			internal static glReplacementCodeuiColor4fNormal3fVertex3fSUN pglReplacementCodeuiColor4fNormal3fVertex3fSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodeuiColor4fNormal3fVertex3fvSUN(uint* rc, float* c, float* n, float* v);
 
@@ -1669,6 +1703,7 @@ namespace OpenGL
 			internal static glReplacementCodeuiColor4fNormal3fVertex3fvSUN pglReplacementCodeuiColor4fNormal3fVertex3fvSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodeuiTexCoord2fVertex3fSUN(uint rc, float s, float t, float x, float y, float z);
 
@@ -1677,6 +1712,7 @@ namespace OpenGL
 			internal static glReplacementCodeuiTexCoord2fVertex3fSUN pglReplacementCodeuiTexCoord2fVertex3fSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodeuiTexCoord2fVertex3fvSUN(uint* rc, float* tc, float* v);
 
@@ -1685,6 +1721,7 @@ namespace OpenGL
 			internal static glReplacementCodeuiTexCoord2fVertex3fvSUN pglReplacementCodeuiTexCoord2fVertex3fvSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN(uint rc, float s, float t, float nx, float ny, float nz, float x, float y, float z);
 
@@ -1693,6 +1730,7 @@ namespace OpenGL
 			internal static glReplacementCodeuiTexCoord2fNormal3fVertex3fSUN pglReplacementCodeuiTexCoord2fNormal3fVertex3fSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN(uint* rc, float* tc, float* n, float* v);
 
@@ -1701,6 +1739,7 @@ namespace OpenGL
 			internal static glReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN pglReplacementCodeuiTexCoord2fNormal3fVertex3fvSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN(uint rc, float s, float t, float r, float g, float b, float a, float nx, float ny, float nz, float x, float y, float z);
 
@@ -1709,6 +1748,7 @@ namespace OpenGL
 			internal static glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN pglReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fSUN;
 
 			[RequiredByFeature("GL_SUN_vertex")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodeuiTexCoord2fColor4fNormal3fVertex3fvSUN(uint* rc, float* tc, float* c, float* n, float* v);
 

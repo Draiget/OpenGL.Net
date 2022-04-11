@@ -1,13 +1,17 @@
 ﻿<Project>
 
+  <ItemGroup>
+    <RdXmlFile Include="Properties/rd.xml" />
+  </ItemGroup>
+
   <PropertyGroup>
-    <BaseIntermediateOutputPath>obj\netcoreapp2.2</BaseIntermediateOutputPath>
+    <BaseIntermediateOutputPath>obj\netcoreapp3.1</BaseIntermediateOutputPath>
   </PropertyGroup>
 
   <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <AssemblyName>OpenGL.Net</AssemblyName>
     <RootNamespace>OpenGL</RootNamespace>
     <Authors>Luca Piccioni</Authors>
@@ -17,6 +21,7 @@
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Platforms>AnyCPU;x86</Platforms>
+    <IlcGenerateCompleteTypeMetadata>true</IlcGenerateCompleteTypeMetadata>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -107,10 +112,15 @@
     <None Remove="KhronosLogMapWgl.xml" />
     <None Remove="LICENSE" />
     <None Remove="Matrix.tt" />
+    <None Remove="Properties\rd.xml" />
     <None Remove="Vertex2.tt" />
     <None Remove="Vertex3.tt" />
     <None Remove="Vertex3Ref.tt" />
     <None Remove="Vertex4.tt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\rd.xml" />
   </ItemGroup>
 
   <Import Project="..\Khronos.Net\Khronos.Net.projitems" Label="Shared" />

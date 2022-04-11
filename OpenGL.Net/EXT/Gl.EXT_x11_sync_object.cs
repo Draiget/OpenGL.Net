@@ -76,6 +76,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_x11_sync_object")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glImportSyncEXT(int external_sync_type, IntPtr external_sync, uint flags);
 

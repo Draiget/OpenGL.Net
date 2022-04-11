@@ -241,35 +241,39 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_AMD_debug_output")]
-			[SuppressUnmanagedCodeSecurity]
+            [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+            [SuppressUnmanagedCodeSecurity]
 			internal delegate void glDebugMessageEnableAMD(int category, int severity, int count, uint* ids, [MarshalAs(UnmanagedType.I1)] bool enabled);
 
 			[RequiredByFeature("GL_AMD_debug_output")]
-			[ThreadStatic]
+            [ThreadStatic]
 			internal static glDebugMessageEnableAMD pglDebugMessageEnableAMD;
 
 			[RequiredByFeature("GL_AMD_debug_output")]
-			[SuppressUnmanagedCodeSecurity]
+            [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+            [SuppressUnmanagedCodeSecurity]
 			internal delegate void glDebugMessageInsertAMD(int category, int severity, uint id, int length, string buf);
 
 			[RequiredByFeature("GL_AMD_debug_output")]
-			[ThreadStatic]
+            [ThreadStatic]
 			internal static glDebugMessageInsertAMD pglDebugMessageInsertAMD;
 
 			[RequiredByFeature("GL_AMD_debug_output")]
-			[SuppressUnmanagedCodeSecurity]
+            [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+            [SuppressUnmanagedCodeSecurity]
 			internal delegate void glDebugMessageCallbackAMD(DebugProc callback, IntPtr userParam);
 
 			[RequiredByFeature("GL_AMD_debug_output")]
-			[ThreadStatic]
+            [ThreadStatic]
 			internal static glDebugMessageCallbackAMD pglDebugMessageCallbackAMD;
 
 			[RequiredByFeature("GL_AMD_debug_output")]
-			[SuppressUnmanagedCodeSecurity]
+            [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+            [SuppressUnmanagedCodeSecurity]
 			internal delegate uint glGetDebugMessageLogAMD(uint count, int bufsize, int* categories, uint* severities, uint* ids, int* lengths, StringBuilder message);
 
 			[RequiredByFeature("GL_AMD_debug_output")]
-			[ThreadStatic]
+            [ThreadStatic]
 			internal static glGetDebugMessageLogAMD pglGetDebugMessageLogAMD;
 
 		}

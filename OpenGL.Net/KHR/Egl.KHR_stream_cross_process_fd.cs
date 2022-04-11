@@ -95,6 +95,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("EGL_KHR_stream_cross_process_fd")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int eglGetStreamFileDescriptorKHR(IntPtr dpy, IntPtr stream);
 
@@ -102,6 +103,7 @@ namespace OpenGL
 			internal static eglGetStreamFileDescriptorKHR peglGetStreamFileDescriptorKHR;
 
 			[RequiredByFeature("EGL_KHR_stream_cross_process_fd")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr eglCreateStreamFromFileDescriptorKHR(IntPtr dpy, int file_descriptor);
 

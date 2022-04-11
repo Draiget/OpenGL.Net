@@ -84,6 +84,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_APPLE_framebuffer_multisample", Api = "gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glRenderbufferStorageMultisampleAPPLE(int target, int samples, int internalformat, int width, int height);
 
@@ -92,6 +93,7 @@ namespace OpenGL
 			internal static glRenderbufferStorageMultisampleAPPLE pglRenderbufferStorageMultisampleAPPLE;
 
 			[RequiredByFeature("GL_APPLE_framebuffer_multisample", Api = "gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glResolveMultisampleFramebufferAPPLE();
 

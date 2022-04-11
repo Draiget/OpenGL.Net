@@ -187,6 +187,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GLX_NV_video_capture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glXBindVideoCaptureDeviceNV(IntPtr dpy, uint video_capture_slot, IntPtr device);
 
@@ -194,6 +195,7 @@ namespace OpenGL
 			internal static glXBindVideoCaptureDeviceNV pglXBindVideoCaptureDeviceNV;
 
 			[RequiredByFeature("GLX_NV_video_capture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr glXEnumerateVideoCaptureDevicesNV(IntPtr dpy, int screen, int* nelements);
 
@@ -201,6 +203,7 @@ namespace OpenGL
 			internal static glXEnumerateVideoCaptureDevicesNV pglXEnumerateVideoCaptureDevicesNV;
 
 			[RequiredByFeature("GLX_NV_video_capture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glXLockVideoCaptureDeviceNV(IntPtr dpy, IntPtr device);
 
@@ -208,6 +211,7 @@ namespace OpenGL
 			internal static glXLockVideoCaptureDeviceNV pglXLockVideoCaptureDeviceNV;
 
 			[RequiredByFeature("GLX_NV_video_capture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glXQueryVideoCaptureDeviceNV(IntPtr dpy, IntPtr device, int attribute, int* value);
 
@@ -215,6 +219,7 @@ namespace OpenGL
 			internal static glXQueryVideoCaptureDeviceNV pglXQueryVideoCaptureDeviceNV;
 
 			[RequiredByFeature("GLX_NV_video_capture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glXReleaseVideoCaptureDeviceNV(IntPtr dpy, IntPtr device);
 

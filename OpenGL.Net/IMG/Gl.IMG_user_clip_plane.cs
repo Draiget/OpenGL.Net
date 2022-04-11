@@ -93,6 +93,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_IMG_user_clip_plane", Api = "gles1")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glClipPlanefIMG(int p, float* eqn);
 
@@ -101,6 +102,7 @@ namespace OpenGL
 			internal static glClipPlanefIMG pglClipPlanefIMG;
 
 			[RequiredByFeature("GL_IMG_user_clip_plane", Api = "gles1")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glClipPlanexIMG(int p, IntPtr* eqn);
 

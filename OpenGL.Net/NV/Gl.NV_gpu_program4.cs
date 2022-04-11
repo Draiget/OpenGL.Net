@@ -525,6 +525,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_gpu_program4")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glProgramLocalParameterI4iNV(int target, uint index, int x, int y, int z, int w);
 
@@ -533,6 +534,7 @@ namespace OpenGL
 			internal static glProgramLocalParameterI4iNV pglProgramLocalParameterI4iNV;
 
 			[RequiredByFeature("GL_NV_gpu_program4")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glProgramLocalParameterI4ivNV(int target, uint index, int* @params);
 
@@ -541,6 +543,7 @@ namespace OpenGL
 			internal static glProgramLocalParameterI4ivNV pglProgramLocalParameterI4ivNV;
 
 			[RequiredByFeature("GL_NV_gpu_program4")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glProgramLocalParametersI4ivNV(int target, uint index, int count, int* @params);
 
@@ -549,6 +552,7 @@ namespace OpenGL
 			internal static glProgramLocalParametersI4ivNV pglProgramLocalParametersI4ivNV;
 
 			[RequiredByFeature("GL_NV_gpu_program4")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glProgramLocalParameterI4uiNV(int target, uint index, uint x, uint y, uint z, uint w);
 
@@ -557,6 +561,7 @@ namespace OpenGL
 			internal static glProgramLocalParameterI4uiNV pglProgramLocalParameterI4uiNV;
 
 			[RequiredByFeature("GL_NV_gpu_program4")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glProgramLocalParameterI4uivNV(int target, uint index, uint* @params);
 
@@ -565,6 +570,7 @@ namespace OpenGL
 			internal static glProgramLocalParameterI4uivNV pglProgramLocalParameterI4uivNV;
 
 			[RequiredByFeature("GL_NV_gpu_program4")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glProgramLocalParametersI4uivNV(int target, uint index, int count, uint* @params);
 
@@ -573,6 +579,7 @@ namespace OpenGL
 			internal static glProgramLocalParametersI4uivNV pglProgramLocalParametersI4uivNV;
 
 			[RequiredByFeature("GL_NV_gpu_program4")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glProgramEnvParameterI4iNV(int target, uint index, int x, int y, int z, int w);
 
@@ -581,6 +588,7 @@ namespace OpenGL
 			internal static glProgramEnvParameterI4iNV pglProgramEnvParameterI4iNV;
 
 			[RequiredByFeature("GL_NV_gpu_program4")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glProgramEnvParameterI4ivNV(int target, uint index, int* @params);
 
@@ -589,6 +597,7 @@ namespace OpenGL
 			internal static glProgramEnvParameterI4ivNV pglProgramEnvParameterI4ivNV;
 
 			[RequiredByFeature("GL_NV_gpu_program4")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glProgramEnvParametersI4ivNV(int target, uint index, int count, int* @params);
 
@@ -597,6 +606,7 @@ namespace OpenGL
 			internal static glProgramEnvParametersI4ivNV pglProgramEnvParametersI4ivNV;
 
 			[RequiredByFeature("GL_NV_gpu_program4")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glProgramEnvParameterI4uiNV(int target, uint index, uint x, uint y, uint z, uint w);
 
@@ -605,6 +615,7 @@ namespace OpenGL
 			internal static glProgramEnvParameterI4uiNV pglProgramEnvParameterI4uiNV;
 
 			[RequiredByFeature("GL_NV_gpu_program4")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glProgramEnvParameterI4uivNV(int target, uint index, uint* @params);
 
@@ -613,6 +624,7 @@ namespace OpenGL
 			internal static glProgramEnvParameterI4uivNV pglProgramEnvParameterI4uivNV;
 
 			[RequiredByFeature("GL_NV_gpu_program4")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glProgramEnvParametersI4uivNV(int target, uint index, int count, uint* @params);
 
@@ -621,6 +633,7 @@ namespace OpenGL
 			internal static glProgramEnvParametersI4uivNV pglProgramEnvParametersI4uivNV;
 
 			[RequiredByFeature("GL_NV_gpu_program4")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetProgramLocalParameterIivNV(int target, uint index, int* @params);
 
@@ -629,6 +642,7 @@ namespace OpenGL
 			internal static glGetProgramLocalParameterIivNV pglGetProgramLocalParameterIivNV;
 
 			[RequiredByFeature("GL_NV_gpu_program4")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetProgramLocalParameterIuivNV(int target, uint index, uint* @params);
 
@@ -637,6 +651,7 @@ namespace OpenGL
 			internal static glGetProgramLocalParameterIuivNV pglGetProgramLocalParameterIuivNV;
 
 			[RequiredByFeature("GL_NV_gpu_program4")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetProgramEnvParameterIivNV(int target, uint index, int* @params);
 
@@ -645,6 +660,7 @@ namespace OpenGL
 			internal static glGetProgramEnvParameterIivNV pglGetProgramEnvParameterIivNV;
 
 			[RequiredByFeature("GL_NV_gpu_program4")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetProgramEnvParameterIuivNV(int target, uint index, uint* @params);
 

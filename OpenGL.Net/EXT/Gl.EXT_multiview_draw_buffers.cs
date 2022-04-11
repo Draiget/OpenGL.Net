@@ -131,6 +131,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_multiview_draw_buffers", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReadBufferIndexedEXT(int src, int index);
 
@@ -139,6 +140,7 @@ namespace OpenGL
 			internal static glReadBufferIndexedEXT pglReadBufferIndexedEXT;
 
 			[RequiredByFeature("GL_EXT_multiview_draw_buffers", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDrawBuffersIndexedEXT(int n, int* location, int* indices);
 
@@ -147,6 +149,7 @@ namespace OpenGL
 			internal static glDrawBuffersIndexedEXT pglDrawBuffersIndexedEXT;
 
 			[RequiredByFeature("GL_EXT_multiview_draw_buffers", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetIntegeri_vEXT(int target, uint index, int* data);
 

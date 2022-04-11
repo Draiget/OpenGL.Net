@@ -212,6 +212,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GLX_SGIX_fbconfig")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glXGetFBConfigAttribSGIX(IntPtr dpy, IntPtr config, int attribute, int* value);
 
@@ -219,6 +220,7 @@ namespace OpenGL
 			internal static glXGetFBConfigAttribSGIX pglXGetFBConfigAttribSGIX;
 
 			[RequiredByFeature("GLX_SGIX_fbconfig")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr* glXChooseFBConfigSGIX(IntPtr dpy, int screen, int* attrib_list, int* nelements);
 
@@ -226,6 +228,7 @@ namespace OpenGL
 			internal static glXChooseFBConfigSGIX pglXChooseFBConfigSGIX;
 
 			[RequiredByFeature("GLX_SGIX_fbconfig")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr glXCreateGLXPixmapWithConfigSGIX(IntPtr dpy, IntPtr config, IntPtr pixmap);
 
@@ -233,6 +236,7 @@ namespace OpenGL
 			internal static glXCreateGLXPixmapWithConfigSGIX pglXCreateGLXPixmapWithConfigSGIX;
 
 			[RequiredByFeature("GLX_SGIX_fbconfig")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr glXCreateContextWithConfigSGIX(IntPtr dpy, IntPtr config, int render_type, IntPtr share_list, bool direct);
 
@@ -240,6 +244,7 @@ namespace OpenGL
 			internal static glXCreateContextWithConfigSGIX pglXCreateContextWithConfigSGIX;
 
 			[RequiredByFeature("GLX_SGIX_fbconfig")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr glXGetVisualFromFBConfigSGIX(IntPtr dpy, IntPtr config);
 
@@ -247,6 +252,7 @@ namespace OpenGL
 			internal static glXGetVisualFromFBConfigSGIX pglXGetVisualFromFBConfigSGIX;
 
 			[RequiredByFeature("GLX_SGIX_fbconfig")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr glXGetFBConfigFromVisualSGIX(IntPtr dpy, IntPtr vis);
 

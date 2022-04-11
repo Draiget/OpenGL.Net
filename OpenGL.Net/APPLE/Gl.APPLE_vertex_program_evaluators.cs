@@ -339,6 +339,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_APPLE_vertex_program_evaluators")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glEnableVertexAttribAPPLE(uint index, int pname);
 
@@ -347,6 +348,7 @@ namespace OpenGL
 			internal static glEnableVertexAttribAPPLE pglEnableVertexAttribAPPLE;
 
 			[RequiredByFeature("GL_APPLE_vertex_program_evaluators")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDisableVertexAttribAPPLE(uint index, int pname);
 
@@ -364,6 +366,7 @@ namespace OpenGL
 			internal static glIsVertexAttribEnabledAPPLE pglIsVertexAttribEnabledAPPLE;
 
 			[RequiredByFeature("GL_APPLE_vertex_program_evaluators")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMapVertexAttrib1dAPPLE(uint index, uint size, double u1, double u2, int stride, int order, double* points);
 
@@ -372,6 +375,7 @@ namespace OpenGL
 			internal static glMapVertexAttrib1dAPPLE pglMapVertexAttrib1dAPPLE;
 
 			[RequiredByFeature("GL_APPLE_vertex_program_evaluators")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMapVertexAttrib1fAPPLE(uint index, uint size, float u1, float u2, int stride, int order, float* points);
 
@@ -380,6 +384,7 @@ namespace OpenGL
 			internal static glMapVertexAttrib1fAPPLE pglMapVertexAttrib1fAPPLE;
 
 			[RequiredByFeature("GL_APPLE_vertex_program_evaluators")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMapVertexAttrib2dAPPLE(uint index, uint size, double u1, double u2, int ustride, int uorder, double v1, double v2, int vstride, int vorder, double* points);
 
@@ -388,6 +393,7 @@ namespace OpenGL
 			internal static glMapVertexAttrib2dAPPLE pglMapVertexAttrib2dAPPLE;
 
 			[RequiredByFeature("GL_APPLE_vertex_program_evaluators")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMapVertexAttrib2fAPPLE(uint index, uint size, float u1, float u2, int ustride, int uorder, float v1, float v2, int vstride, int vorder, float* points);
 

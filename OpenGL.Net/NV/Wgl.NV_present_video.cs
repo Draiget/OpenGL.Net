@@ -138,6 +138,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("WGL_NV_present_video")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int wglEnumerateVideoDevicesNV(IntPtr hDC, IntPtr* phDeviceList);
 
@@ -145,6 +146,7 @@ namespace OpenGL
 			internal static wglEnumerateVideoDevicesNV pwglEnumerateVideoDevicesNV;
 
 			[RequiredByFeature("WGL_NV_present_video")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglBindVideoDeviceNV(IntPtr hDC, uint uVideoSlot, IntPtr hVideoDevice, int* piAttribList);
 
@@ -152,6 +154,7 @@ namespace OpenGL
 			internal static wglBindVideoDeviceNV pwglBindVideoDeviceNV;
 
 			[RequiredByFeature("WGL_NV_present_video")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglQueryCurrentContextNV(int iAttribute, int* piValue);
 

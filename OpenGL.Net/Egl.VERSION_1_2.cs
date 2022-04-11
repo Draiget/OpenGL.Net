@@ -370,6 +370,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("EGL_VERSION_1_2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglBindAPI(uint api);
 
@@ -377,6 +378,7 @@ namespace OpenGL
 			internal static eglBindAPI peglBindAPI;
 
 			[RequiredByFeature("EGL_VERSION_1_2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate uint eglQueryAPI();
 
@@ -384,6 +386,7 @@ namespace OpenGL
 			internal static eglQueryAPI peglQueryAPI;
 
 			[RequiredByFeature("EGL_VERSION_1_2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr eglCreatePbufferFromClientBuffer(IntPtr dpy, uint buftype, IntPtr buffer, IntPtr config, int* attrib_list);
 
@@ -391,6 +394,7 @@ namespace OpenGL
 			internal static eglCreatePbufferFromClientBuffer peglCreatePbufferFromClientBuffer;
 
 			[RequiredByFeature("EGL_VERSION_1_2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglReleaseThread();
 
@@ -398,6 +402,7 @@ namespace OpenGL
 			internal static eglReleaseThread peglReleaseThread;
 
 			[RequiredByFeature("EGL_VERSION_1_2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglWaitClient();
 

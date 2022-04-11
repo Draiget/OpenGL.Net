@@ -1064,6 +1064,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_ATI_fragment_shader")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate uint glGenFragmentShadersATI(uint range);
 
@@ -1072,6 +1073,7 @@ namespace OpenGL
 			internal static glGenFragmentShadersATI pglGenFragmentShadersATI;
 
 			[RequiredByFeature("GL_ATI_fragment_shader")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glBindFragmentShaderATI(uint id);
 
@@ -1080,6 +1082,7 @@ namespace OpenGL
 			internal static glBindFragmentShaderATI pglBindFragmentShaderATI;
 
 			[RequiredByFeature("GL_ATI_fragment_shader")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDeleteFragmentShaderATI(uint id);
 
@@ -1088,6 +1091,7 @@ namespace OpenGL
 			internal static glDeleteFragmentShaderATI pglDeleteFragmentShaderATI;
 
 			[RequiredByFeature("GL_ATI_fragment_shader")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glBeginFragmentShaderATI();
 
@@ -1096,6 +1100,7 @@ namespace OpenGL
 			internal static glBeginFragmentShaderATI pglBeginFragmentShaderATI;
 
 			[RequiredByFeature("GL_ATI_fragment_shader")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glEndFragmentShaderATI();
 
@@ -1104,6 +1109,7 @@ namespace OpenGL
 			internal static glEndFragmentShaderATI pglEndFragmentShaderATI;
 
 			[RequiredByFeature("GL_ATI_fragment_shader")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glPassTexCoordATI(uint dst, uint coord, int swizzle);
 
@@ -1112,6 +1118,7 @@ namespace OpenGL
 			internal static glPassTexCoordATI pglPassTexCoordATI;
 
 			[RequiredByFeature("GL_ATI_fragment_shader")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glSampleMapATI(uint dst, uint interp, int swizzle);
 
@@ -1120,6 +1127,7 @@ namespace OpenGL
 			internal static glSampleMapATI pglSampleMapATI;
 
 			[RequiredByFeature("GL_ATI_fragment_shader")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glColorFragmentOp1ATI(int op, uint dst, uint dstMask, uint dstMod, uint arg1, uint arg1Rep, uint arg1Mod);
 
@@ -1128,6 +1136,7 @@ namespace OpenGL
 			internal static glColorFragmentOp1ATI pglColorFragmentOp1ATI;
 
 			[RequiredByFeature("GL_ATI_fragment_shader")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glColorFragmentOp2ATI(int op, uint dst, uint dstMask, uint dstMod, uint arg1, uint arg1Rep, uint arg1Mod, uint arg2, uint arg2Rep, uint arg2Mod);
 
@@ -1136,6 +1145,7 @@ namespace OpenGL
 			internal static glColorFragmentOp2ATI pglColorFragmentOp2ATI;
 
 			[RequiredByFeature("GL_ATI_fragment_shader")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glColorFragmentOp3ATI(int op, uint dst, uint dstMask, uint dstMod, uint arg1, uint arg1Rep, uint arg1Mod, uint arg2, uint arg2Rep, uint arg2Mod, uint arg3, uint arg3Rep, uint arg3Mod);
 
@@ -1144,6 +1154,7 @@ namespace OpenGL
 			internal static glColorFragmentOp3ATI pglColorFragmentOp3ATI;
 
 			[RequiredByFeature("GL_ATI_fragment_shader")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glAlphaFragmentOp1ATI(int op, uint dst, uint dstMod, uint arg1, uint arg1Rep, uint arg1Mod);
 
@@ -1152,6 +1163,7 @@ namespace OpenGL
 			internal static glAlphaFragmentOp1ATI pglAlphaFragmentOp1ATI;
 
 			[RequiredByFeature("GL_ATI_fragment_shader")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glAlphaFragmentOp2ATI(int op, uint dst, uint dstMod, uint arg1, uint arg1Rep, uint arg1Mod, uint arg2, uint arg2Rep, uint arg2Mod);
 
@@ -1160,6 +1172,7 @@ namespace OpenGL
 			internal static glAlphaFragmentOp2ATI pglAlphaFragmentOp2ATI;
 
 			[RequiredByFeature("GL_ATI_fragment_shader")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glAlphaFragmentOp3ATI(int op, uint dst, uint dstMod, uint arg1, uint arg1Rep, uint arg1Mod, uint arg2, uint arg2Rep, uint arg2Mod, uint arg3, uint arg3Rep, uint arg3Mod);
 
@@ -1168,6 +1181,7 @@ namespace OpenGL
 			internal static glAlphaFragmentOp3ATI pglAlphaFragmentOp3ATI;
 
 			[RequiredByFeature("GL_ATI_fragment_shader")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glSetFragmentShaderConstantATI(uint dst, float* value);
 

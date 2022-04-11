@@ -189,6 +189,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NVX_linked_gpu_multicast")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glLGPUNamedBufferSubDataNVX(uint gpuMask, uint buffer, IntPtr offset, uint size, IntPtr data);
 
@@ -197,6 +198,7 @@ namespace OpenGL
 			internal static glLGPUNamedBufferSubDataNVX pglLGPUNamedBufferSubDataNVX;
 
 			[RequiredByFeature("GL_NVX_linked_gpu_multicast")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glLGPUCopyImageSubDataNVX(uint sourceGpu, uint destinationGpuMask, uint srcName, int srcTarget, int srcLevel, int srcX, int srxY, int srcZ, uint dstName, int dstTarget, int dstLevel, int dstX, int dstY, int dstZ, int width, int height, int depth);
 
@@ -205,6 +207,7 @@ namespace OpenGL
 			internal static glLGPUCopyImageSubDataNVX pglLGPUCopyImageSubDataNVX;
 
 			[RequiredByFeature("GL_NVX_linked_gpu_multicast")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glLGPUInterlockNVX();
 

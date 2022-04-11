@@ -99,6 +99,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_external_buffer", Api = "gl|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glBufferStorageExternalEXT(int target, IntPtr offset, uint size, IntPtr clientBuffer, uint flags);
 
@@ -107,6 +108,7 @@ namespace OpenGL
 			internal static glBufferStorageExternalEXT pglBufferStorageExternalEXT;
 
 			[RequiredByFeature("GL_EXT_external_buffer", Api = "gl|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNamedBufferStorageExternalEXT(uint buffer, IntPtr offset, uint size, IntPtr clientBuffer, uint flags);
 

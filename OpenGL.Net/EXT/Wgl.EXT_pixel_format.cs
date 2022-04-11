@@ -173,6 +173,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("WGL_EXT_pixel_format")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglGetPixelFormatAttribivEXT(IntPtr hdc, int iPixelFormat, int iLayerPlane, uint nAttributes, int* piAttributes, int* piValues);
 
@@ -180,6 +181,7 @@ namespace OpenGL
 			internal static wglGetPixelFormatAttribivEXT pwglGetPixelFormatAttribivEXT;
 
 			[RequiredByFeature("WGL_EXT_pixel_format")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglGetPixelFormatAttribfvEXT(IntPtr hdc, int iPixelFormat, int iLayerPlane, uint nAttributes, int* piAttributes, float* pfValues);
 
@@ -187,6 +189,7 @@ namespace OpenGL
 			internal static wglGetPixelFormatAttribfvEXT pwglGetPixelFormatAttribfvEXT;
 
 			[RequiredByFeature("WGL_EXT_pixel_format")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglChoosePixelFormatEXT(IntPtr hdc, int* piAttribIList, float* pfAttribFList, uint nMaxFormats, int* piFormats, uint* nNumFormats);
 

@@ -117,6 +117,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("EGL_KHR_stream_consumer_gltexture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglStreamConsumerGLTextureExternalKHR(IntPtr dpy, IntPtr stream);
 
@@ -124,6 +125,7 @@ namespace OpenGL
 			internal static eglStreamConsumerGLTextureExternalKHR peglStreamConsumerGLTextureExternalKHR;
 
 			[RequiredByFeature("EGL_KHR_stream_consumer_gltexture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglStreamConsumerAcquireKHR(IntPtr dpy, IntPtr stream);
 
@@ -131,6 +133,7 @@ namespace OpenGL
 			internal static eglStreamConsumerAcquireKHR peglStreamConsumerAcquireKHR;
 
 			[RequiredByFeature("EGL_KHR_stream_consumer_gltexture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglStreamConsumerReleaseKHR(IntPtr dpy, IntPtr stream);
 

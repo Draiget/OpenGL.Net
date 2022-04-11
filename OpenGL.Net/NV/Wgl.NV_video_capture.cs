@@ -183,6 +183,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("WGL_NV_video_capture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglBindVideoCaptureDeviceNV(uint uVideoSlot, IntPtr hDevice);
 
@@ -190,6 +191,7 @@ namespace OpenGL
 			internal static wglBindVideoCaptureDeviceNV pwglBindVideoCaptureDeviceNV;
 
 			[RequiredByFeature("WGL_NV_video_capture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate uint wglEnumerateVideoCaptureDevicesNV(IntPtr hDc, IntPtr* phDeviceList);
 
@@ -197,6 +199,7 @@ namespace OpenGL
 			internal static wglEnumerateVideoCaptureDevicesNV pwglEnumerateVideoCaptureDevicesNV;
 
 			[RequiredByFeature("WGL_NV_video_capture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglLockVideoCaptureDeviceNV(IntPtr hDc, IntPtr hDevice);
 
@@ -204,6 +207,7 @@ namespace OpenGL
 			internal static wglLockVideoCaptureDeviceNV pwglLockVideoCaptureDeviceNV;
 
 			[RequiredByFeature("WGL_NV_video_capture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglQueryVideoCaptureDeviceNV(IntPtr hDc, IntPtr hDevice, int iAttribute, int* piValue);
 
@@ -211,6 +215,7 @@ namespace OpenGL
 			internal static wglQueryVideoCaptureDeviceNV pwglQueryVideoCaptureDeviceNV;
 
 			[RequiredByFeature("WGL_NV_video_capture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglReleaseVideoCaptureDeviceNV(IntPtr hDc, IntPtr hDevice);
 

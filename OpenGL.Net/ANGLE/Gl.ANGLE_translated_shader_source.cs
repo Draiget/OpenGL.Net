@@ -80,6 +80,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_ANGLE_translated_shader_source", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetTranslatedShaderSourceANGLE(uint shader, int bufsize, int* length, string source);
 

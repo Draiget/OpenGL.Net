@@ -92,6 +92,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_OES_viewport_array", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDepthRangeArrayfvOES(uint first, int count, float* v);
 
@@ -100,6 +101,7 @@ namespace OpenGL
 			internal static glDepthRangeArrayfvOES pglDepthRangeArrayfvOES;
 
 			[RequiredByFeature("GL_OES_viewport_array", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDepthRangeIndexedfOES(uint index, float n, float f);
 

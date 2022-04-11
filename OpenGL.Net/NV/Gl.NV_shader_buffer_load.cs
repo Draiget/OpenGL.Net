@@ -357,6 +357,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_shader_buffer_load", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMakeBufferResidentNV(int target, int access);
 
@@ -365,6 +366,7 @@ namespace OpenGL
 			internal static glMakeBufferResidentNV pglMakeBufferResidentNV;
 
 			[RequiredByFeature("GL_NV_shader_buffer_load", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMakeBufferNonResidentNV(int target);
 
@@ -382,6 +384,7 @@ namespace OpenGL
 			internal static glIsBufferResidentNV pglIsBufferResidentNV;
 
 			[RequiredByFeature("GL_NV_shader_buffer_load", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMakeNamedBufferResidentNV(uint buffer, int access);
 
@@ -390,6 +393,7 @@ namespace OpenGL
 			internal static glMakeNamedBufferResidentNV pglMakeNamedBufferResidentNV;
 
 			[RequiredByFeature("GL_NV_shader_buffer_load", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMakeNamedBufferNonResidentNV(uint buffer);
 
@@ -407,6 +411,7 @@ namespace OpenGL
 			internal static glIsNamedBufferResidentNV pglIsNamedBufferResidentNV;
 
 			[RequiredByFeature("GL_NV_shader_buffer_load", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetBufferParameterui64vNV(int target, int pname, ulong* @params);
 
@@ -415,6 +420,7 @@ namespace OpenGL
 			internal static glGetBufferParameterui64vNV pglGetBufferParameterui64vNV;
 
 			[RequiredByFeature("GL_NV_shader_buffer_load", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetNamedBufferParameterui64vNV(uint buffer, int pname, ulong* @params);
 
@@ -423,6 +429,7 @@ namespace OpenGL
 			internal static glGetNamedBufferParameterui64vNV pglGetNamedBufferParameterui64vNV;
 
 			[RequiredByFeature("GL_NV_shader_buffer_load", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetIntegerui64vNV(int value, ulong* result);
 
@@ -431,6 +438,7 @@ namespace OpenGL
 			internal static glGetIntegerui64vNV pglGetIntegerui64vNV;
 
 			[RequiredByFeature("GL_NV_shader_buffer_load", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUniformui64NV(int location, ulong value);
 
@@ -439,6 +447,7 @@ namespace OpenGL
 			internal static glUniformui64NV pglUniformui64NV;
 
 			[RequiredByFeature("GL_NV_shader_buffer_load", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUniformui64vNV(int location, int count, ulong* value);
 
@@ -448,6 +457,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_AMD_gpu_shader_int64")]
 			[RequiredByFeature("GL_NV_shader_buffer_load", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetUniformui64vNV(uint program, int location, ulong* @params);
 
@@ -457,6 +467,7 @@ namespace OpenGL
 			internal static glGetUniformui64vNV pglGetUniformui64vNV;
 
 			[RequiredByFeature("GL_NV_shader_buffer_load", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glProgramUniformui64NV(uint program, int location, ulong value);
 
@@ -465,6 +476,7 @@ namespace OpenGL
 			internal static glProgramUniformui64NV pglProgramUniformui64NV;
 
 			[RequiredByFeature("GL_NV_shader_buffer_load", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glProgramUniformui64vNV(uint program, int location, int count, ulong* value);
 

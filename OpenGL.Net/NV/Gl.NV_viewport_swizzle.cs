@@ -144,6 +144,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_viewport_swizzle", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glViewportSwizzleNV(uint index, int swizzlex, int swizzley, int swizzlez, int swizzlew);
 

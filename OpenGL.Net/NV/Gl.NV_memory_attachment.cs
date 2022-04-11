@@ -239,6 +239,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_memory_attachment", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetMemoryObjectDetachedResourcesuivNV(uint memory, int pname, int first, int count, uint* @params);
 
@@ -247,6 +248,7 @@ namespace OpenGL
 			internal static glGetMemoryObjectDetachedResourcesuivNV pglGetMemoryObjectDetachedResourcesuivNV;
 
 			[RequiredByFeature("GL_NV_memory_attachment", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glResetMemoryObjectParameterNV(uint memory, int pname);
 
@@ -255,6 +257,7 @@ namespace OpenGL
 			internal static glResetMemoryObjectParameterNV pglResetMemoryObjectParameterNV;
 
 			[RequiredByFeature("GL_NV_memory_attachment", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexAttachMemoryNV(int target, uint memory, ulong offset);
 
@@ -263,6 +266,7 @@ namespace OpenGL
 			internal static glTexAttachMemoryNV pglTexAttachMemoryNV;
 
 			[RequiredByFeature("GL_NV_memory_attachment", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glBufferAttachMemoryNV(int target, uint memory, ulong offset);
 
@@ -271,6 +275,7 @@ namespace OpenGL
 			internal static glBufferAttachMemoryNV pglBufferAttachMemoryNV;
 
 			[RequiredByFeature("GL_NV_memory_attachment", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTextureAttachMemoryNV(uint texture, uint memory, ulong offset);
 
@@ -279,6 +284,7 @@ namespace OpenGL
 			internal static glTextureAttachMemoryNV pglTextureAttachMemoryNV;
 
 			[RequiredByFeature("GL_NV_memory_attachment", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNamedBufferAttachMemoryNV(uint buffer, uint memory, ulong offset);
 

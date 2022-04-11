@@ -154,6 +154,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_draw_vulkan_image", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDrawVkImageNV(ulong vkImage, uint sampler, float x0, float y0, float x1, float y1, float z, float s0, float t0, float s1, float t1);
 
@@ -162,6 +163,7 @@ namespace OpenGL
 			internal static glDrawVkImageNV pglDrawVkImageNV;
 
 			[RequiredByFeature("GL_NV_draw_vulkan_image", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate VulkanProc glGetVkProcAddrNV(string name);
 
@@ -170,6 +172,7 @@ namespace OpenGL
 			internal static glGetVkProcAddrNV pglGetVkProcAddrNV;
 
 			[RequiredByFeature("GL_NV_draw_vulkan_image", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glWaitVkSemaphoreNV(ulong vkSemaphore);
 
@@ -178,6 +181,7 @@ namespace OpenGL
 			internal static glWaitVkSemaphoreNV pglWaitVkSemaphoreNV;
 
 			[RequiredByFeature("GL_NV_draw_vulkan_image", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glSignalVkSemaphoreNV(ulong vkSemaphore);
 
@@ -186,6 +190,7 @@ namespace OpenGL
 			internal static glSignalVkSemaphoreNV pglSignalVkSemaphoreNV;
 
 			[RequiredByFeature("GL_NV_draw_vulkan_image", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glSignalVkFenceNV(ulong vkFence);
 

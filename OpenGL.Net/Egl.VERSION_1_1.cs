@@ -300,6 +300,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("EGL_VERSION_1_1")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglBindTexImage(IntPtr dpy, IntPtr surface, int buffer);
 
@@ -307,6 +308,7 @@ namespace OpenGL
 			internal static eglBindTexImage peglBindTexImage;
 
 			[RequiredByFeature("EGL_VERSION_1_1")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglReleaseTexImage(IntPtr dpy, IntPtr surface, int buffer);
 
@@ -314,6 +316,7 @@ namespace OpenGL
 			internal static eglReleaseTexImage peglReleaseTexImage;
 
 			[RequiredByFeature("EGL_VERSION_1_1")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglSurfaceAttrib(IntPtr dpy, IntPtr surface, int attribute, int value);
 
@@ -321,6 +324,7 @@ namespace OpenGL
 			internal static eglSurfaceAttrib peglSurfaceAttrib;
 
 			[RequiredByFeature("EGL_VERSION_1_1")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglSwapInterval(IntPtr dpy, int interval);
 

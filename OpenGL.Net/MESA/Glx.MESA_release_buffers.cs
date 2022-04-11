@@ -67,6 +67,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GLX_MESA_release_buffers")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool glXReleaseBuffersMESA(IntPtr dpy, IntPtr drawable);
 

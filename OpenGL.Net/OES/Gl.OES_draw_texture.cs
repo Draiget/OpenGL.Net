@@ -243,6 +243,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_OES_draw_texture", Api = "gles1")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDrawTexsOES(short x, short y, short z, short width, short height);
 
@@ -251,6 +252,7 @@ namespace OpenGL
 			internal static glDrawTexsOES pglDrawTexsOES;
 
 			[RequiredByFeature("GL_OES_draw_texture", Api = "gles1")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDrawTexiOES(int x, int y, int z, int width, int height);
 
@@ -259,6 +261,7 @@ namespace OpenGL
 			internal static glDrawTexiOES pglDrawTexiOES;
 
 			[RequiredByFeature("GL_OES_draw_texture", Api = "gles1")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDrawTexxOES(IntPtr x, IntPtr y, IntPtr z, IntPtr width, IntPtr height);
 
@@ -267,6 +270,7 @@ namespace OpenGL
 			internal static glDrawTexxOES pglDrawTexxOES;
 
 			[RequiredByFeature("GL_OES_draw_texture", Api = "gles1")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDrawTexsvOES(short* coords);
 
@@ -275,6 +279,7 @@ namespace OpenGL
 			internal static glDrawTexsvOES pglDrawTexsvOES;
 
 			[RequiredByFeature("GL_OES_draw_texture", Api = "gles1")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDrawTexivOES(int* coords);
 
@@ -283,6 +288,7 @@ namespace OpenGL
 			internal static glDrawTexivOES pglDrawTexivOES;
 
 			[RequiredByFeature("GL_OES_draw_texture", Api = "gles1")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDrawTexxvOES(IntPtr* coords);
 
@@ -291,6 +297,7 @@ namespace OpenGL
 			internal static glDrawTexxvOES pglDrawTexxvOES;
 
 			[RequiredByFeature("GL_OES_draw_texture", Api = "gles1")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDrawTexfOES(float x, float y, float z, float width, float height);
 
@@ -299,6 +306,7 @@ namespace OpenGL
 			internal static glDrawTexfOES pglDrawTexfOES;
 
 			[RequiredByFeature("GL_OES_draw_texture", Api = "gles1")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDrawTexfvOES(float* coords);
 

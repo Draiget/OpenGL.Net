@@ -180,6 +180,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_INTEL_parallel_arrays")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexPointervINTEL(int size, int type, IntPtr* pointer);
 
@@ -188,6 +189,7 @@ namespace OpenGL
 			internal static glVertexPointervINTEL pglVertexPointervINTEL;
 
 			[RequiredByFeature("GL_INTEL_parallel_arrays")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNormalPointervINTEL(int type, IntPtr* pointer);
 
@@ -196,6 +198,7 @@ namespace OpenGL
 			internal static glNormalPointervINTEL pglNormalPointervINTEL;
 
 			[RequiredByFeature("GL_INTEL_parallel_arrays")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glColorPointervINTEL(int size, int type, IntPtr* pointer);
 
@@ -204,6 +207,7 @@ namespace OpenGL
 			internal static glColorPointervINTEL pglColorPointervINTEL;
 
 			[RequiredByFeature("GL_INTEL_parallel_arrays")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoordPointervINTEL(int size, int type, IntPtr* pointer);
 

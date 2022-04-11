@@ -371,6 +371,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_separate_shader_objects")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUseShaderProgramEXT(int type, uint program);
 
@@ -379,6 +380,7 @@ namespace OpenGL
 			internal static glUseShaderProgramEXT pglUseShaderProgramEXT;
 
 			[RequiredByFeature("GL_EXT_separate_shader_objects")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glActiveProgramEXT(uint program);
 
@@ -387,6 +389,7 @@ namespace OpenGL
 			internal static glActiveProgramEXT pglActiveProgramEXT;
 
 			[RequiredByFeature("GL_EXT_separate_shader_objects")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate uint glCreateShaderProgramEXT(int type, string @string);
 
@@ -395,6 +398,7 @@ namespace OpenGL
 			internal static glCreateShaderProgramEXT pglCreateShaderProgramEXT;
 
 			[RequiredByFeature("GL_EXT_separate_shader_objects", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glActiveShaderProgramEXT(uint pipeline, uint program);
 
@@ -403,6 +407,7 @@ namespace OpenGL
 			internal static glActiveShaderProgramEXT pglActiveShaderProgramEXT;
 
 			[RequiredByFeature("GL_EXT_separate_shader_objects", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glBindProgramPipelineEXT(uint pipeline);
 
@@ -411,6 +416,7 @@ namespace OpenGL
 			internal static glBindProgramPipelineEXT pglBindProgramPipelineEXT;
 
 			[RequiredByFeature("GL_EXT_separate_shader_objects", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate uint glCreateShaderProgramvEXT(int type, int count, string[] strings);
 
@@ -419,6 +425,7 @@ namespace OpenGL
 			internal static glCreateShaderProgramvEXT pglCreateShaderProgramvEXT;
 
 			[RequiredByFeature("GL_EXT_separate_shader_objects", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDeleteProgramPipelinesEXT(int n, uint* pipelines);
 
@@ -427,6 +434,7 @@ namespace OpenGL
 			internal static glDeleteProgramPipelinesEXT pglDeleteProgramPipelinesEXT;
 
 			[RequiredByFeature("GL_EXT_separate_shader_objects", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGenProgramPipelinesEXT(int n, uint* pipelines);
 
@@ -435,6 +443,7 @@ namespace OpenGL
 			internal static glGenProgramPipelinesEXT pglGenProgramPipelinesEXT;
 
 			[RequiredByFeature("GL_EXT_separate_shader_objects", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetProgramPipelineInfoLogEXT(uint pipeline, int bufSize, int* length, StringBuilder infoLog);
 
@@ -443,6 +452,7 @@ namespace OpenGL
 			internal static glGetProgramPipelineInfoLogEXT pglGetProgramPipelineInfoLogEXT;
 
 			[RequiredByFeature("GL_EXT_separate_shader_objects", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetProgramPipelineivEXT(uint pipeline, int pname, int* @params);
 
@@ -460,6 +470,7 @@ namespace OpenGL
 			internal static glIsProgramPipelineEXT pglIsProgramPipelineEXT;
 
 			[RequiredByFeature("GL_EXT_separate_shader_objects", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glUseProgramStagesEXT(uint pipeline, uint stages, uint program);
 
@@ -468,6 +479,7 @@ namespace OpenGL
 			internal static glUseProgramStagesEXT pglUseProgramStagesEXT;
 
 			[RequiredByFeature("GL_EXT_separate_shader_objects", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glValidateProgramPipelineEXT(uint pipeline);
 

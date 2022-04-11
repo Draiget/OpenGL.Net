@@ -181,6 +181,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("WGL_ARB_buffer_region")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr wglCreateBufferRegionARB(IntPtr hDC, int iLayerPlane, uint uType);
 
@@ -188,6 +189,7 @@ namespace OpenGL
 			internal static wglCreateBufferRegionARB pwglCreateBufferRegionARB;
 
 			[RequiredByFeature("WGL_ARB_buffer_region")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void wglDeleteBufferRegionARB(IntPtr hRegion);
 
@@ -195,6 +197,7 @@ namespace OpenGL
 			internal static wglDeleteBufferRegionARB pwglDeleteBufferRegionARB;
 
 			[RequiredByFeature("WGL_ARB_buffer_region")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglSaveBufferRegionARB(IntPtr hRegion, int x, int y, int width, int height);
 
@@ -202,6 +205,7 @@ namespace OpenGL
 			internal static wglSaveBufferRegionARB pwglSaveBufferRegionARB;
 
 			[RequiredByFeature("WGL_ARB_buffer_region")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglRestoreBufferRegionARB(IntPtr hRegion, int x, int y, int width, int height, int xSrc, int ySrc);
 

@@ -227,6 +227,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GLX_MESA_query_renderer")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool glXQueryCurrentRendererIntegerMESA(int attribute, uint* value);
 
@@ -234,6 +235,7 @@ namespace OpenGL
 			internal static glXQueryCurrentRendererIntegerMESA pglXQueryCurrentRendererIntegerMESA;
 
 			[RequiredByFeature("GLX_MESA_query_renderer")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr glXQueryCurrentRendererStringMESA(int attribute);
 
@@ -241,6 +243,7 @@ namespace OpenGL
 			internal static glXQueryCurrentRendererStringMESA pglXQueryCurrentRendererStringMESA;
 
 			[RequiredByFeature("GLX_MESA_query_renderer")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool glXQueryRendererIntegerMESA(IntPtr dpy, int screen, int renderer, int attribute, uint* value);
 
@@ -248,6 +251,7 @@ namespace OpenGL
 			internal static glXQueryRendererIntegerMESA pglXQueryRendererIntegerMESA;
 
 			[RequiredByFeature("GLX_MESA_query_renderer")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr glXQueryRendererStringMESA(IntPtr dpy, int screen, int renderer, int attribute);
 

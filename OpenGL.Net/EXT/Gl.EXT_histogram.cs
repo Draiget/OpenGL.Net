@@ -261,6 +261,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_histogram")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetHistogramEXT(int target, [MarshalAs(UnmanagedType.I1)] bool reset, int format, int type, IntPtr values);
 
@@ -269,6 +270,7 @@ namespace OpenGL
 			internal static glGetHistogramEXT pglGetHistogramEXT;
 
 			[RequiredByFeature("GL_EXT_histogram")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetHistogramParameterfvEXT(int target, int pname, float* @params);
 
@@ -277,6 +279,7 @@ namespace OpenGL
 			internal static glGetHistogramParameterfvEXT pglGetHistogramParameterfvEXT;
 
 			[RequiredByFeature("GL_EXT_histogram")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetHistogramParameterivEXT(int target, int pname, int* @params);
 
@@ -285,6 +288,7 @@ namespace OpenGL
 			internal static glGetHistogramParameterivEXT pglGetHistogramParameterivEXT;
 
 			[RequiredByFeature("GL_EXT_histogram")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetMinmaxEXT(int target, [MarshalAs(UnmanagedType.I1)] bool reset, int format, int type, IntPtr values);
 
@@ -293,6 +297,7 @@ namespace OpenGL
 			internal static glGetMinmaxEXT pglGetMinmaxEXT;
 
 			[RequiredByFeature("GL_EXT_histogram")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetMinmaxParameterfvEXT(int target, int pname, float* @params);
 
@@ -301,6 +306,7 @@ namespace OpenGL
 			internal static glGetMinmaxParameterfvEXT pglGetMinmaxParameterfvEXT;
 
 			[RequiredByFeature("GL_EXT_histogram")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetMinmaxParameterivEXT(int target, int pname, int* @params);
 

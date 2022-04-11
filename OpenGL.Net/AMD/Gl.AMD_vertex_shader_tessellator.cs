@@ -117,6 +117,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_AMD_vertex_shader_tessellator")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTessellationFactorAMD(float factor);
 
@@ -125,6 +126,7 @@ namespace OpenGL
 			internal static glTessellationFactorAMD pglTessellationFactorAMD;
 
 			[RequiredByFeature("GL_AMD_vertex_shader_tessellator")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTessellationModeAMD(int mode);
 

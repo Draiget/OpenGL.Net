@@ -143,6 +143,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_SGIS_sharpen_texture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glSharpenTexFuncSGIS(int target, int n, float* points);
 
@@ -151,6 +152,7 @@ namespace OpenGL
 			internal static glSharpenTexFuncSGIS pglSharpenTexFuncSGIS;
 
 			[RequiredByFeature("GL_SGIS_sharpen_texture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetSharpenTexFuncSGIS(int target, float* points);
 

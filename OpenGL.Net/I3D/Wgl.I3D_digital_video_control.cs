@@ -129,6 +129,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("WGL_I3D_digital_video_control")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglGetDigitalVideoParametersI3D(IntPtr hDC, int iAttribute, int* piValue);
 
@@ -136,6 +137,7 @@ namespace OpenGL
 			internal static wglGetDigitalVideoParametersI3D pwglGetDigitalVideoParametersI3D;
 
 			[RequiredByFeature("WGL_I3D_digital_video_control")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglSetDigitalVideoParametersI3D(IntPtr hDC, int iAttribute, int* piValue);
 

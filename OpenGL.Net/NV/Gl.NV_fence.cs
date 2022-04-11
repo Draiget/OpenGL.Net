@@ -215,6 +215,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_fence", Api = "gl|gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDeleteFencesNV(int n, uint* fences);
 
@@ -223,6 +224,7 @@ namespace OpenGL
 			internal static glDeleteFencesNV pglDeleteFencesNV;
 
 			[RequiredByFeature("GL_NV_fence", Api = "gl|gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGenFencesNV(int n, uint* fences);
 
@@ -249,6 +251,7 @@ namespace OpenGL
 			internal static glTestFenceNV pglTestFenceNV;
 
 			[RequiredByFeature("GL_NV_fence", Api = "gl|gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetFenceivNV(uint fence, int pname, int* @params);
 
@@ -257,6 +260,7 @@ namespace OpenGL
 			internal static glGetFenceivNV pglGetFenceivNV;
 
 			[RequiredByFeature("GL_NV_fence", Api = "gl|gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFinishFenceNV(uint fence);
 
@@ -265,6 +269,7 @@ namespace OpenGL
 			internal static glFinishFenceNV pglFinishFenceNV;
 
 			[RequiredByFeature("GL_NV_fence", Api = "gl|gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glSetFenceNV(uint fence, int condition);
 

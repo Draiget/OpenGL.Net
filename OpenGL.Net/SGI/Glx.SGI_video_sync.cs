@@ -99,6 +99,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GLX_SGI_video_sync")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glXGetVideoSyncSGI(uint* count);
 
@@ -106,6 +107,7 @@ namespace OpenGL
 			internal static glXGetVideoSyncSGI pglXGetVideoSyncSGI;
 
 			[RequiredByFeature("GLX_SGI_video_sync")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glXWaitVideoSyncSGI(int divisor, int remainder, uint* count);
 

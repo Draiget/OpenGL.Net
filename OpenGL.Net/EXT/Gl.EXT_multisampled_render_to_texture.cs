@@ -81,6 +81,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_multisampled_render_to_texture", Api = "gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFramebufferTexture2DMultisampleEXT(int target, int attachment, int textarget, uint texture, int level, int samples);
 

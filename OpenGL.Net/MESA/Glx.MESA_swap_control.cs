@@ -80,6 +80,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GLX_MESA_swap_control")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glXGetSwapIntervalMESA();
 
@@ -87,6 +88,7 @@ namespace OpenGL
 			internal static glXGetSwapIntervalMESA pglXGetSwapIntervalMESA;
 
 			[RequiredByFeature("GLX_MESA_swap_control")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glXSwapIntervalMESA(uint interval);
 

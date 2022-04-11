@@ -575,6 +575,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_SGIX_fragment_lighting")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFragmentColorMaterialSGIX(int face, int mode);
 
@@ -583,6 +584,7 @@ namespace OpenGL
 			internal static glFragmentColorMaterialSGIX pglFragmentColorMaterialSGIX;
 
 			[RequiredByFeature("GL_SGIX_fragment_lighting")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFragmentLightfSGIX(int light, int pname, float param);
 
@@ -591,6 +593,7 @@ namespace OpenGL
 			internal static glFragmentLightfSGIX pglFragmentLightfSGIX;
 
 			[RequiredByFeature("GL_SGIX_fragment_lighting")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFragmentLightfvSGIX(int light, int pname, float* @params);
 
@@ -599,6 +602,7 @@ namespace OpenGL
 			internal static glFragmentLightfvSGIX pglFragmentLightfvSGIX;
 
 			[RequiredByFeature("GL_SGIX_fragment_lighting")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFragmentLightiSGIX(int light, int pname, int param);
 
@@ -607,6 +611,7 @@ namespace OpenGL
 			internal static glFragmentLightiSGIX pglFragmentLightiSGIX;
 
 			[RequiredByFeature("GL_SGIX_fragment_lighting")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFragmentLightivSGIX(int light, int pname, int* @params);
 
@@ -615,6 +620,7 @@ namespace OpenGL
 			internal static glFragmentLightivSGIX pglFragmentLightivSGIX;
 
 			[RequiredByFeature("GL_SGIX_fragment_lighting")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFragmentLightModelfSGIX(int pname, float param);
 
@@ -623,6 +629,7 @@ namespace OpenGL
 			internal static glFragmentLightModelfSGIX pglFragmentLightModelfSGIX;
 
 			[RequiredByFeature("GL_SGIX_fragment_lighting")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFragmentLightModelfvSGIX(int pname, float* @params);
 
@@ -631,6 +638,7 @@ namespace OpenGL
 			internal static glFragmentLightModelfvSGIX pglFragmentLightModelfvSGIX;
 
 			[RequiredByFeature("GL_SGIX_fragment_lighting")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFragmentLightModeliSGIX(int pname, int param);
 
@@ -639,6 +647,7 @@ namespace OpenGL
 			internal static glFragmentLightModeliSGIX pglFragmentLightModeliSGIX;
 
 			[RequiredByFeature("GL_SGIX_fragment_lighting")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFragmentLightModelivSGIX(int pname, int* @params);
 
@@ -647,6 +656,7 @@ namespace OpenGL
 			internal static glFragmentLightModelivSGIX pglFragmentLightModelivSGIX;
 
 			[RequiredByFeature("GL_SGIX_fragment_lighting")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFragmentMaterialfSGIX(int face, int pname, float param);
 
@@ -655,6 +665,7 @@ namespace OpenGL
 			internal static glFragmentMaterialfSGIX pglFragmentMaterialfSGIX;
 
 			[RequiredByFeature("GL_SGIX_fragment_lighting")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFragmentMaterialfvSGIX(int face, int pname, float* @params);
 
@@ -663,6 +674,7 @@ namespace OpenGL
 			internal static glFragmentMaterialfvSGIX pglFragmentMaterialfvSGIX;
 
 			[RequiredByFeature("GL_SGIX_fragment_lighting")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFragmentMaterialiSGIX(int face, int pname, int param);
 
@@ -671,6 +683,7 @@ namespace OpenGL
 			internal static glFragmentMaterialiSGIX pglFragmentMaterialiSGIX;
 
 			[RequiredByFeature("GL_SGIX_fragment_lighting")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFragmentMaterialivSGIX(int face, int pname, int* @params);
 
@@ -679,6 +692,7 @@ namespace OpenGL
 			internal static glFragmentMaterialivSGIX pglFragmentMaterialivSGIX;
 
 			[RequiredByFeature("GL_SGIX_fragment_lighting")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetFragmentLightfvSGIX(int light, int pname, float* @params);
 
@@ -687,6 +701,7 @@ namespace OpenGL
 			internal static glGetFragmentLightfvSGIX pglGetFragmentLightfvSGIX;
 
 			[RequiredByFeature("GL_SGIX_fragment_lighting")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetFragmentLightivSGIX(int light, int pname, int* @params);
 
@@ -695,6 +710,7 @@ namespace OpenGL
 			internal static glGetFragmentLightivSGIX pglGetFragmentLightivSGIX;
 
 			[RequiredByFeature("GL_SGIX_fragment_lighting")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetFragmentMaterialfvSGIX(int face, int pname, float* @params);
 
@@ -703,6 +719,7 @@ namespace OpenGL
 			internal static glGetFragmentMaterialfvSGIX pglGetFragmentMaterialfvSGIX;
 
 			[RequiredByFeature("GL_SGIX_fragment_lighting")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetFragmentMaterialivSGIX(int face, int pname, int* @params);
 
@@ -711,6 +728,7 @@ namespace OpenGL
 			internal static glGetFragmentMaterialivSGIX pglGetFragmentMaterialivSGIX;
 
 			[RequiredByFeature("GL_SGIX_fragment_lighting")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glLightEnviSGIX(int pname, int param);
 

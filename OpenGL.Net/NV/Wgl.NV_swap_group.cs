@@ -197,6 +197,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("WGL_NV_swap_group")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglJoinSwapGroupNV(IntPtr hDC, uint group);
 
@@ -204,6 +205,7 @@ namespace OpenGL
 			internal static wglJoinSwapGroupNV pwglJoinSwapGroupNV;
 
 			[RequiredByFeature("WGL_NV_swap_group")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglBindSwapBarrierNV(uint group, uint barrier);
 
@@ -211,6 +213,7 @@ namespace OpenGL
 			internal static wglBindSwapBarrierNV pwglBindSwapBarrierNV;
 
 			[RequiredByFeature("WGL_NV_swap_group")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglQuerySwapGroupNV(IntPtr hDC, uint* group, uint* barrier);
 
@@ -218,6 +221,7 @@ namespace OpenGL
 			internal static wglQuerySwapGroupNV pwglQuerySwapGroupNV;
 
 			[RequiredByFeature("WGL_NV_swap_group")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglQueryMaxSwapGroupsNV(IntPtr hDC, uint* maxGroups, uint* maxBarriers);
 
@@ -225,6 +229,7 @@ namespace OpenGL
 			internal static wglQueryMaxSwapGroupsNV pwglQueryMaxSwapGroupsNV;
 
 			[RequiredByFeature("WGL_NV_swap_group")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglQueryFrameCountNV(IntPtr hDC, uint* count);
 
@@ -232,6 +237,7 @@ namespace OpenGL
 			internal static wglQueryFrameCountNV pwglQueryFrameCountNV;
 
 			[RequiredByFeature("WGL_NV_swap_group")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglResetFrameCountNV(IntPtr hDC);
 

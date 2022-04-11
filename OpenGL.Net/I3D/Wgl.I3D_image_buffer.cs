@@ -174,6 +174,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("WGL_I3D_image_buffer")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr wglCreateImageBufferI3D(IntPtr hDC, int dwSize, uint uFlags);
 
@@ -181,6 +182,7 @@ namespace OpenGL
 			internal static wglCreateImageBufferI3D pwglCreateImageBufferI3D;
 
 			[RequiredByFeature("WGL_I3D_image_buffer")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglDestroyImageBufferI3D(IntPtr hDC, IntPtr pAddress);
 
@@ -188,6 +190,7 @@ namespace OpenGL
 			internal static wglDestroyImageBufferI3D pwglDestroyImageBufferI3D;
 
 			[RequiredByFeature("WGL_I3D_image_buffer")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglAssociateImageBufferEventsI3D(IntPtr hDC, IntPtr* pEvent, IntPtr* pAddress, int* pSize, uint count);
 
@@ -195,6 +198,7 @@ namespace OpenGL
 			internal static wglAssociateImageBufferEventsI3D pwglAssociateImageBufferEventsI3D;
 
 			[RequiredByFeature("WGL_I3D_image_buffer")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglReleaseImageBufferEventsI3D(IntPtr hDC, IntPtr* pAddress, uint count);
 

@@ -4645,7 +4645,10 @@ namespace OpenGL
 		[RemovedByFeature("GL_VERSION_3_2")]
 		FogCoordinateSource = Gl.FOG_COORDINATE_SOURCE,
 
-	}
+        [RequiredByFeature("GL_VERSION_1_0")]
+        FogColor = Gl.FOG_COLOR,
+
+    }
 
 	/// <summary>
 	/// Strongly typed enumeration FogPointerTypeIBM.
@@ -14198,7 +14201,37 @@ namespace OpenGL
 		[RequiredByFeature("GL_EXT_render_snorm", Api = "gles2")]
 		Short = Gl.SHORT,
 
-	}
+        /// <summary>
+        /// Strongly typed for value GL_UNSIGNED_BYTE.
+        /// </summary>
+        [RequiredByFeature("GL_VERSION_1_0")]
+        [RequiredByFeature("GL_VERSION_ES_CM_1_0", Api = "gles1")]
+        [RequiredByFeature("GL_ES_VERSION_2_0", Api = "gles2")]
+        [RequiredByFeature("GL_SC_VERSION_2_0", Api = "glsc2")]
+        UnsignedByte = Gl.UNSIGNED_BYTE,
+
+        /// <summary>
+        /// Strongly typed for value GL_UNSIGNED_INT.
+        /// </summary>
+        [RequiredByFeature("GL_VERSION_1_0")]
+        [RequiredByFeature("GL_ES_VERSION_2_0", Api = "gles2")]
+        [RequiredByFeature("GL_SC_VERSION_2_0", Api = "glsc2")]
+        [RequiredByFeature("GL_ANGLE_depth_texture", Api = "gles2")]
+        [RequiredByFeature("GL_OES_depth_texture", Api = "gles2")]
+        [RequiredByFeature("GL_OES_element_index_uint", Api = "gles1|gles2")]
+        UnsignedInt = Gl.UNSIGNED_INT,
+
+        /// <summary>
+        /// Strongly typed for value GL_UNSIGNED_SHORT.
+        /// </summary>
+        [RequiredByFeature("GL_VERSION_1_0")]
+        [RequiredByFeature("GL_VERSION_ES_CM_1_0", Api = "gles1")]
+        [RequiredByFeature("GL_ES_VERSION_2_0", Api = "gles2")]
+        [RequiredByFeature("GL_SC_VERSION_2_0", Api = "glsc2")]
+        [RequiredByFeature("GL_ANGLE_depth_texture", Api = "gles2")]
+        [RequiredByFeature("GL_OES_depth_texture", Api = "gles2")]
+        UnsignedShort = Gl.UNSIGNED_SHORT,
+    }
 
 	/// <summary>
 	/// Strongly typed enumeration ObjectIdentifier.
@@ -15403,7 +15436,9 @@ namespace OpenGL
 		[RequiredByFeature("GL_SGIX_ycrcb")]
 		Ycrcb444Sgix = Gl.YCRCB_444_SGIX,
 
-	}
+        [RequiredByFeature("GL_VERSION_1_2")]
+        UnsignedInt8888Rev = Gl.UNSIGNED_INT_8_8_8_8_REV,
+    }
 
 	/// <summary>
 	/// Strongly typed enumeration PixelMap.
@@ -16224,7 +16259,10 @@ namespace OpenGL
 		[RequiredByFeature("GL_EXT_texture_type_2_10_10_10_REV", Api = "gles2")]
 		UnsignedInt2101010Rev = Gl.UNSIGNED_INT_2_10_10_10_REV,
 
-	}
+        [RequiredByFeature("GL_VERSION_1_2")]
+        UnsignedInt8888Rev = Gl.UNSIGNED_INT_8_8_8_8_REV,
+
+    }
 
 	/// <summary>
 	/// Strongly typed enumeration PointParameterNameSGIS.
@@ -18408,6 +18446,17 @@ namespace OpenGL
 		[RequiredByFeature("GL_EXT_render_snorm", Api = "gles2")]
 		Short = Gl.SHORT,
 
+        [RequiredByFeature("GL_VERSION_1_0")]
+        UnsignedByte = Gl.UNSIGNED_BYTE,
+
+        [RequiredByFeature("GL_VERSION_1_0")]
+        Byte = Gl.BYTE,
+
+        [RequiredByFeature("GL_VERSION_1_0")]
+        UnsignedInt = Gl.UNSIGNED_INT,
+
+        [RequiredByFeature("GL_VERSION_1_0")]
+        UnsignedShort = Gl.UNSIGNED_SHORT,
 	}
 
 	/// <summary>
@@ -19358,6 +19407,8 @@ namespace OpenGL
 	/// </summary>
 	public enum TextureTarget
 	{
+		TextureBuffer = Gl.TEXTURE_BUFFER,
+
 		/// <summary>
 		/// Strongly typed for value GL_DETAIL_TEXTURE_2D_SGIS.
 		/// </summary>
@@ -20754,7 +20805,18 @@ namespace OpenGL
 		[RequiredByFeature("GL_EXT_render_snorm", Api = "gles2")]
 		Short = Gl.SHORT,
 
-	}
+        [RequiredByFeature("GL_VERSION_1_0")]
+        UnsignedByte = Gl.UNSIGNED_BYTE,
+
+        [RequiredByFeature("GL_VERSION_1_0")]
+        Byte = Gl.BYTE,
+
+        [RequiredByFeature("GL_VERSION_1_0")]
+        UnsignedInt = Gl.UNSIGNED_INT,
+
+        [RequiredByFeature("GL_VERSION_1_0")]
+        UnsignedShort = Gl.UNSIGNED_SHORT,
+    }
 
 	/// <summary>
 	/// Strongly typed enumeration VertexProvokingMode.

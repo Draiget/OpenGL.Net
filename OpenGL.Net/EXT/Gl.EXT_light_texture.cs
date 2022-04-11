@@ -147,6 +147,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_light_texture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glApplyTextureEXT(int mode);
 
@@ -155,6 +156,7 @@ namespace OpenGL
 			internal static glApplyTextureEXT pglApplyTextureEXT;
 
 			[RequiredByFeature("GL_EXT_light_texture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTextureLightEXT(int pname);
 
@@ -163,6 +165,7 @@ namespace OpenGL
 			internal static glTextureLightEXT pglTextureLightEXT;
 
 			[RequiredByFeature("GL_EXT_light_texture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTextureMaterialEXT(int face, int mode);
 

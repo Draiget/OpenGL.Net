@@ -1140,6 +1140,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream1sATI(int stream, short x);
 
@@ -1148,6 +1149,7 @@ namespace OpenGL
 			internal static glVertexStream1sATI pglVertexStream1sATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream1svATI(int stream, short* coords);
 
@@ -1156,6 +1158,7 @@ namespace OpenGL
 			internal static glVertexStream1svATI pglVertexStream1svATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream1iATI(int stream, int x);
 
@@ -1164,6 +1167,7 @@ namespace OpenGL
 			internal static glVertexStream1iATI pglVertexStream1iATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream1ivATI(int stream, int* coords);
 
@@ -1172,6 +1176,7 @@ namespace OpenGL
 			internal static glVertexStream1ivATI pglVertexStream1ivATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream1fATI(int stream, float x);
 
@@ -1180,6 +1185,7 @@ namespace OpenGL
 			internal static glVertexStream1fATI pglVertexStream1fATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream1fvATI(int stream, float* coords);
 
@@ -1188,6 +1194,7 @@ namespace OpenGL
 			internal static glVertexStream1fvATI pglVertexStream1fvATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream1dATI(int stream, double x);
 
@@ -1196,6 +1203,7 @@ namespace OpenGL
 			internal static glVertexStream1dATI pglVertexStream1dATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream1dvATI(int stream, double* coords);
 
@@ -1204,6 +1212,7 @@ namespace OpenGL
 			internal static glVertexStream1dvATI pglVertexStream1dvATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream2sATI(int stream, short x, short y);
 
@@ -1212,6 +1221,7 @@ namespace OpenGL
 			internal static glVertexStream2sATI pglVertexStream2sATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream2svATI(int stream, short* coords);
 
@@ -1220,6 +1230,7 @@ namespace OpenGL
 			internal static glVertexStream2svATI pglVertexStream2svATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream2iATI(int stream, int x, int y);
 
@@ -1228,6 +1239,7 @@ namespace OpenGL
 			internal static glVertexStream2iATI pglVertexStream2iATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream2ivATI(int stream, int* coords);
 
@@ -1236,6 +1248,7 @@ namespace OpenGL
 			internal static glVertexStream2ivATI pglVertexStream2ivATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream2fATI(int stream, float x, float y);
 
@@ -1244,6 +1257,7 @@ namespace OpenGL
 			internal static glVertexStream2fATI pglVertexStream2fATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream2fvATI(int stream, float* coords);
 
@@ -1252,6 +1266,7 @@ namespace OpenGL
 			internal static glVertexStream2fvATI pglVertexStream2fvATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream2dATI(int stream, double x, double y);
 
@@ -1260,6 +1275,7 @@ namespace OpenGL
 			internal static glVertexStream2dATI pglVertexStream2dATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream2dvATI(int stream, double* coords);
 
@@ -1268,6 +1284,7 @@ namespace OpenGL
 			internal static glVertexStream2dvATI pglVertexStream2dvATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream3sATI(int stream, short x, short y, short z);
 
@@ -1276,6 +1293,7 @@ namespace OpenGL
 			internal static glVertexStream3sATI pglVertexStream3sATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream3svATI(int stream, short* coords);
 
@@ -1284,6 +1302,7 @@ namespace OpenGL
 			internal static glVertexStream3svATI pglVertexStream3svATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream3iATI(int stream, int x, int y, int z);
 
@@ -1292,6 +1311,7 @@ namespace OpenGL
 			internal static glVertexStream3iATI pglVertexStream3iATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream3ivATI(int stream, int* coords);
 
@@ -1300,6 +1320,7 @@ namespace OpenGL
 			internal static glVertexStream3ivATI pglVertexStream3ivATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream3fATI(int stream, float x, float y, float z);
 
@@ -1308,6 +1329,7 @@ namespace OpenGL
 			internal static glVertexStream3fATI pglVertexStream3fATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream3fvATI(int stream, float* coords);
 
@@ -1316,6 +1338,7 @@ namespace OpenGL
 			internal static glVertexStream3fvATI pglVertexStream3fvATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream3dATI(int stream, double x, double y, double z);
 
@@ -1324,6 +1347,7 @@ namespace OpenGL
 			internal static glVertexStream3dATI pglVertexStream3dATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream3dvATI(int stream, double* coords);
 
@@ -1332,6 +1356,7 @@ namespace OpenGL
 			internal static glVertexStream3dvATI pglVertexStream3dvATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream4sATI(int stream, short x, short y, short z, short w);
 
@@ -1340,6 +1365,7 @@ namespace OpenGL
 			internal static glVertexStream4sATI pglVertexStream4sATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream4svATI(int stream, short* coords);
 
@@ -1348,6 +1374,7 @@ namespace OpenGL
 			internal static glVertexStream4svATI pglVertexStream4svATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream4iATI(int stream, int x, int y, int z, int w);
 
@@ -1356,6 +1383,7 @@ namespace OpenGL
 			internal static glVertexStream4iATI pglVertexStream4iATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream4ivATI(int stream, int* coords);
 
@@ -1364,6 +1392,7 @@ namespace OpenGL
 			internal static glVertexStream4ivATI pglVertexStream4ivATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream4fATI(int stream, float x, float y, float z, float w);
 
@@ -1372,6 +1401,7 @@ namespace OpenGL
 			internal static glVertexStream4fATI pglVertexStream4fATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream4fvATI(int stream, float* coords);
 
@@ -1380,6 +1410,7 @@ namespace OpenGL
 			internal static glVertexStream4fvATI pglVertexStream4fvATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream4dATI(int stream, double x, double y, double z, double w);
 
@@ -1388,6 +1419,7 @@ namespace OpenGL
 			internal static glVertexStream4dATI pglVertexStream4dATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexStream4dvATI(int stream, double* coords);
 
@@ -1396,6 +1428,7 @@ namespace OpenGL
 			internal static glVertexStream4dvATI pglVertexStream4dvATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNormalStream3bATI(int stream, sbyte nx, sbyte ny, sbyte nz);
 
@@ -1404,6 +1437,7 @@ namespace OpenGL
 			internal static glNormalStream3bATI pglNormalStream3bATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNormalStream3bvATI(int stream, sbyte* coords);
 
@@ -1412,6 +1446,7 @@ namespace OpenGL
 			internal static glNormalStream3bvATI pglNormalStream3bvATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNormalStream3sATI(int stream, short nx, short ny, short nz);
 
@@ -1420,6 +1455,7 @@ namespace OpenGL
 			internal static glNormalStream3sATI pglNormalStream3sATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNormalStream3svATI(int stream, short* coords);
 
@@ -1428,6 +1464,7 @@ namespace OpenGL
 			internal static glNormalStream3svATI pglNormalStream3svATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNormalStream3iATI(int stream, int nx, int ny, int nz);
 
@@ -1436,6 +1473,7 @@ namespace OpenGL
 			internal static glNormalStream3iATI pglNormalStream3iATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNormalStream3ivATI(int stream, int* coords);
 
@@ -1444,6 +1482,7 @@ namespace OpenGL
 			internal static glNormalStream3ivATI pglNormalStream3ivATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNormalStream3fATI(int stream, float nx, float ny, float nz);
 
@@ -1452,6 +1491,7 @@ namespace OpenGL
 			internal static glNormalStream3fATI pglNormalStream3fATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNormalStream3fvATI(int stream, float* coords);
 
@@ -1460,6 +1500,7 @@ namespace OpenGL
 			internal static glNormalStream3fvATI pglNormalStream3fvATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNormalStream3dATI(int stream, double nx, double ny, double nz);
 
@@ -1468,6 +1509,7 @@ namespace OpenGL
 			internal static glNormalStream3dATI pglNormalStream3dATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNormalStream3dvATI(int stream, double* coords);
 
@@ -1476,6 +1518,7 @@ namespace OpenGL
 			internal static glNormalStream3dvATI pglNormalStream3dvATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glClientActiveVertexStreamATI(int stream);
 
@@ -1484,6 +1527,7 @@ namespace OpenGL
 			internal static glClientActiveVertexStreamATI pglClientActiveVertexStreamATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexBlendEnviATI(int pname, int param);
 
@@ -1492,6 +1536,7 @@ namespace OpenGL
 			internal static glVertexBlendEnviATI pglVertexBlendEnviATI;
 
 			[RequiredByFeature("GL_ATI_vertex_streams")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexBlendEnvfATI(int pname, float param);
 

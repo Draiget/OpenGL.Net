@@ -311,6 +311,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_QCOM_tiled_rendering", Api = "gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glStartTilingQCOM(uint x, uint y, uint width, uint height, uint preserveMask);
 
@@ -319,6 +320,7 @@ namespace OpenGL
 			internal static glStartTilingQCOM pglStartTilingQCOM;
 
 			[RequiredByFeature("GL_QCOM_tiled_rendering", Api = "gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glEndTilingQCOM(uint preserveMask);
 

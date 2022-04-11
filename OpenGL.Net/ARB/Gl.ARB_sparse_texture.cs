@@ -161,6 +161,7 @@ namespace OpenGL
 		{
 			[RequiredByFeature("GL_ARB_sparse_texture", Api = "gl|glcore")]
 			[RequiredByFeature("GL_EXT_sparse_texture", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexPageCommitmentARB(int target, int level, int xoffset, int yoffset, int zoffset, int width, int height, int depth, [MarshalAs(UnmanagedType.I1)] bool commit);
 

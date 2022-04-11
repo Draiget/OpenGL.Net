@@ -92,6 +92,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_viewport_array", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDepthRangeArrayfvNV(uint first, int count, float* v);
 
@@ -100,6 +101,7 @@ namespace OpenGL
 			internal static glDepthRangeArrayfvNV pglDepthRangeArrayfvNV;
 
 			[RequiredByFeature("GL_NV_viewport_array", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDepthRangeIndexedfNV(uint index, float n, float f);
 

@@ -114,6 +114,7 @@ namespace OpenGL
 		{
 			[RequiredByFeature("GL_ARB_geometry_shader4", Api = "gl|glcore")]
 			[RequiredByFeature("GL_NV_geometry_program4")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFramebufferTextureFaceARB(int target, int attachment, uint texture, int level, int face);
 

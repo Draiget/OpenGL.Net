@@ -84,6 +84,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_primitive_restart")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glPrimitiveRestartNV();
 
@@ -92,6 +93,7 @@ namespace OpenGL
 			internal static glPrimitiveRestartNV pglPrimitiveRestartNV;
 
 			[RequiredByFeature("GL_NV_primitive_restart")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glPrimitiveRestartIndexNV(uint index);
 

@@ -238,6 +238,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_ARB_matrix_palette")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glCurrentPaletteMatrixARB(int index);
 
@@ -246,6 +247,7 @@ namespace OpenGL
 			internal static glCurrentPaletteMatrixARB pglCurrentPaletteMatrixARB;
 
 			[RequiredByFeature("GL_ARB_matrix_palette")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMatrixIndexubvARB(int size, byte* indices);
 
@@ -254,6 +256,7 @@ namespace OpenGL
 			internal static glMatrixIndexubvARB pglMatrixIndexubvARB;
 
 			[RequiredByFeature("GL_ARB_matrix_palette")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMatrixIndexusvARB(int size, ushort* indices);
 
@@ -262,6 +265,7 @@ namespace OpenGL
 			internal static glMatrixIndexusvARB pglMatrixIndexusvARB;
 
 			[RequiredByFeature("GL_ARB_matrix_palette")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMatrixIndexuivARB(int size, uint* indices);
 
@@ -270,6 +274,7 @@ namespace OpenGL
 			internal static glMatrixIndexuivARB pglMatrixIndexuivARB;
 
 			[RequiredByFeature("GL_ARB_matrix_palette")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMatrixIndexPointerARB(int size, int type, int stride, IntPtr pointer);
 

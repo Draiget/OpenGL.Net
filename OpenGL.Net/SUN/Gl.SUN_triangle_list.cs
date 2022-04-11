@@ -278,6 +278,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_SUN_triangle_list")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodeuiSUN(uint code);
 
@@ -286,6 +287,7 @@ namespace OpenGL
 			internal static glReplacementCodeuiSUN pglReplacementCodeuiSUN;
 
 			[RequiredByFeature("GL_SUN_triangle_list")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodeusSUN(ushort code);
 
@@ -294,6 +296,7 @@ namespace OpenGL
 			internal static glReplacementCodeusSUN pglReplacementCodeusSUN;
 
 			[RequiredByFeature("GL_SUN_triangle_list")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodeubSUN(byte code);
 
@@ -302,6 +305,7 @@ namespace OpenGL
 			internal static glReplacementCodeubSUN pglReplacementCodeubSUN;
 
 			[RequiredByFeature("GL_SUN_triangle_list")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodeuivSUN(uint* code);
 
@@ -310,6 +314,7 @@ namespace OpenGL
 			internal static glReplacementCodeuivSUN pglReplacementCodeuivSUN;
 
 			[RequiredByFeature("GL_SUN_triangle_list")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodeusvSUN(ushort* code);
 
@@ -318,6 +323,7 @@ namespace OpenGL
 			internal static glReplacementCodeusvSUN pglReplacementCodeusvSUN;
 
 			[RequiredByFeature("GL_SUN_triangle_list")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodeubvSUN(byte* code);
 
@@ -326,6 +332,7 @@ namespace OpenGL
 			internal static glReplacementCodeubvSUN pglReplacementCodeubvSUN;
 
 			[RequiredByFeature("GL_SUN_triangle_list")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glReplacementCodePointerSUN(int type, int stride, IntPtr* pointer);
 

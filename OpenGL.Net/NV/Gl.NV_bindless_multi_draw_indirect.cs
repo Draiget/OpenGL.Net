@@ -163,6 +163,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_bindless_multi_draw_indirect", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMultiDrawArraysIndirectBindlessNV(int mode, IntPtr indirect, int drawCount, int stride, int vertexBufferCount);
 
@@ -171,6 +172,7 @@ namespace OpenGL
 			internal static glMultiDrawArraysIndirectBindlessNV pglMultiDrawArraysIndirectBindlessNV;
 
 			[RequiredByFeature("GL_NV_bindless_multi_draw_indirect", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMultiDrawElementsIndirectBindlessNV(int mode, int type, IntPtr indirect, int drawCount, int stride, int vertexBufferCount);
 

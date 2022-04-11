@@ -157,6 +157,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_semaphore_win32", Api = "gl|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glImportSemaphoreWin32HandleEXT(uint semaphore, int handleType, IntPtr handle);
 
@@ -165,6 +166,7 @@ namespace OpenGL
 			internal static glImportSemaphoreWin32HandleEXT pglImportSemaphoreWin32HandleEXT;
 
 			[RequiredByFeature("GL_EXT_semaphore_win32", Api = "gl|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glImportSemaphoreWin32NameEXT(uint semaphore, int handleType, IntPtr name);
 

@@ -93,6 +93,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_debug_marker", Api = "gl|glcore|gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glInsertEventMarkerEXT(int length, string marker);
 
@@ -101,6 +102,7 @@ namespace OpenGL
 			internal static glInsertEventMarkerEXT pglInsertEventMarkerEXT;
 
 			[RequiredByFeature("GL_EXT_debug_marker", Api = "gl|glcore|gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glPushGroupMarkerEXT(int length, string marker);
 
@@ -109,6 +111,7 @@ namespace OpenGL
 			internal static glPushGroupMarkerEXT pglPushGroupMarkerEXT;
 
 			[RequiredByFeature("GL_EXT_debug_marker", Api = "gl|glcore|gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glPopGroupMarkerEXT();
 

@@ -397,6 +397,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_AMD_performance_monitor", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetPerfMonitorGroupsAMD(int* numGroups, int groupsSize, uint* groups);
 
@@ -405,6 +406,7 @@ namespace OpenGL
 			internal static glGetPerfMonitorGroupsAMD pglGetPerfMonitorGroupsAMD;
 
 			[RequiredByFeature("GL_AMD_performance_monitor", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetPerfMonitorCountersAMD(uint group, int* numCounters, int* maxActiveCounters, int counterSize, uint* counters);
 
@@ -413,6 +415,7 @@ namespace OpenGL
 			internal static glGetPerfMonitorCountersAMD pglGetPerfMonitorCountersAMD;
 
 			[RequiredByFeature("GL_AMD_performance_monitor", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetPerfMonitorGroupStringAMD(uint group, int bufSize, int* length, StringBuilder groupString);
 
@@ -421,6 +424,7 @@ namespace OpenGL
 			internal static glGetPerfMonitorGroupStringAMD pglGetPerfMonitorGroupStringAMD;
 
 			[RequiredByFeature("GL_AMD_performance_monitor", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetPerfMonitorCounterStringAMD(uint group, uint counter, int bufSize, int* length, StringBuilder counterString);
 
@@ -429,6 +433,7 @@ namespace OpenGL
 			internal static glGetPerfMonitorCounterStringAMD pglGetPerfMonitorCounterStringAMD;
 
 			[RequiredByFeature("GL_AMD_performance_monitor", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetPerfMonitorCounterInfoAMD(uint group, uint counter, int pname, IntPtr data);
 
@@ -437,6 +442,7 @@ namespace OpenGL
 			internal static glGetPerfMonitorCounterInfoAMD pglGetPerfMonitorCounterInfoAMD;
 
 			[RequiredByFeature("GL_AMD_performance_monitor", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGenPerfMonitorsAMD(int n, uint* monitors);
 
@@ -445,6 +451,7 @@ namespace OpenGL
 			internal static glGenPerfMonitorsAMD pglGenPerfMonitorsAMD;
 
 			[RequiredByFeature("GL_AMD_performance_monitor", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDeletePerfMonitorsAMD(int n, uint* monitors);
 
@@ -453,6 +460,7 @@ namespace OpenGL
 			internal static glDeletePerfMonitorsAMD pglDeletePerfMonitorsAMD;
 
 			[RequiredByFeature("GL_AMD_performance_monitor", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glSelectPerfMonitorCountersAMD(uint monitor, [MarshalAs(UnmanagedType.I1)] bool enable, uint group, int numCounters, uint* counterList);
 
@@ -461,6 +469,7 @@ namespace OpenGL
 			internal static glSelectPerfMonitorCountersAMD pglSelectPerfMonitorCountersAMD;
 
 			[RequiredByFeature("GL_AMD_performance_monitor", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glBeginPerfMonitorAMD(uint monitor);
 
@@ -469,6 +478,7 @@ namespace OpenGL
 			internal static glBeginPerfMonitorAMD pglBeginPerfMonitorAMD;
 
 			[RequiredByFeature("GL_AMD_performance_monitor", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glEndPerfMonitorAMD(uint monitor);
 
@@ -477,6 +487,7 @@ namespace OpenGL
 			internal static glEndPerfMonitorAMD pglEndPerfMonitorAMD;
 
 			[RequiredByFeature("GL_AMD_performance_monitor", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetPerfMonitorCounterDataAMD(uint monitor, int pname, int dataSize, uint* data, int* bytesWritten);
 

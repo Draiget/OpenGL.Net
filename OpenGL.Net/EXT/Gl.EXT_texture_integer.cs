@@ -255,6 +255,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_texture_integer")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glClearColorIiEXT(int red, int green, int blue, int alpha);
 
@@ -263,6 +264,7 @@ namespace OpenGL
 			internal static glClearColorIiEXT pglClearColorIiEXT;
 
 			[RequiredByFeature("GL_EXT_texture_integer")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glClearColorIuiEXT(uint red, uint green, uint blue, uint alpha);
 

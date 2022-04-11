@@ -160,6 +160,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GLX_EXT_import_context")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr glXGetCurrentDisplayEXT();
 
@@ -167,6 +168,7 @@ namespace OpenGL
 			internal static glXGetCurrentDisplayEXT pglXGetCurrentDisplayEXT;
 
 			[RequiredByFeature("GLX_EXT_import_context")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glXQueryContextInfoEXT(IntPtr dpy, IntPtr context, int attribute, int* value);
 
@@ -174,6 +176,7 @@ namespace OpenGL
 			internal static glXQueryContextInfoEXT pglXQueryContextInfoEXT;
 
 			[RequiredByFeature("GLX_EXT_import_context")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr glXGetContextIDEXT(IntPtr context);
 
@@ -181,6 +184,7 @@ namespace OpenGL
 			internal static glXGetContextIDEXT pglXGetContextIDEXT;
 
 			[RequiredByFeature("GLX_EXT_import_context")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr glXImportContextEXT(IntPtr dpy, IntPtr contextID);
 
@@ -188,6 +192,7 @@ namespace OpenGL
 			internal static glXImportContextEXT pglXImportContextEXT;
 
 			[RequiredByFeature("GLX_EXT_import_context")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glXFreeContextEXT(IntPtr dpy, IntPtr context);
 

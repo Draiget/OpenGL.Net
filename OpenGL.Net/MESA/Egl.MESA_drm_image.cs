@@ -154,6 +154,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("EGL_MESA_drm_image")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr eglCreateDRMImageMESA(IntPtr dpy, int* attrib_list);
 
@@ -161,6 +162,7 @@ namespace OpenGL
 			internal static eglCreateDRMImageMESA peglCreateDRMImageMESA;
 
 			[RequiredByFeature("EGL_MESA_drm_image")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglExportDRMImageMESA(IntPtr dpy, IntPtr image, int* name, int* handle, int* stride);
 

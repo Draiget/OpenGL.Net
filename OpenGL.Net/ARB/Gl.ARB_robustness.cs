@@ -923,6 +923,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_ARB_robustness", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glGetGraphicsResetStatusARB();
 
@@ -931,6 +932,7 @@ namespace OpenGL
 			internal static glGetGraphicsResetStatusARB pglGetGraphicsResetStatusARB;
 
 			[RequiredByFeature("GL_ARB_robustness", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetnTexImageARB(int target, int level, int format, int type, int bufSize, IntPtr img);
 
@@ -939,6 +941,7 @@ namespace OpenGL
 			internal static glGetnTexImageARB pglGetnTexImageARB;
 
 			[RequiredByFeature("GL_ARB_robustness", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetnCompressedTexImageARB(int target, int lod, int bufSize, IntPtr img);
 
@@ -947,6 +950,7 @@ namespace OpenGL
 			internal static glGetnCompressedTexImageARB pglGetnCompressedTexImageARB;
 
 			[RequiredByFeature("GL_ARB_robustness", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetnUniformfvARB(uint program, int location, int bufSize, float* @params);
 
@@ -955,6 +959,7 @@ namespace OpenGL
 			internal static glGetnUniformfvARB pglGetnUniformfvARB;
 
 			[RequiredByFeature("GL_ARB_robustness", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetnUniformivARB(uint program, int location, int bufSize, int* @params);
 
@@ -963,6 +968,7 @@ namespace OpenGL
 			internal static glGetnUniformivARB pglGetnUniformivARB;
 
 			[RequiredByFeature("GL_ARB_robustness", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetnUniformuivARB(uint program, int location, int bufSize, uint* @params);
 
@@ -971,6 +977,7 @@ namespace OpenGL
 			internal static glGetnUniformuivARB pglGetnUniformuivARB;
 
 			[RequiredByFeature("GL_ARB_robustness", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetnUniformdvARB(uint program, int location, int bufSize, double* @params);
 
@@ -979,6 +986,7 @@ namespace OpenGL
 			internal static glGetnUniformdvARB pglGetnUniformdvARB;
 
 			[RequiredByFeature("GL_ARB_robustness", Profile = "compatibility")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetnMapdvARB(int target, int query, int bufSize, double* v);
 
@@ -987,6 +995,7 @@ namespace OpenGL
 			internal static glGetnMapdvARB pglGetnMapdvARB;
 
 			[RequiredByFeature("GL_ARB_robustness", Profile = "compatibility")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetnMapfvARB(int target, int query, int bufSize, float* v);
 
@@ -995,6 +1004,7 @@ namespace OpenGL
 			internal static glGetnMapfvARB pglGetnMapfvARB;
 
 			[RequiredByFeature("GL_ARB_robustness", Profile = "compatibility")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetnMapivARB(int target, int query, int bufSize, int* v);
 
@@ -1003,6 +1013,7 @@ namespace OpenGL
 			internal static glGetnMapivARB pglGetnMapivARB;
 
 			[RequiredByFeature("GL_ARB_robustness", Profile = "compatibility")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetnPixelMapfvARB(int map, int bufSize, float* values);
 
@@ -1011,6 +1022,7 @@ namespace OpenGL
 			internal static glGetnPixelMapfvARB pglGetnPixelMapfvARB;
 
 			[RequiredByFeature("GL_ARB_robustness", Profile = "compatibility")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetnPixelMapuivARB(int map, int bufSize, uint* values);
 
@@ -1019,6 +1031,7 @@ namespace OpenGL
 			internal static glGetnPixelMapuivARB pglGetnPixelMapuivARB;
 
 			[RequiredByFeature("GL_ARB_robustness", Profile = "compatibility")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetnPixelMapusvARB(int map, int bufSize, ushort* values);
 
@@ -1027,6 +1040,7 @@ namespace OpenGL
 			internal static glGetnPixelMapusvARB pglGetnPixelMapusvARB;
 
 			[RequiredByFeature("GL_ARB_robustness", Profile = "compatibility")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetnPolygonStippleARB(int bufSize, byte* pattern);
 
@@ -1035,6 +1049,7 @@ namespace OpenGL
 			internal static glGetnPolygonStippleARB pglGetnPolygonStippleARB;
 
 			[RequiredByFeature("GL_ARB_robustness", Profile = "compatibility")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetnColorTableARB(int target, int format, int type, int bufSize, IntPtr table);
 
@@ -1043,6 +1058,7 @@ namespace OpenGL
 			internal static glGetnColorTableARB pglGetnColorTableARB;
 
 			[RequiredByFeature("GL_ARB_robustness", Profile = "compatibility")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetnConvolutionFilterARB(int target, int format, int type, int bufSize, IntPtr image);
 
@@ -1051,6 +1067,7 @@ namespace OpenGL
 			internal static glGetnConvolutionFilterARB pglGetnConvolutionFilterARB;
 
 			[RequiredByFeature("GL_ARB_robustness", Profile = "compatibility")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetnSeparableFilterARB(int target, int format, int type, int rowBufSize, IntPtr row, int columnBufSize, IntPtr column, IntPtr span);
 
@@ -1059,6 +1076,7 @@ namespace OpenGL
 			internal static glGetnSeparableFilterARB pglGetnSeparableFilterARB;
 
 			[RequiredByFeature("GL_ARB_robustness", Profile = "compatibility")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetnHistogramARB(int target, [MarshalAs(UnmanagedType.I1)] bool reset, int format, int type, int bufSize, IntPtr values);
 
@@ -1067,6 +1085,7 @@ namespace OpenGL
 			internal static glGetnHistogramARB pglGetnHistogramARB;
 
 			[RequiredByFeature("GL_ARB_robustness", Profile = "compatibility")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetnMinmaxARB(int target, [MarshalAs(UnmanagedType.I1)] bool reset, int format, int type, int bufSize, IntPtr values);
 

@@ -197,6 +197,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_SGIS_pixel_texture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glPixelTexGenParameteriSGIS(int pname, int param);
 
@@ -205,6 +206,7 @@ namespace OpenGL
 			internal static glPixelTexGenParameteriSGIS pglPixelTexGenParameteriSGIS;
 
 			[RequiredByFeature("GL_SGIS_pixel_texture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glPixelTexGenParameterivSGIS(int pname, int* @params);
 
@@ -213,6 +215,7 @@ namespace OpenGL
 			internal static glPixelTexGenParameterivSGIS pglPixelTexGenParameterivSGIS;
 
 			[RequiredByFeature("GL_SGIS_pixel_texture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glPixelTexGenParameterfSGIS(int pname, float param);
 
@@ -221,6 +224,7 @@ namespace OpenGL
 			internal static glPixelTexGenParameterfSGIS pglPixelTexGenParameterfSGIS;
 
 			[RequiredByFeature("GL_SGIS_pixel_texture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glPixelTexGenParameterfvSGIS(int pname, float* @params);
 
@@ -229,6 +233,7 @@ namespace OpenGL
 			internal static glPixelTexGenParameterfvSGIS pglPixelTexGenParameterfvSGIS;
 
 			[RequiredByFeature("GL_SGIS_pixel_texture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetPixelTexGenParameterivSGIS(int pname, int* @params);
 
@@ -237,6 +242,7 @@ namespace OpenGL
 			internal static glGetPixelTexGenParameterivSGIS pglGetPixelTexGenParameterivSGIS;
 
 			[RequiredByFeature("GL_SGIS_pixel_texture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetPixelTexGenParameterfvSGIS(int pname, float* @params);
 

@@ -591,6 +591,7 @@ namespace OpenGL
 		{
 			[RequiredByFeature("EGL_VERSION_1_5")]
 			[RequiredByFeature("EGL_KHR_cl_event2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr eglCreateSync(IntPtr dpy, uint type, IntPtr* attrib_list);
 
@@ -601,6 +602,7 @@ namespace OpenGL
 			[RequiredByFeature("EGL_VERSION_1_5")]
 			[RequiredByFeature("EGL_KHR_fence_sync")]
 			[RequiredByFeature("EGL_KHR_reusable_sync")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglDestroySync(IntPtr dpy, IntPtr sync);
 
@@ -612,6 +614,7 @@ namespace OpenGL
 			[RequiredByFeature("EGL_VERSION_1_5")]
 			[RequiredByFeature("EGL_KHR_fence_sync")]
 			[RequiredByFeature("EGL_KHR_reusable_sync")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int eglClientWaitSync(IntPtr dpy, IntPtr sync, int flags, ulong timeout);
 
@@ -621,6 +624,7 @@ namespace OpenGL
 			internal static eglClientWaitSync peglClientWaitSync;
 
 			[RequiredByFeature("EGL_VERSION_1_5")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglGetSyncAttrib(IntPtr dpy, IntPtr sync, int attribute, IntPtr* value);
 
@@ -628,6 +632,7 @@ namespace OpenGL
 			internal static eglGetSyncAttrib peglGetSyncAttrib;
 
 			[RequiredByFeature("EGL_VERSION_1_5")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr eglCreateImage(IntPtr dpy, IntPtr ctx, uint target, IntPtr buffer, IntPtr* attrib_list);
 
@@ -637,6 +642,7 @@ namespace OpenGL
 			[RequiredByFeature("EGL_VERSION_1_5")]
 			[RequiredByFeature("EGL_KHR_image")]
 			[RequiredByFeature("EGL_KHR_image_base")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglDestroyImage(IntPtr dpy, IntPtr image);
 
@@ -646,6 +652,7 @@ namespace OpenGL
 			internal static eglDestroyImage peglDestroyImage;
 
 			[RequiredByFeature("EGL_VERSION_1_5")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr eglGetPlatformDisplay(uint platform, IntPtr native_display, IntPtr* attrib_list);
 
@@ -653,6 +660,7 @@ namespace OpenGL
 			internal static eglGetPlatformDisplay peglGetPlatformDisplay;
 
 			[RequiredByFeature("EGL_VERSION_1_5")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr eglCreatePlatformWindowSurface(IntPtr dpy, IntPtr config, IntPtr native_window, IntPtr* attrib_list);
 
@@ -660,6 +668,7 @@ namespace OpenGL
 			internal static eglCreatePlatformWindowSurface peglCreatePlatformWindowSurface;
 
 			[RequiredByFeature("EGL_VERSION_1_5")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr eglCreatePlatformPixmapSurface(IntPtr dpy, IntPtr config, IntPtr native_pixmap, IntPtr* attrib_list);
 
@@ -667,6 +676,7 @@ namespace OpenGL
 			internal static eglCreatePlatformPixmapSurface peglCreatePlatformPixmapSurface;
 
 			[RequiredByFeature("EGL_VERSION_1_5")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglWaitSync(IntPtr dpy, IntPtr sync, int flags);
 

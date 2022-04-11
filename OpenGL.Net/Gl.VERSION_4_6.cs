@@ -363,6 +363,7 @@ namespace OpenGL
 		{
 			[RequiredByFeature("GL_VERSION_4_6")]
 			[RequiredByFeature("GL_ARB_gl_spirv", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glSpecializeShader(uint shader, string pEntryPoint, uint numSpecializationConstants, uint* pConstantIndex, uint* pConstantValue);
 
@@ -373,6 +374,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_6")]
 			[RequiredByFeature("GL_ARB_indirect_parameters", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMultiDrawArraysIndirectCount(int mode, IntPtr indirect, IntPtr drawcount, int maxdrawcount, int stride);
 
@@ -383,6 +385,7 @@ namespace OpenGL
 
 			[RequiredByFeature("GL_VERSION_4_6")]
 			[RequiredByFeature("GL_ARB_indirect_parameters", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMultiDrawElementsIndirectCount(int mode, int type, IntPtr indirect, IntPtr drawcount, int maxdrawcount, int stride);
 
@@ -394,6 +397,7 @@ namespace OpenGL
 			[RequiredByFeature("GL_VERSION_4_6")]
 			[RequiredByFeature("GL_ARB_polygon_offset_clamp", Api = "gl|glcore")]
 			[RequiredByFeature("GL_EXT_polygon_offset_clamp", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glPolygonOffsetClamp(float factor, float units, float clamp);
 

@@ -153,6 +153,7 @@ namespace OpenGL
 		{
 			[RequiredByFeature("EGL_EXT_device_base")]
 			[RequiredByFeature("EGL_EXT_device_query")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglQueryDeviceAttribEXT(IntPtr device, int attribute, IntPtr* value);
 
@@ -162,6 +163,7 @@ namespace OpenGL
 
 			[RequiredByFeature("EGL_EXT_device_base")]
 			[RequiredByFeature("EGL_EXT_device_query")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr eglQueryDeviceStringEXT(IntPtr device, int name);
 
@@ -172,6 +174,7 @@ namespace OpenGL
 			[RequiredByFeature("EGL_EXT_device_base")]
 			[RequiredByFeature("EGL_EXT_device_query")]
 			[RequiredByFeature("EGL_NV_stream_metadata")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglQueryDisplayAttribEXT(IntPtr dpy, int attribute, IntPtr* value);
 

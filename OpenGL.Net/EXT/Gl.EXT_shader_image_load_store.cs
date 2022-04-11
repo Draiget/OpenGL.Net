@@ -78,6 +78,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_shader_image_load_store")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glBindImageTextureEXT(uint index, uint texture, int level, [MarshalAs(UnmanagedType.I1)] bool layered, int layer, int access, int format);
 

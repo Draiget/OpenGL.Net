@@ -128,6 +128,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_QCOM_driver_control", Api = "gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetDriverControlsQCOM(int* num, int size, uint* driverControls);
 
@@ -136,6 +137,7 @@ namespace OpenGL
 			internal static glGetDriverControlsQCOM pglGetDriverControlsQCOM;
 
 			[RequiredByFeature("GL_QCOM_driver_control", Api = "gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetDriverControlStringQCOM(uint driverControl, int bufSize, int* length, StringBuilder driverControlString);
 
@@ -144,6 +146,7 @@ namespace OpenGL
 			internal static glGetDriverControlStringQCOM pglGetDriverControlStringQCOM;
 
 			[RequiredByFeature("GL_QCOM_driver_control", Api = "gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glEnableDriverControlQCOM(uint driverControl);
 
@@ -152,6 +155,7 @@ namespace OpenGL
 			internal static glEnableDriverControlQCOM pglEnableDriverControlQCOM;
 
 			[RequiredByFeature("GL_QCOM_driver_control", Api = "gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDisableDriverControlQCOM(uint driverControl);
 

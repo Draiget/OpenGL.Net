@@ -281,6 +281,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_present_video")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glPresentFrameKeyedNV(uint video_slot, ulong minPresentTime, uint beginPresentTimeId, uint presentDurationId, int type, int target0, uint fill0, uint key0, int target1, uint fill1, uint key1);
 
@@ -289,6 +290,7 @@ namespace OpenGL
 			internal static glPresentFrameKeyedNV pglPresentFrameKeyedNV;
 
 			[RequiredByFeature("GL_NV_present_video")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glPresentFrameDualFillNV(uint video_slot, ulong minPresentTime, uint beginPresentTimeId, uint presentDurationId, int type, int target0, uint fill0, int target1, uint fill1, int target2, uint fill2, int target3, uint fill3);
 
@@ -297,6 +299,7 @@ namespace OpenGL
 			internal static glPresentFrameDualFillNV pglPresentFrameDualFillNV;
 
 			[RequiredByFeature("GL_NV_present_video")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetVideoivNV(uint video_slot, int pname, int* @params);
 
@@ -305,6 +308,7 @@ namespace OpenGL
 			internal static glGetVideoivNV pglGetVideoivNV;
 
 			[RequiredByFeature("GL_NV_present_video")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetVideouivNV(uint video_slot, int pname, uint* @params);
 
@@ -313,6 +317,7 @@ namespace OpenGL
 			internal static glGetVideouivNV pglGetVideouivNV;
 
 			[RequiredByFeature("GL_NV_present_video")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetVideoi64vNV(uint video_slot, int pname, long* @params);
 
@@ -321,6 +326,7 @@ namespace OpenGL
 			internal static glGetVideoi64vNV pglGetVideoi64vNV;
 
 			[RequiredByFeature("GL_NV_present_video")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetVideoui64vNV(uint video_slot, int pname, ulong* @params);
 

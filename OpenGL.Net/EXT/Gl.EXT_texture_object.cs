@@ -174,6 +174,7 @@ namespace OpenGL
 			internal static glAreTexturesResidentEXT pglAreTexturesResidentEXT;
 
 			[RequiredByFeature("GL_EXT_texture_object")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDeleteTexturesEXT(int n, uint* textures);
 
@@ -182,6 +183,7 @@ namespace OpenGL
 			internal static glDeleteTexturesEXT pglDeleteTexturesEXT;
 
 			[RequiredByFeature("GL_EXT_texture_object")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGenTexturesEXT(int n, uint* textures);
 

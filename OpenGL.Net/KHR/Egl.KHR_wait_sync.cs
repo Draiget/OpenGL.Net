@@ -70,6 +70,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("EGL_KHR_wait_sync")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int eglWaitSyncKHR(IntPtr dpy, IntPtr sync, int flags);
 

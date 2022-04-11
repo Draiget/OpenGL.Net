@@ -95,6 +95,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_framebuffer_object")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glBindRenderbufferEXT(int target, uint renderbuffer);
 
@@ -103,6 +104,7 @@ namespace OpenGL
 			internal static glBindRenderbufferEXT pglBindRenderbufferEXT;
 
 			[RequiredByFeature("GL_EXT_framebuffer_object")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glBindFramebufferEXT(int target, uint framebuffer);
 

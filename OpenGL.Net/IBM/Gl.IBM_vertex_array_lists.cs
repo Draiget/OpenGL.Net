@@ -377,6 +377,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_IBM_vertex_array_lists")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glColorPointerListIBM(int size, int type, int stride, IntPtr* pointer, int ptrstride);
 
@@ -385,6 +386,7 @@ namespace OpenGL
 			internal static glColorPointerListIBM pglColorPointerListIBM;
 
 			[RequiredByFeature("GL_IBM_vertex_array_lists")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glSecondaryColorPointerListIBM(int size, int type, int stride, IntPtr* pointer, int ptrstride);
 
@@ -393,6 +395,7 @@ namespace OpenGL
 			internal static glSecondaryColorPointerListIBM pglSecondaryColorPointerListIBM;
 
 			[RequiredByFeature("GL_IBM_vertex_array_lists")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glEdgeFlagPointerListIBM(int stride, bool[] pointer, int ptrstride);
 
@@ -401,6 +404,7 @@ namespace OpenGL
 			internal static glEdgeFlagPointerListIBM pglEdgeFlagPointerListIBM;
 
 			[RequiredByFeature("GL_IBM_vertex_array_lists")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFogCoordPointerListIBM(int type, int stride, IntPtr* pointer, int ptrstride);
 
@@ -409,6 +413,7 @@ namespace OpenGL
 			internal static glFogCoordPointerListIBM pglFogCoordPointerListIBM;
 
 			[RequiredByFeature("GL_IBM_vertex_array_lists")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glIndexPointerListIBM(int type, int stride, IntPtr* pointer, int ptrstride);
 
@@ -417,6 +422,7 @@ namespace OpenGL
 			internal static glIndexPointerListIBM pglIndexPointerListIBM;
 
 			[RequiredByFeature("GL_IBM_vertex_array_lists")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNormalPointerListIBM(int type, int stride, IntPtr* pointer, int ptrstride);
 
@@ -425,6 +431,7 @@ namespace OpenGL
 			internal static glNormalPointerListIBM pglNormalPointerListIBM;
 
 			[RequiredByFeature("GL_IBM_vertex_array_lists")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoordPointerListIBM(int size, int type, int stride, IntPtr* pointer, int ptrstride);
 
@@ -433,6 +440,7 @@ namespace OpenGL
 			internal static glTexCoordPointerListIBM pglTexCoordPointerListIBM;
 
 			[RequiredByFeature("GL_IBM_vertex_array_lists")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexPointerListIBM(int size, int type, int stride, IntPtr* pointer, int ptrstride);
 

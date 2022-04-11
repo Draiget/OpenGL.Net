@@ -597,6 +597,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_memory_object", Api = "gl|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDeleteMemoryObjectsEXT(int n, uint* memoryObjects);
 
@@ -614,6 +615,7 @@ namespace OpenGL
 			internal static glIsMemoryObjectEXT pglIsMemoryObjectEXT;
 
 			[RequiredByFeature("GL_EXT_memory_object", Api = "gl|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glCreateMemoryObjectsEXT(int n, uint* memoryObjects);
 
@@ -622,6 +624,7 @@ namespace OpenGL
 			internal static glCreateMemoryObjectsEXT pglCreateMemoryObjectsEXT;
 
 			[RequiredByFeature("GL_EXT_memory_object", Api = "gl|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMemoryObjectParameterivEXT(uint memoryObject, int pname, int* @params);
 
@@ -630,6 +633,7 @@ namespace OpenGL
 			internal static glMemoryObjectParameterivEXT pglMemoryObjectParameterivEXT;
 
 			[RequiredByFeature("GL_EXT_memory_object", Api = "gl|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetMemoryObjectParameterivEXT(uint memoryObject, int pname, int* @params);
 
@@ -638,6 +642,7 @@ namespace OpenGL
 			internal static glGetMemoryObjectParameterivEXT pglGetMemoryObjectParameterivEXT;
 
 			[RequiredByFeature("GL_EXT_memory_object", Api = "gl|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexStorageMem2DEXT(int target, int levels, int internalFormat, int width, int height, uint memory, ulong offset);
 
@@ -646,6 +651,7 @@ namespace OpenGL
 			internal static glTexStorageMem2DEXT pglTexStorageMem2DEXT;
 
 			[RequiredByFeature("GL_EXT_memory_object", Api = "gl|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexStorageMem2DMultisampleEXT(int target, int samples, int internalFormat, int width, int height, [MarshalAs(UnmanagedType.I1)] bool fixedSampleLocations, uint memory, ulong offset);
 
@@ -654,6 +660,7 @@ namespace OpenGL
 			internal static glTexStorageMem2DMultisampleEXT pglTexStorageMem2DMultisampleEXT;
 
 			[RequiredByFeature("GL_EXT_memory_object", Api = "gl|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexStorageMem3DEXT(int target, int levels, int internalFormat, int width, int height, int depth, uint memory, ulong offset);
 
@@ -662,6 +669,7 @@ namespace OpenGL
 			internal static glTexStorageMem3DEXT pglTexStorageMem3DEXT;
 
 			[RequiredByFeature("GL_EXT_memory_object", Api = "gl|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexStorageMem3DMultisampleEXT(int target, int samples, int internalFormat, int width, int height, int depth, [MarshalAs(UnmanagedType.I1)] bool fixedSampleLocations, uint memory, ulong offset);
 
@@ -670,6 +678,7 @@ namespace OpenGL
 			internal static glTexStorageMem3DMultisampleEXT pglTexStorageMem3DMultisampleEXT;
 
 			[RequiredByFeature("GL_EXT_memory_object", Api = "gl|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glBufferStorageMemEXT(int target, uint size, uint memory, ulong offset);
 
@@ -678,6 +687,7 @@ namespace OpenGL
 			internal static glBufferStorageMemEXT pglBufferStorageMemEXT;
 
 			[RequiredByFeature("GL_EXT_memory_object", Api = "gl|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTextureStorageMem2DEXT(uint texture, int levels, int internalFormat, int width, int height, uint memory, ulong offset);
 
@@ -686,6 +696,7 @@ namespace OpenGL
 			internal static glTextureStorageMem2DEXT pglTextureStorageMem2DEXT;
 
 			[RequiredByFeature("GL_EXT_memory_object", Api = "gl|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTextureStorageMem2DMultisampleEXT(uint texture, int samples, int internalFormat, int width, int height, [MarshalAs(UnmanagedType.I1)] bool fixedSampleLocations, uint memory, ulong offset);
 
@@ -694,6 +705,7 @@ namespace OpenGL
 			internal static glTextureStorageMem2DMultisampleEXT pglTextureStorageMem2DMultisampleEXT;
 
 			[RequiredByFeature("GL_EXT_memory_object", Api = "gl|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTextureStorageMem3DEXT(uint texture, int levels, int internalFormat, int width, int height, int depth, uint memory, ulong offset);
 
@@ -702,6 +714,7 @@ namespace OpenGL
 			internal static glTextureStorageMem3DEXT pglTextureStorageMem3DEXT;
 
 			[RequiredByFeature("GL_EXT_memory_object", Api = "gl|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTextureStorageMem3DMultisampleEXT(uint texture, int samples, int internalFormat, int width, int height, int depth, [MarshalAs(UnmanagedType.I1)] bool fixedSampleLocations, uint memory, ulong offset);
 
@@ -710,6 +723,7 @@ namespace OpenGL
 			internal static glTextureStorageMem3DMultisampleEXT pglTextureStorageMem3DMultisampleEXT;
 
 			[RequiredByFeature("GL_EXT_memory_object", Api = "gl|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNamedBufferStorageMemEXT(uint buffer, uint size, uint memory, ulong offset);
 
@@ -718,6 +732,7 @@ namespace OpenGL
 			internal static glNamedBufferStorageMemEXT pglNamedBufferStorageMemEXT;
 
 			[RequiredByFeature("GL_EXT_memory_object")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexStorageMem1DEXT(int target, int levels, int internalFormat, int width, uint memory, ulong offset);
 
@@ -726,6 +741,7 @@ namespace OpenGL
 			internal static glTexStorageMem1DEXT pglTexStorageMem1DEXT;
 
 			[RequiredByFeature("GL_EXT_memory_object")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTextureStorageMem1DEXT(uint texture, int levels, int internalFormat, int width, uint memory, ulong offset);
 

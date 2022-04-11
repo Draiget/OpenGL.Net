@@ -81,6 +81,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_OES_EGL_image", Api = "gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glEGLImageTargetTexture2DOES(int target, IntPtr image);
 
@@ -89,6 +90,7 @@ namespace OpenGL
 			internal static glEGLImageTargetTexture2DOES pglEGLImageTargetTexture2DOES;
 
 			[RequiredByFeature("GL_OES_EGL_image", Api = "gles1|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glEGLImageTargetRenderbufferStorageOES(int target, IntPtr image);
 

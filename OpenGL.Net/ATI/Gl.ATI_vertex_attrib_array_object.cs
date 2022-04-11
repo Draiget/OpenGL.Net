@@ -130,6 +130,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_ATI_vertex_attrib_array_object")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexAttribArrayObjectATI(uint index, int size, int type, [MarshalAs(UnmanagedType.I1)] bool normalized, int stride, uint buffer, uint offset);
 
@@ -138,6 +139,7 @@ namespace OpenGL
 			internal static glVertexAttribArrayObjectATI pglVertexAttribArrayObjectATI;
 
 			[RequiredByFeature("GL_ATI_vertex_attrib_array_object")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetVertexAttribArrayObjectfvATI(uint index, int pname, float* @params);
 
@@ -146,6 +148,7 @@ namespace OpenGL
 			internal static glGetVertexAttribArrayObjectfvATI pglGetVertexAttribArrayObjectfvATI;
 
 			[RequiredByFeature("GL_ATI_vertex_attrib_array_object")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetVertexAttribArrayObjectivATI(uint index, int pname, int* @params);
 

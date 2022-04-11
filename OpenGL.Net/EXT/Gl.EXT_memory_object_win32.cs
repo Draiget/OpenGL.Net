@@ -143,6 +143,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_memory_object_win32", Api = "gl|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glImportMemoryWin32HandleEXT(uint memory, ulong size, int handleType, IntPtr handle);
 
@@ -151,6 +152,7 @@ namespace OpenGL
 			internal static glImportMemoryWin32HandleEXT pglImportMemoryWin32HandleEXT;
 
 			[RequiredByFeature("GL_EXT_memory_object_win32", Api = "gl|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glImportMemoryWin32NameEXT(uint memory, ulong size, int handleType, IntPtr name);
 

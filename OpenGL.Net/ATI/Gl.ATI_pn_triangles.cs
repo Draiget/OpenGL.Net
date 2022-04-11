@@ -135,6 +135,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_ATI_pn_triangles")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glPNTrianglesiATI(int pname, int param);
 
@@ -143,6 +144,7 @@ namespace OpenGL
 			internal static glPNTrianglesiATI pglPNTrianglesiATI;
 
 			[RequiredByFeature("GL_ATI_pn_triangles")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glPNTrianglesfATI(int pname, float param);
 

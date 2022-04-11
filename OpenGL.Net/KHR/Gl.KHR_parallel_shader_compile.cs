@@ -62,6 +62,7 @@ namespace OpenGL
 		{
 			[RequiredByFeature("GL_ARB_parallel_shader_compile", Api = "gl|glcore")]
 			[RequiredByFeature("GL_KHR_parallel_shader_compile", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMaxShaderCompilerThreadsKHR(uint count);
 

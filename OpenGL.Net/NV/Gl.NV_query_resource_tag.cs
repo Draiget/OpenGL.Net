@@ -118,6 +118,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_query_resource_tag")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGenQueryResourceTagNV(int n, int* tagIds);
 
@@ -126,6 +127,7 @@ namespace OpenGL
 			internal static glGenQueryResourceTagNV pglGenQueryResourceTagNV;
 
 			[RequiredByFeature("GL_NV_query_resource_tag")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDeleteQueryResourceTagNV(int n, int* tagIds);
 
@@ -134,6 +136,7 @@ namespace OpenGL
 			internal static glDeleteQueryResourceTagNV pglDeleteQueryResourceTagNV;
 
 			[RequiredByFeature("GL_NV_query_resource_tag")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glQueryResourceTagNV(int tagId, string tagString);
 

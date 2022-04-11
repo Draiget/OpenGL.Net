@@ -116,6 +116,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_IBM_multimode_draw_arrays")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMultiModeDrawArraysIBM(int* mode, int* first, int* count, int primcount, int modestride);
 
@@ -124,6 +125,7 @@ namespace OpenGL
 			internal static glMultiModeDrawArraysIBM pglMultiModeDrawArraysIBM;
 
 			[RequiredByFeature("GL_IBM_multimode_draw_arrays")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glMultiModeDrawElementsIBM(int* mode, int* count, int type, IntPtr* indices, int primcount, int modestride);
 

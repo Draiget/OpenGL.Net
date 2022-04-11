@@ -90,6 +90,7 @@ namespace OpenGL
 		{
 			[RequiredByFeature("EGL_KHR_image")]
 			[RequiredByFeature("EGL_KHR_image_base")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr eglCreateImageKHR(IntPtr dpy, IntPtr ctx, uint target, IntPtr buffer, int* attrib_list);
 

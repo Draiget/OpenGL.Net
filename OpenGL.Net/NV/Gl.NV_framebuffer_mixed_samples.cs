@@ -145,6 +145,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_framebuffer_mixed_samples", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glCoverageModulationTableNV(int n, float* v);
 
@@ -153,6 +154,7 @@ namespace OpenGL
 			internal static glCoverageModulationTableNV pglCoverageModulationTableNV;
 
 			[RequiredByFeature("GL_NV_framebuffer_mixed_samples", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetCoverageModulationTableNV(int bufsize, float* v);
 
@@ -161,6 +163,7 @@ namespace OpenGL
 			internal static glGetCoverageModulationTableNV pglGetCoverageModulationTableNV;
 
 			[RequiredByFeature("GL_NV_framebuffer_mixed_samples", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glCoverageModulationNV(int components);
 

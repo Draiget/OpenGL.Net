@@ -130,6 +130,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_coverage_sample", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glCoverageMaskNV([MarshalAs(UnmanagedType.I1)] bool mask);
 
@@ -138,6 +139,7 @@ namespace OpenGL
 			internal static glCoverageMaskNV pglCoverageMaskNV;
 
 			[RequiredByFeature("GL_NV_coverage_sample", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glCoverageOperationNV(int operation);
 

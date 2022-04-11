@@ -172,6 +172,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_SGIX_async")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glAsyncMarkerSGIX(uint marker);
 
@@ -180,6 +181,7 @@ namespace OpenGL
 			internal static glAsyncMarkerSGIX pglAsyncMarkerSGIX;
 
 			[RequiredByFeature("GL_SGIX_async")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glFinishAsyncSGIX(uint* markerp);
 
@@ -188,6 +190,7 @@ namespace OpenGL
 			internal static glFinishAsyncSGIX pglFinishAsyncSGIX;
 
 			[RequiredByFeature("GL_SGIX_async")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int glPollAsyncSGIX(uint* markerp);
 
@@ -196,6 +199,7 @@ namespace OpenGL
 			internal static glPollAsyncSGIX pglPollAsyncSGIX;
 
 			[RequiredByFeature("GL_SGIX_async")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate uint glGenAsyncMarkersSGIX(int range);
 
@@ -204,6 +208,7 @@ namespace OpenGL
 			internal static glGenAsyncMarkersSGIX pglGenAsyncMarkersSGIX;
 
 			[RequiredByFeature("GL_SGIX_async")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDeleteAsyncMarkersSGIX(uint marker, int range);
 

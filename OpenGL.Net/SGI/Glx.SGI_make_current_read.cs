@@ -89,6 +89,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GLX_SGI_make_current_read")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool glXMakeCurrentReadSGI(IntPtr dpy, IntPtr draw, IntPtr read, IntPtr ctx);
 
@@ -96,6 +97,7 @@ namespace OpenGL
 			internal static glXMakeCurrentReadSGI pglXMakeCurrentReadSGI;
 
 			[RequiredByFeature("GLX_SGI_make_current_read")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr glXGetCurrentReadDrawableSGI();
 

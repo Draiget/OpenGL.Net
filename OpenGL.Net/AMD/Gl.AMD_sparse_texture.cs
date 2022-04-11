@@ -141,6 +141,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_AMD_sparse_texture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexStorageSparseAMD(int target, int internalFormat, int width, int height, int depth, int layers, uint flags);
 
@@ -149,6 +150,7 @@ namespace OpenGL
 			internal static glTexStorageSparseAMD pglTexStorageSparseAMD;
 
 			[RequiredByFeature("GL_AMD_sparse_texture")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTextureStorageSparseAMD(uint texture, int target, int internalFormat, int width, int height, int depth, int layers, uint flags);
 

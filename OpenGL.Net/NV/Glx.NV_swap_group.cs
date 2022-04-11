@@ -215,6 +215,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GLX_NV_swap_group")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool glXJoinSwapGroupNV(IntPtr dpy, IntPtr drawable, uint group);
 
@@ -222,6 +223,7 @@ namespace OpenGL
 			internal static glXJoinSwapGroupNV pglXJoinSwapGroupNV;
 
 			[RequiredByFeature("GLX_NV_swap_group")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool glXBindSwapBarrierNV(IntPtr dpy, uint group, uint barrier);
 
@@ -229,6 +231,7 @@ namespace OpenGL
 			internal static glXBindSwapBarrierNV pglXBindSwapBarrierNV;
 
 			[RequiredByFeature("GLX_NV_swap_group")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool glXQuerySwapGroupNV(IntPtr dpy, IntPtr drawable, uint* group, uint* barrier);
 
@@ -236,6 +239,7 @@ namespace OpenGL
 			internal static glXQuerySwapGroupNV pglXQuerySwapGroupNV;
 
 			[RequiredByFeature("GLX_NV_swap_group")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool glXQueryMaxSwapGroupsNV(IntPtr dpy, int screen, uint* maxGroups, uint* maxBarriers);
 
@@ -243,6 +247,7 @@ namespace OpenGL
 			internal static glXQueryMaxSwapGroupsNV pglXQueryMaxSwapGroupsNV;
 
 			[RequiredByFeature("GLX_NV_swap_group")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool glXQueryFrameCountNV(IntPtr dpy, int screen, uint* count);
 
@@ -250,6 +255,7 @@ namespace OpenGL
 			internal static glXQueryFrameCountNV pglXQueryFrameCountNV;
 
 			[RequiredByFeature("GLX_NV_swap_group")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool glXResetFrameCountNV(IntPtr dpy, int screen);
 

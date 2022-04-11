@@ -110,6 +110,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_AMD_occlusion_query_event")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glQueryObjectParameteruiAMD(int target, uint id, int pname, uint param);
 

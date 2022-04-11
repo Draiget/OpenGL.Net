@@ -78,6 +78,7 @@ namespace OpenGL
 		{
 			[RequiredByFeature("EGL_EXT_device_base")]
 			[RequiredByFeature("EGL_EXT_device_enumeration")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglQueryDevicesEXT(int max_devices, IntPtr* devices, int* num_devices);
 

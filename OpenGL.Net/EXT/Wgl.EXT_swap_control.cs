@@ -80,6 +80,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("WGL_EXT_swap_control")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglSwapIntervalEXT(int interval);
 
@@ -87,6 +88,7 @@ namespace OpenGL
 			internal static wglSwapIntervalEXT pwglSwapIntervalEXT;
 
 			[RequiredByFeature("WGL_EXT_swap_control")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int wglGetSwapIntervalEXT();
 

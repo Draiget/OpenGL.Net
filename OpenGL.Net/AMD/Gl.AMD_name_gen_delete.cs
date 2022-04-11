@@ -149,6 +149,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_AMD_name_gen_delete")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGenNamesAMD(int identifier, uint num, uint* names);
 
@@ -157,6 +158,7 @@ namespace OpenGL
 			internal static glGenNamesAMD pglGenNamesAMD;
 
 			[RequiredByFeature("GL_AMD_name_gen_delete")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDeleteNamesAMD(int identifier, uint num, uint* names);
 

@@ -140,6 +140,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_pixel_data_range")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glPixelDataRangeNV(int target, int length, IntPtr pointer);
 
@@ -148,6 +149,7 @@ namespace OpenGL
 			internal static glPixelDataRangeNV pglPixelDataRangeNV;
 
 			[RequiredByFeature("GL_NV_pixel_data_range")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFlushPixelDataRangeNV(int target);
 

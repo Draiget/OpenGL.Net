@@ -269,6 +269,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_fragment_program")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glProgramNamedParameter4fNV(uint id, int len, byte* name, float x, float y, float z, float w);
 
@@ -277,6 +278,7 @@ namespace OpenGL
 			internal static glProgramNamedParameter4fNV pglProgramNamedParameter4fNV;
 
 			[RequiredByFeature("GL_NV_fragment_program")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glProgramNamedParameter4fvNV(uint id, int len, byte* name, float* v);
 
@@ -285,6 +287,7 @@ namespace OpenGL
 			internal static glProgramNamedParameter4fvNV pglProgramNamedParameter4fvNV;
 
 			[RequiredByFeature("GL_NV_fragment_program")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glProgramNamedParameter4dNV(uint id, int len, byte* name, double x, double y, double z, double w);
 
@@ -293,6 +296,7 @@ namespace OpenGL
 			internal static glProgramNamedParameter4dNV pglProgramNamedParameter4dNV;
 
 			[RequiredByFeature("GL_NV_fragment_program")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glProgramNamedParameter4dvNV(uint id, int len, byte* name, double* v);
 
@@ -301,6 +305,7 @@ namespace OpenGL
 			internal static glProgramNamedParameter4dvNV pglProgramNamedParameter4dvNV;
 
 			[RequiredByFeature("GL_NV_fragment_program")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetProgramNamedParameterfvNV(uint id, int len, byte* name, float* @params);
 
@@ -309,6 +314,7 @@ namespace OpenGL
 			internal static glGetProgramNamedParameterfvNV pglGetProgramNamedParameterfvNV;
 
 			[RequiredByFeature("GL_NV_fragment_program")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetProgramNamedParameterdvNV(uint id, int len, byte* name, double* @params);
 

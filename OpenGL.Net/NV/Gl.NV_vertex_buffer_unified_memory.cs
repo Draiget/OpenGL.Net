@@ -449,6 +449,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_vertex_buffer_unified_memory", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glBufferAddressRangeNV(int pname, uint index, ulong address, uint length);
 
@@ -457,6 +458,7 @@ namespace OpenGL
 			internal static glBufferAddressRangeNV pglBufferAddressRangeNV;
 
 			[RequiredByFeature("GL_NV_vertex_buffer_unified_memory", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexFormatNV(int size, int type, int stride);
 
@@ -465,6 +467,7 @@ namespace OpenGL
 			internal static glVertexFormatNV pglVertexFormatNV;
 
 			[RequiredByFeature("GL_NV_vertex_buffer_unified_memory", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNormalFormatNV(int type, int stride);
 
@@ -473,6 +476,7 @@ namespace OpenGL
 			internal static glNormalFormatNV pglNormalFormatNV;
 
 			[RequiredByFeature("GL_NV_vertex_buffer_unified_memory", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glColorFormatNV(int size, int type, int stride);
 
@@ -481,6 +485,7 @@ namespace OpenGL
 			internal static glColorFormatNV pglColorFormatNV;
 
 			[RequiredByFeature("GL_NV_vertex_buffer_unified_memory", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glIndexFormatNV(int type, int stride);
 
@@ -489,6 +494,7 @@ namespace OpenGL
 			internal static glIndexFormatNV pglIndexFormatNV;
 
 			[RequiredByFeature("GL_NV_vertex_buffer_unified_memory", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoordFormatNV(int size, int type, int stride);
 
@@ -497,6 +503,7 @@ namespace OpenGL
 			internal static glTexCoordFormatNV pglTexCoordFormatNV;
 
 			[RequiredByFeature("GL_NV_vertex_buffer_unified_memory", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glEdgeFlagFormatNV(int stride);
 
@@ -505,6 +512,7 @@ namespace OpenGL
 			internal static glEdgeFlagFormatNV pglEdgeFlagFormatNV;
 
 			[RequiredByFeature("GL_NV_vertex_buffer_unified_memory", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glSecondaryColorFormatNV(int size, int type, int stride);
 
@@ -513,6 +521,7 @@ namespace OpenGL
 			internal static glSecondaryColorFormatNV pglSecondaryColorFormatNV;
 
 			[RequiredByFeature("GL_NV_vertex_buffer_unified_memory", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFogCoordFormatNV(int type, int stride);
 
@@ -521,6 +530,7 @@ namespace OpenGL
 			internal static glFogCoordFormatNV pglFogCoordFormatNV;
 
 			[RequiredByFeature("GL_NV_vertex_buffer_unified_memory", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexAttribFormatNV(uint index, int size, int type, [MarshalAs(UnmanagedType.I1)] bool normalized, int stride);
 
@@ -529,6 +539,7 @@ namespace OpenGL
 			internal static glVertexAttribFormatNV pglVertexAttribFormatNV;
 
 			[RequiredByFeature("GL_NV_vertex_buffer_unified_memory", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexAttribIFormatNV(uint index, int size, int type, int stride);
 
@@ -537,6 +548,7 @@ namespace OpenGL
 			internal static glVertexAttribIFormatNV pglVertexAttribIFormatNV;
 
 			[RequiredByFeature("GL_NV_vertex_buffer_unified_memory", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetIntegerui64i_vNV(int value, uint index, ulong* result);
 

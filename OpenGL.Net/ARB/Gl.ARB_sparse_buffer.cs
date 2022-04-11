@@ -130,6 +130,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_ARB_sparse_buffer", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glBufferPageCommitmentARB(int target, IntPtr offset, uint size, [MarshalAs(UnmanagedType.I1)] bool commit);
 
@@ -138,6 +139,7 @@ namespace OpenGL
 			internal static glBufferPageCommitmentARB pglBufferPageCommitmentARB;
 
 			[RequiredByFeature("GL_ARB_sparse_buffer", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNamedBufferPageCommitmentEXT(uint buffer, IntPtr offset, uint size, [MarshalAs(UnmanagedType.I1)] bool commit);
 
@@ -146,6 +148,7 @@ namespace OpenGL
 			internal static glNamedBufferPageCommitmentEXT pglNamedBufferPageCommitmentEXT;
 
 			[RequiredByFeature("GL_ARB_sparse_buffer", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNamedBufferPageCommitmentARB(uint buffer, IntPtr offset, uint size, [MarshalAs(UnmanagedType.I1)] bool commit);
 

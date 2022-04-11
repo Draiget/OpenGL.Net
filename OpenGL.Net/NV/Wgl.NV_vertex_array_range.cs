@@ -88,6 +88,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("WGL_NV_vertex_array_range")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr wglAllocateMemoryNV(int size, float readfreq, float writefreq, float priority);
 
@@ -95,6 +96,7 @@ namespace OpenGL
 			internal static wglAllocateMemoryNV pwglAllocateMemoryNV;
 
 			[RequiredByFeature("WGL_NV_vertex_array_range")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void wglFreeMemoryNV(IntPtr pointer);
 

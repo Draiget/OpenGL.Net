@@ -136,6 +136,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_internalformat_sample_query", Api = "gl|glcore|gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetInternalformatSampleivNV(int target, int internalformat, int samples, int pname, int bufSize, int* @params);
 

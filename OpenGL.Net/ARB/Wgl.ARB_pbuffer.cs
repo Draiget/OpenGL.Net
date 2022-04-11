@@ -226,6 +226,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("WGL_ARB_pbuffer")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr wglCreatePbufferARB(IntPtr hDC, int iPixelFormat, int iWidth, int iHeight, int* piAttribList);
 
@@ -233,6 +234,7 @@ namespace OpenGL
 			internal static wglCreatePbufferARB pwglCreatePbufferARB;
 
 			[RequiredByFeature("WGL_ARB_pbuffer")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate IntPtr wglGetPbufferDCARB(IntPtr hPbuffer);
 
@@ -240,6 +242,7 @@ namespace OpenGL
 			internal static wglGetPbufferDCARB pwglGetPbufferDCARB;
 
 			[RequiredByFeature("WGL_ARB_pbuffer")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate int wglReleasePbufferDCARB(IntPtr hPbuffer, IntPtr hDC);
 
@@ -247,6 +250,7 @@ namespace OpenGL
 			internal static wglReleasePbufferDCARB pwglReleasePbufferDCARB;
 
 			[RequiredByFeature("WGL_ARB_pbuffer")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglDestroyPbufferARB(IntPtr hPbuffer);
 
@@ -254,6 +258,7 @@ namespace OpenGL
 			internal static wglDestroyPbufferARB pwglDestroyPbufferARB;
 
 			[RequiredByFeature("WGL_ARB_pbuffer")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglQueryPbufferARB(IntPtr hPbuffer, int iAttribute, int* piValue);
 

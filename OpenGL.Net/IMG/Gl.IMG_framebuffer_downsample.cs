@@ -135,6 +135,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_IMG_framebuffer_downsample", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFramebufferTexture2DDownsampleIMG(int target, int attachment, int textarget, uint texture, int level, int xscale, int yscale);
 
@@ -143,6 +144,7 @@ namespace OpenGL
 			internal static glFramebufferTexture2DDownsampleIMG pglFramebufferTexture2DDownsampleIMG;
 
 			[RequiredByFeature("GL_IMG_framebuffer_downsample", Api = "gles2")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glFramebufferTextureLayerDownsampleIMG(int target, int attachment, uint texture, int level, int layer, int xscale, int yscale);
 

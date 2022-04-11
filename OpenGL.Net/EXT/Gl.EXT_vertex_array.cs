@@ -375,6 +375,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_EXT_vertex_array")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glColorPointerEXT(int size, int type, int stride, int count, IntPtr pointer);
 
@@ -383,6 +384,7 @@ namespace OpenGL
 			internal static glColorPointerEXT pglColorPointerEXT;
 
 			[RequiredByFeature("GL_EXT_vertex_array")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glEdgeFlagPointerEXT(int stride, int count, byte* pointer);
 
@@ -391,6 +393,7 @@ namespace OpenGL
 			internal static glEdgeFlagPointerEXT pglEdgeFlagPointerEXT;
 
 			[RequiredByFeature("GL_EXT_vertex_array")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glIndexPointerEXT(int type, int stride, int count, IntPtr pointer);
 
@@ -399,6 +402,7 @@ namespace OpenGL
 			internal static glIndexPointerEXT pglIndexPointerEXT;
 
 			[RequiredByFeature("GL_EXT_vertex_array")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glNormalPointerEXT(int type, int stride, int count, IntPtr pointer);
 
@@ -407,6 +411,7 @@ namespace OpenGL
 			internal static glNormalPointerEXT pglNormalPointerEXT;
 
 			[RequiredByFeature("GL_EXT_vertex_array")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexCoordPointerEXT(int size, int type, int stride, int count, IntPtr pointer);
 
@@ -415,6 +420,7 @@ namespace OpenGL
 			internal static glTexCoordPointerEXT pglTexCoordPointerEXT;
 
 			[RequiredByFeature("GL_EXT_vertex_array")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glVertexPointerEXT(int size, int type, int stride, int count, IntPtr pointer);
 

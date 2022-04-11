@@ -71,6 +71,7 @@ namespace OpenGL
 		{
 			[RequiredByFeature("GL_EXT_transform_feedback")]
 			[RequiredByFeature("GL_NV_transform_feedback")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glBindBufferOffsetEXT(int target, uint index, uint buffer, IntPtr offset);
 

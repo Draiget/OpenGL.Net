@@ -177,6 +177,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_SUN_global_alpha")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGlobalAlphaFactorbSUN(sbyte factor);
 
@@ -185,6 +186,7 @@ namespace OpenGL
 			internal static glGlobalAlphaFactorbSUN pglGlobalAlphaFactorbSUN;
 
 			[RequiredByFeature("GL_SUN_global_alpha")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGlobalAlphaFactorsSUN(short factor);
 
@@ -193,6 +195,7 @@ namespace OpenGL
 			internal static glGlobalAlphaFactorsSUN pglGlobalAlphaFactorsSUN;
 
 			[RequiredByFeature("GL_SUN_global_alpha")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGlobalAlphaFactoriSUN(int factor);
 
@@ -201,6 +204,7 @@ namespace OpenGL
 			internal static glGlobalAlphaFactoriSUN pglGlobalAlphaFactoriSUN;
 
 			[RequiredByFeature("GL_SUN_global_alpha")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGlobalAlphaFactorfSUN(float factor);
 
@@ -209,6 +213,7 @@ namespace OpenGL
 			internal static glGlobalAlphaFactorfSUN pglGlobalAlphaFactorfSUN;
 
 			[RequiredByFeature("GL_SUN_global_alpha")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGlobalAlphaFactordSUN(double factor);
 
@@ -217,6 +222,7 @@ namespace OpenGL
 			internal static glGlobalAlphaFactordSUN pglGlobalAlphaFactordSUN;
 
 			[RequiredByFeature("GL_SUN_global_alpha")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGlobalAlphaFactorubSUN(byte factor);
 
@@ -225,6 +231,7 @@ namespace OpenGL
 			internal static glGlobalAlphaFactorubSUN pglGlobalAlphaFactorubSUN;
 
 			[RequiredByFeature("GL_SUN_global_alpha")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGlobalAlphaFactorusSUN(ushort factor);
 
@@ -233,6 +240,7 @@ namespace OpenGL
 			internal static glGlobalAlphaFactorusSUN pglGlobalAlphaFactorusSUN;
 
 			[RequiredByFeature("GL_SUN_global_alpha")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGlobalAlphaFactoruiSUN(uint factor);
 

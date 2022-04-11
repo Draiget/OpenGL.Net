@@ -138,6 +138,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_SGIS_texture_filter4")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetTexFilterFuncSGIS(int target, int filter, float* weights);
 
@@ -146,6 +147,7 @@ namespace OpenGL
 			internal static glGetTexFilterFuncSGIS pglGetTexFilterFuncSGIS;
 
 			[RequiredByFeature("GL_SGIS_texture_filter4")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glTexFilterFuncSGIS(int target, int filter, int n, float* weights);
 

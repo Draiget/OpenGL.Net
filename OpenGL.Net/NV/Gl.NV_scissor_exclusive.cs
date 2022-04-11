@@ -107,6 +107,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_scissor_exclusive", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glScissorExclusiveNV(int x, int y, int width, int height);
 
@@ -115,6 +116,7 @@ namespace OpenGL
 			internal static glScissorExclusiveNV pglScissorExclusiveNV;
 
 			[RequiredByFeature("GL_NV_scissor_exclusive", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glScissorExclusiveArrayvNV(uint first, int count, int* v);
 

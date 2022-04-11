@@ -283,6 +283,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("WGL_NV_video_output")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglGetVideoDeviceNV(IntPtr hDC, int numDevices, IntPtr* hVideoDevice);
 
@@ -290,6 +291,7 @@ namespace OpenGL
 			internal static wglGetVideoDeviceNV pwglGetVideoDeviceNV;
 
 			[RequiredByFeature("WGL_NV_video_output")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglReleaseVideoDeviceNV(IntPtr hVideoDevice);
 
@@ -297,6 +299,7 @@ namespace OpenGL
 			internal static wglReleaseVideoDeviceNV pwglReleaseVideoDeviceNV;
 
 			[RequiredByFeature("WGL_NV_video_output")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglBindVideoImageNV(IntPtr hVideoDevice, IntPtr hPbuffer, int iVideoBuffer);
 
@@ -304,6 +307,7 @@ namespace OpenGL
 			internal static wglBindVideoImageNV pwglBindVideoImageNV;
 
 			[RequiredByFeature("WGL_NV_video_output")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglReleaseVideoImageNV(IntPtr hPbuffer, int iVideoBuffer);
 
@@ -311,6 +315,7 @@ namespace OpenGL
 			internal static wglReleaseVideoImageNV pwglReleaseVideoImageNV;
 
 			[RequiredByFeature("WGL_NV_video_output")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglSendPbufferToVideoNV(IntPtr hPbuffer, int iBufferType, uint* pulCounterPbuffer, bool bBlock);
 
@@ -318,6 +323,7 @@ namespace OpenGL
 			internal static wglSendPbufferToVideoNV pwglSendPbufferToVideoNV;
 
 			[RequiredByFeature("WGL_NV_video_output")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool wglGetVideoInfoNV(IntPtr hpVideoDevice, uint* pulCounterOutputPbuffer, uint* pulCounterOutputVideo);
 

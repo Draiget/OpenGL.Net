@@ -121,6 +121,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("EGL_MESA_image_dma_buf_export")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglExportDMABUFImageQueryMESA(IntPtr dpy, IntPtr image, int* fourcc, int* num_planes, ulong* modifiers);
 
@@ -128,6 +129,7 @@ namespace OpenGL
 			internal static eglExportDMABUFImageQueryMESA peglExportDMABUFImageQueryMESA;
 
 			[RequiredByFeature("EGL_MESA_image_dma_buf_export")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool eglExportDMABUFImageMESA(IntPtr dpy, IntPtr image, int* fds, int* strides, int* offsets);
 

@@ -222,6 +222,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_occlusion_query")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGenOcclusionQueriesNV(int n, uint* ids);
 
@@ -230,6 +231,7 @@ namespace OpenGL
 			internal static glGenOcclusionQueriesNV pglGenOcclusionQueriesNV;
 
 			[RequiredByFeature("GL_NV_occlusion_query")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glDeleteOcclusionQueriesNV(int n, uint* ids);
 
@@ -247,6 +249,7 @@ namespace OpenGL
 			internal static glIsOcclusionQueryNV pglIsOcclusionQueryNV;
 
 			[RequiredByFeature("GL_NV_occlusion_query")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glBeginOcclusionQueryNV(uint id);
 
@@ -255,6 +258,7 @@ namespace OpenGL
 			internal static glBeginOcclusionQueryNV pglBeginOcclusionQueryNV;
 
 			[RequiredByFeature("GL_NV_occlusion_query")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glEndOcclusionQueryNV();
 
@@ -263,6 +267,7 @@ namespace OpenGL
 			internal static glEndOcclusionQueryNV pglEndOcclusionQueryNV;
 
 			[RequiredByFeature("GL_NV_occlusion_query")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetOcclusionQueryivNV(uint id, int pname, int* @params);
 
@@ -271,6 +276,7 @@ namespace OpenGL
 			internal static glGetOcclusionQueryivNV pglGetOcclusionQueryivNV;
 
 			[RequiredByFeature("GL_NV_occlusion_query")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetOcclusionQueryuivNV(uint id, int pname, uint* @params);
 

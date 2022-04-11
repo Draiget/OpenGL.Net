@@ -324,6 +324,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GL_NV_shading_rate_image", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glBindShadingRateImageNV(uint texture);
 
@@ -332,6 +333,7 @@ namespace OpenGL
 			internal static glBindShadingRateImageNV pglBindShadingRateImageNV;
 
 			[RequiredByFeature("GL_NV_shading_rate_image", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetShadingRateImagePaletteNV(uint viewport, uint entry, int* rate);
 
@@ -340,6 +342,7 @@ namespace OpenGL
 			internal static glGetShadingRateImagePaletteNV pglGetShadingRateImagePaletteNV;
 
 			[RequiredByFeature("GL_NV_shading_rate_image", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glGetShadingRateSampleLocationivNV(int rate, uint samples, uint index, int* location);
 
@@ -348,6 +351,7 @@ namespace OpenGL
 			internal static glGetShadingRateSampleLocationivNV pglGetShadingRateSampleLocationivNV;
 
 			[RequiredByFeature("GL_NV_shading_rate_image", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glShadingRateImageBarrierNV([MarshalAs(UnmanagedType.I1)] bool synchronize);
 
@@ -356,6 +360,7 @@ namespace OpenGL
 			internal static glShadingRateImageBarrierNV pglShadingRateImageBarrierNV;
 
 			[RequiredByFeature("GL_NV_shading_rate_image", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glShadingRateImagePaletteNV(uint viewport, uint first, int count, int* rates);
 
@@ -364,6 +369,7 @@ namespace OpenGL
 			internal static glShadingRateImagePaletteNV pglShadingRateImagePaletteNV;
 
 			[RequiredByFeature("GL_NV_shading_rate_image", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glShadingRateSampleOrderNV(int order);
 
@@ -372,6 +378,7 @@ namespace OpenGL
 			internal static glShadingRateSampleOrderNV pglShadingRateSampleOrderNV;
 
 			[RequiredByFeature("GL_NV_shading_rate_image", Api = "gl|glcore")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate void glShadingRateSampleOrderCustomNV(int rate, uint samples, int* locations);
 

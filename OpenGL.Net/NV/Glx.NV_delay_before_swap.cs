@@ -70,6 +70,7 @@ namespace OpenGL
 		internal static unsafe partial class Delegates
 		{
 			[RequiredByFeature("GLX_NV_delay_before_swap")]
+			[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
 			[SuppressUnmanagedCodeSecurity]
 			internal delegate bool glXDelayBeforeSwapNV(IntPtr dpy, IntPtr drawable, float seconds);
 
